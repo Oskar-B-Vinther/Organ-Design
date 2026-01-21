@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Mossfet")(type "KiCad")(uri "C:/PCB Projekter/lib files/AO3400A/AO3400A.kicad_sym")(options "")(descr ""))
+  (lib (name "AO3400A")(type "KiCad")(uri "C:/PCB Projekter/lib files/AO3400A/AO3400A.kicad_sym")(options "")(descr ""))
+)

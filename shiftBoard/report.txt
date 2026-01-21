@@ -1,0 +1,166 @@
+Info: Processing symbol 'D1:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'D3:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'D4:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'D5:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'D6:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'D7:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'D2:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'R1:'.
+Info: Processing symbol 'D8:Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal'.
+Info: Processing symbol 'J1:'.
+Info: Processing symbol 'J2:'.
+Info: Processing symbol 'J3:'.
+Info: Processing symbol 'J4:'.
+Info: Processing symbol 'J5:'.
+Info: Processing symbol 'J6:'.
+Info: Processing symbol 'J7:'.
+Info: Processing symbol 'J8:'.
+Info: Processing symbol 'J9:'.
+Info: Processing symbol 'J10:'.
+Info: Processing symbol 'J11:'.
+Info: Processing symbol 'Q1:'.
+Info: Processing symbol 'Q2:'.
+Info: Processing symbol 'Q3:'.
+Info: Processing symbol 'Q4:'.
+Info: Processing symbol 'Q5:'.
+Info: Processing symbol 'Q6:'.
+Info: Processing symbol 'Q7:'.
+Info: Processing symbol 'Q8:'.
+Info: Processing symbol 'R2:'.
+Info: Processing symbol 'R3:'.
+Info: Processing symbol 'R4:'.
+Info: Processing symbol 'R5:'.
+Info: Processing symbol 'R6:'.
+Info: Processing symbol 'R7:'.
+Info: Processing symbol 'R8:'.
+Info: Processing symbol 'U2:'.
+Info: Total warnings: 0, errors: 28.
+Updated D3 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D3 footprint filters to 'D*DO?41*'.
+Add net Net-(D3-K).
+Connected D3 pin 1 to Net-(D3-K).
+Add net Net-(D3-A).
+Connected D3 pin 2 to Net-(D3-A).
+Added D4 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Changed REF** reference designator to D4.
+Changed D4 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Updated D4 symbol association from  to /c6d3532c-0d08-44a8-9474-0918b5b498b5.
+Updated D4 fields.
+Updated D4 sheetname to '/'.
+Updated D4 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D4 footprint filters to 'D*DO?41*'.
+Add net Net-(D4-K).
+Connected D4 pin 1 to Net-(D4-K).
+Add net Net-(D4-A).
+Connected D4 pin 2 to Net-(D4-A).
+Added D5 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Changed REF** reference designator to D5.
+Changed D5 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Updated D5 symbol association from  to /8148c56e-3e21-4eca-a210-7b00c45800c7.
+Updated D5 fields.
+Updated D5 sheetname to '/'.
+Updated D5 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D5 footprint filters to 'D*DO?41*'.
+Add net Net-(D5-K).
+Connected D5 pin 1 to Net-(D5-K).
+Add net Net-(D5-A).
+Connected D5 pin 2 to Net-(D5-A).
+Added D6 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Changed REF** reference designator to D6.
+Changed D6 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Updated D6 symbol association from  to /641e1833-ee8e-473b-aac3-92c18554ae66.
+Updated D6 fields.
+Updated D6 sheetname to '/'.
+Updated D6 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D6 footprint filters to 'D*DO?41*'.
+Add net Net-(D6-A).
+Connected D6 pin 2 to Net-(D6-A).
+Add net Net-(D6-K).
+Connected D6 pin 1 to Net-(D6-K).
+Added D7 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Changed REF** reference designator to D7.
+Updated D2 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D7 symbol association from  to /64c63f1d-2426-49fc-9629-8122f1e3dc14.
+Updated D7 fields.
+Updated D7 sheetname to '/'.
+Updated D7 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D7 footprint filters to 'D*DO?41*'.
+Add net Net-(D7-K).
+Connected D7 pin 1 to Net-(D7-K).
+Add net Net-(D7-A).
+Connected D7 pin 2 to Net-(D7-A).
+Added D1 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Added D8 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Changed REF** reference designator to D8.
+Changed D8 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Updated D8 symbol association from  to /c3a79455-3101-48ef-acc7-a3c1cbee5fd0.
+Updated D8 fields.
+Updated D8 sheetname to '/'.
+Updated D8 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D8 footprint filters to 'D*DO?41*'.
+Add net Net-(D8-A).
+Connected D8 pin 2 to Net-(D8-A).
+Add net Net-(D8-K).
+Connected D8 pin 1 to Net-(D8-K).
+Changed REF** reference designator to D1.
+Changed D1 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Updated D1 symbol association from  to /8a70fb9f-60b1-4707-8899-f67734f88772.
+Updated D1 fields.
+Updated D1 sheetname to '/'.
+Updated D1 sheetfile to 'shiftBoard.kicad_sch'.
+Updated D1 footprint filters to 'D*DO?41*'.
+Add net Net-(D1-K).
+Connected D1 pin 1 to Net-(D1-K).
+Add net Net-(D1-A).
+Connected D1 pin 2 to Net-(D1-A).
+Added D2 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Changed REF** reference designator to D2.
+Changed D2 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Updated D2 symbol association from  to /ef95e1ec-b176-43c9-801d-78289be10abe.
+Updated D2 fields.
+Updated D2 sheetname to '/'.
+Updated D2 footprint filters to 'D*DO?41*'.
+Add net Net-(D2-K).
+Changed D7 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Connected D2 pin 1 to Net-(D2-K).
+Add net Net-(D2-A).
+Connected D2 pin 2 to Net-(D2-A).
+Added D3 (footprint 'Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal').
+Changed REF** reference designator to D3.
+Changed D3 value from D_DO-41_SOD81_P10.16mm_Horizontal to 1N4007.
+Updated D3 symbol association from  to /ed2ac5f4-13c4-4f3a-83e2-54471f6dad54.
+Updated D3 fields.
+
+
+Updated D3 sheetname to '/'.
+Error: Cannot add Q5 (no footprint assigned).
+Error: Cannot add J1 (no footprint assigned).
+Error: Cannot add Q6 (no footprint assigned).
+Error: Cannot add J9 (no footprint assigned).
+Error: Cannot add Q7 (no footprint assigned).
+Error: Cannot add J5 (no footprint assigned).
+Error: Cannot add Q8 (no footprint assigned).
+Error: Cannot add J10 (no footprint assigned).
+Error: Cannot add R1 (no footprint assigned).
+Error: Cannot add J3 (no footprint assigned).
+Error: Cannot add R2 (no footprint assigned).
+Error: Cannot add J11 (no footprint assigned).
+Error: Cannot add R3 (no footprint assigned).
+Error: Cannot add J6 (no footprint assigned).
+Error: Cannot add R4 (no footprint assigned).
+Error: Cannot add Q1 (no footprint assigned).
+Error: Cannot add R5 (no footprint assigned).
+Error: Cannot add J2 (no footprint assigned).
+Error: Cannot add R6 (no footprint assigned).
+Error: Cannot add Q2 (no footprint assigned).
+Error: Cannot add R7 (no footprint assigned).
+Error: Cannot add J7 (no footprint assigned).
+Error: Cannot add R8 (no footprint assigned).
+Error: Cannot add Q3 (no footprint assigned).
+Error: Cannot add U2 (no footprint assigned).
+Error: Cannot add J4 (no footprint assigned).
+Error: Cannot add Q4 (no footprint assigned).
+Error: Cannot add J8 (no footprint assigned).
+
+
+Info: Total warnings: 0, errors: 28.
