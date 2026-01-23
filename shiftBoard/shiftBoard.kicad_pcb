@@ -104,13 +104,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "017e29de-d5bb-4954-87e2-cda43b11863c")
-		(at 156.84 27.5)
+		(at 157.34 33)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D8"
 			(at 5.08 -2.47 0)
 			(layer "F.SilkS")
-			(uuid "24e23771-5574-405a-9a34-74c73b50636e")
+			(uuid "89442c73-4ea8-49e4-8406-c6e3d1ac417e")
 			(effects
 				(font
 					(size 1 1)
@@ -121,7 +121,7 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "aa17a55e-281f-49b6-b83f-b40be1c086ea")
+			(uuid "946359fa-16c7-4473-8a9c-65c4e7c3a05e")
 			(effects
 				(font
 					(size 1 1)
@@ -133,7 +133,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b9487133-298f-469e-9dec-c869458cfd24")
+			(uuid "ec28e430-257d-4c9e-973e-ecbbfb4c0b69")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -145,7 +145,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9157c0b9-98d4-45ce-8ea4-55fc83070f41")
+			(uuid "8ffaafd8-95c5-4210-92ae-4c8402746a0b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -389,7 +389,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "109998f9-a7e4-4f03-b3a1-e0776f32134d")
-		(at 108.845 75.833333 90)
+		(at 125.0175 69.5 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "J3"
@@ -404,7 +404,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 2.5 5.72 90)
+			(at 3 -16.1725 0)
 			(layer "F.Fab")
 			(uuid "0ec27788-abec-4124-b82f-eb18c161a261")
 			(effects
@@ -738,7 +738,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "117ec961-07c6-447a-b96a-2d21a87e7f77")
-		(at 175 121.5 90)
+		(at 175.5 111 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V1"
@@ -1087,7 +1087,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "12469fd7-b32c-4187-af35-7f893d69b7bb")
-		(at 175 33.5 90)
+		(at 175.5 39 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V7"
@@ -1436,13 +1436,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "16114785-9016-492e-8c07-b257f3169594")
-		(at 156.42 57)
+		(at 156.92 57)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D6"
 			(at 5.08 -2.47 0)
 			(layer "F.SilkS")
-			(uuid "19536481-6b1a-418c-8a74-80b0d55ce7a1")
+			(uuid "b452db8f-7407-4e59-99f1-14b3b55e368f")
 			(effects
 				(font
 					(size 1 1)
@@ -1453,7 +1453,7 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "fdc3ae02-d917-449c-8dfa-9699f6ce05ca")
+			(uuid "1b321068-0711-4e92-9863-502774201d6b")
 			(effects
 				(font
 					(size 1 1)
@@ -1465,7 +1465,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1751b82b-005a-459b-8980-49c3bce2de3d")
+			(uuid "34cf6120-c322-4222-86a9-ba045c2138e8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +1477,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d49b8d7d-b4b4-4733-8a7b-61ce34a1bf5a")
+			(uuid "94a2e73c-b675-43db-a072-983840145f18")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1721,13 +1721,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "23fdc292-229d-47a0-ab99-9426574304f4")
-		(at 156.42 41.5)
+		(at 156.92 45)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D7"
 			(at 5.08 -2.47 0)
 			(layer "F.SilkS")
-			(uuid "6be52e73-f6c7-47fe-83de-ba941f3b28e2")
+			(uuid "a410741a-65e9-455d-8b7a-110822ab0637")
 			(effects
 				(font
 					(size 1 1)
@@ -1738,7 +1738,7 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "2bc5c43e-9ff5-4b66-b468-1262aeecf39f")
+			(uuid "0af18a20-14d4-45cc-81f7-92f2a032a71e")
 			(effects
 				(font
 					(size 1 1)
@@ -1750,7 +1750,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "26824b24-7e32-4f91-b351-b0c06fc35aa1")
+			(uuid "d185279c-b38c-48f1-8c45-ac7e72dc867b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1762,7 +1762,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "95c3c42a-ab60-4fbb-8ddb-c211ca61b88b")
+			(uuid "b407908a-8946-4d95-bf99-35d59b8537cd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1935,7 +1935,7 @@
 			(uuid "f23d1c37-7874-4d96-9b96-f5bd796ebc7c")
 		)
 		(fp_text user "K"
-			(at 1.11 -18.645 0)
+			(at 1.11 -16.645 0)
 			(layer "F.SilkS")
 			(uuid "a8b25065-cc9f-4772-ab95-9191d61d2296")
 			(effects
@@ -1957,7 +1957,7 @@
 			)
 		)
 		(fp_text user "K"
-			(at 1.11 -18.645 0)
+			(at 1.11 -16.645 0)
 			(layer "F.Fab")
 			(uuid "6df8a49c-a211-47fb-9c69-0b288d042b69")
 			(effects
@@ -2006,11 +2006,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "2bf2b094-8d0c-49b9-a0eb-8fbaceaf8034")
-		(at 145.755 137.55)
+		(at 157 123.245 90)
 		(property "Reference" "Q9"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "6bb433fe-9b12-49cc-9d91-b23c25e9e87f")
+			(uuid "7b458f50-82d4-469b-8a64-a2f466ecabdc")
 			(effects
 				(font
 					(size 1 1)
@@ -2019,9 +2019,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 8.16 2.615 0)
+			(at 0.745 2.95 90)
 			(layer "F.Fab")
-			(uuid "85d6af99-792a-453c-9513-2cdd90f865e8")
+			(uuid "31538ca8-ad73-4d98-8734-af7a55f84e0f")
 			(effects
 				(font
 					(size 1 1)
@@ -2030,10 +2030,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c50def32-0046-4ef2-9a0b-1aebb189562e")
+			(uuid "2b668763-f991-4234-9781-067d57d594ca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2042,10 +2042,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "720a0c6b-935d-4c06-93ce-c0e61d276f7e")
+			(uuid "19d41632-26c5-4f1c-bf87-199ff9ad3222")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2054,7 +2054,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2067,7 +2067,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2080,7 +2080,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2093,7 +2093,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2106,7 +2106,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2119,7 +2119,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2132,7 +2132,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2145,7 +2145,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2158,7 +2158,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2171,7 +2171,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2184,7 +2184,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2197,7 +2197,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2214,16 +2214,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3e3db692-848b-4ccd-8a60-21737e13183f")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -2232,6 +2222,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "6b4bfc66-209e-489d-9b62-39264a3a88c2")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3e3db692-848b-4ccd-8a60-21737e13183f")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -2245,26 +2245,6 @@
 			(uuid "4039690a-4e3c-44a1-8ed7-f460ea3bde14")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "bf229bcb-34e2-40ed-ad00-02966430691a")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "2a61d9be-fb70-41db-a30a-44548dbb5f07")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -2273,6 +2253,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "063d1530-cfc1-4229-8fb6-b938d92aa555")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bf229bcb-34e2-40ed-ad00-02966430691a")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -2285,24 +2275,14 @@
 			(uuid "6ea66593-ab2f-431e-b112-53d1ad23cda4")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "9b282038-deb7-41a0-91c9-668c0b4fe350")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "e49a1c92-3017-49d6-aae1-c580916fc2c1")
+			(layer "F.CrtYd")
+			(uuid "2a61d9be-fb70-41db-a30a-44548dbb5f07")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -2315,6 +2295,16 @@
 			(uuid "cfb7db5d-5a78-4131-a803-dba0dd7caef7")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9b282038-deb7-41a0-91c9-668c0b4fe350")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -2323,6 +2313,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "3052deb1-4179-4f5a-a3b0-ccf8e5933712")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e49a1c92-3017-49d6-aae1-c580916fc2c1")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -2336,7 +2336,7 @@
 			(uuid "0bac383c-e638-4b15-aadb-624dbc28f1e2")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2346,7 +2346,7 @@
 			(uuid "7186aee2-c8fd-4c30-a15f-fe7370c8a42e")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2356,7 +2356,7 @@
 			(uuid "0c7a7727-3d39-4916-b6b5-03372ef527a4")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2370,11 +2370,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "2fbe1d4a-a774-4909-8dce-4aa13588b387")
-		(at 145.755 49.05)
+		(at 157 50.5 90)
 		(property "Reference" "Q6"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "3aade725-d52b-4e06-ac5b-e957e6029c01")
+			(uuid "66fca28a-4bc5-46b4-84d1-4d20d0664f95")
 			(effects
 				(font
 					(size 1 1)
@@ -2383,9 +2383,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 7.745 -4.95 0)
+			(at -0.755 2.95 90)
 			(layer "F.Fab")
-			(uuid "802f9335-1ae9-4922-86e1-f88c92a92222")
+			(uuid "59912f49-16b8-428c-9ade-139514e0608c")
 			(effects
 				(font
 					(size 1 1)
@@ -2394,10 +2394,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "05cc4e8d-6af4-4820-a0bc-69f5dd217951")
+			(uuid "cda7a407-da30-4920-afaa-097544404618")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2406,10 +2406,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e754d2b9-0f26-47ae-897b-8e2858645358")
+			(uuid "be214a14-db73-4aa6-973c-8e0f7a66f83a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2418,7 +2418,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2431,7 +2431,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2444,7 +2444,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2457,7 +2457,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2470,7 +2470,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2483,7 +2483,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2496,7 +2496,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2509,7 +2509,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2522,7 +2522,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2535,7 +2535,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2548,7 +2548,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2561,7 +2561,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -2578,16 +2578,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "bb7c43d4-d9d1-4a6a-8465-23cf40540077")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -2596,6 +2586,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "bcc1e0ee-8980-4f1f-8f2b-204f67639c34")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bb7c43d4-d9d1-4a6a-8465-23cf40540077")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -2609,26 +2609,6 @@
 			(uuid "d466e203-4425-4aa9-be2e-da1c23c253f3")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "8c61b936-8713-4982-b6de-4afee7d62fae")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "a4b9996a-aa7d-4f69-be84-573fc4edd374")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -2637,6 +2617,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "277979ca-345b-4b3b-b282-90113cd2a1d3")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8c61b936-8713-4982-b6de-4afee7d62fae")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -2649,24 +2639,14 @@
 			(uuid "047f5331-397b-46e2-b122-bff82d46de5e")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "fcb94c47-6ce6-457d-961c-973ab5643eaf")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "5bbf98e5-c520-47f1-8679-f54d790fecaf")
+			(layer "F.CrtYd")
+			(uuid "a4b9996a-aa7d-4f69-be84-573fc4edd374")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -2679,6 +2659,16 @@
 			(uuid "dee73b9f-f2d7-46a2-b9b1-17acd09a6107")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fcb94c47-6ce6-457d-961c-973ab5643eaf")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -2687,6 +2677,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "d28b2723-e166-47ca-bf6b-441dd005685c")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5bbf98e5-c520-47f1-8679-f54d790fecaf")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -2700,7 +2700,7 @@
 			(uuid "02410061-3ff0-4ac1-8578-02281fa0ff7d")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2710,7 +2710,7 @@
 			(uuid "c17364d2-d8e9-4855-a3be-ae79797b13b1")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2720,7 +2720,7 @@
 			(uuid "6748d664-e31d-4c4f-af0e-61e79f058b76")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -2734,7 +2734,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "3172c4ae-5c92-4b51-a20d-f56d38137f5c")
-		(at 175 91 90)
+		(at 175.5 87 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V3"
@@ -3083,7 +3083,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "33c3c7ae-a6f7-40b6-8b82-23c560a026bf")
-		(at 175 63 90)
+		(at 175.5 63 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V5"
@@ -3432,7 +3432,7 @@
 	(footprint "Library:74HC595"
 		(layer "F.Cu")
 		(uuid "34227079-7b41-450a-ac4b-57ac8196ab35")
-		(at 136 79.5 180)
+		(at 144.5908 74.595 180)
 		(property "Reference" "U2"
 			(at 1.752945 -8.027975 0)
 			(layer "F.SilkS")
@@ -3445,7 +3445,7 @@
 			)
 		)
 		(property "Value" "74HC595"
-			(at 16.362 7.22675 0)
+			(at -0.5908 7.675 0)
 			(layer "F.Fab")
 			(uuid "a2e73627-989b-4756-8698-dd4743f8db64")
 			(effects
@@ -4411,7 +4411,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "44cb9e96-ce1c-4508-80b6-137b05e10d57")
-		(at 175 136.5 90)
+		(at 175.5 123 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V8"
@@ -4760,7 +4760,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "5c306381-aca7-482d-8b57-74e8ccb1b0a7")
-		(at 175 47.5 90)
+		(at 175.5 51 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V6"
@@ -5109,7 +5109,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "60a16dca-e409-4ae9-b5c2-f52185a645ea")
-		(at 108.845 120.5 90)
+		(at 125.0175 96.5 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "J1"
@@ -5124,7 +5124,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 2.5 5.72 90)
+			(at 2 -16.1725 0)
 			(layer "F.Fab")
 			(uuid "0f6e76ed-6158-42f2-ae7b-2d6221e49d73")
 			(effects
@@ -5458,7 +5458,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "625f3c7c-7449-4ee0-aa3e-ced04bf05cf4")
-		(at 108.5 48.5 -90)
+		(at 124.6725 51 -90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "J4"
@@ -5473,7 +5473,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 2.5 5.72 90)
+			(at 2.5 15.1725 0)
 			(layer "F.Fab")
 			(uuid "5d3218da-bfe0-412c-bc0c-6efceb51c066")
 			(effects
@@ -5807,11 +5807,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "62e51573-b597-4b84-9d10-21c16738bd8c")
-		(at 145.755 78.05)
+		(at 157 74.5 90)
 		(property "Reference" "Q4"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "0bbd0cae-a001-4d85-a202-a0b541c7f0cd")
+			(uuid "10797c73-3fb0-4078-a31e-0c38e9bacd47")
 			(effects
 				(font
 					(size 1 1)
@@ -5820,9 +5820,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 8.16 2.615 0)
+			(at -0.255 2.95 90)
 			(layer "F.Fab")
-			(uuid "45563a04-eac1-49f3-a4c1-8097ee38989e")
+			(uuid "2d7184b1-0119-4ee2-b3e4-a198fde602ba")
 			(effects
 				(font
 					(size 1 1)
@@ -5831,10 +5831,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f4d1550b-f4e8-4530-9bc0-f617637a8f5c")
+			(uuid "c552a17b-6a24-4f8d-bfd4-6be5d2ff4d97")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5843,10 +5843,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d0ace4a1-2d25-4c80-a0ce-6f858517295f")
+			(uuid "7ff1812b-3ee7-48f5-befc-76ecd215eb45")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5855,7 +5855,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5868,7 +5868,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5881,7 +5881,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5894,7 +5894,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5907,7 +5907,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5920,7 +5920,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5933,7 +5933,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5946,7 +5946,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5959,7 +5959,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5972,7 +5972,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5985,7 +5985,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -5998,7 +5998,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6015,16 +6015,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4378f779-8cc8-426f-9930-b00dbe378ad1")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -6033,6 +6023,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "a076352c-3355-4a49-917b-5228844de1da")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4378f779-8cc8-426f-9930-b00dbe378ad1")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -6046,26 +6046,6 @@
 			(uuid "96328554-96f8-4cd8-9e5e-c393aa88d6e4")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7de01bd5-3196-49d2-a671-207ca68d2684")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "ebb99229-103e-4b15-b604-1d285c579376")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -6074,6 +6054,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "7fb6507f-062b-469b-aaf2-ae1f13c58e72")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7de01bd5-3196-49d2-a671-207ca68d2684")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -6086,24 +6076,14 @@
 			(uuid "5fa159ab-c1a1-4969-b896-721730aa1420")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "cb51a79e-ac0a-43e3-9510-c137534c134b")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "f496a97b-2743-4480-9ad2-40909be2d3c2")
+			(layer "F.CrtYd")
+			(uuid "ebb99229-103e-4b15-b604-1d285c579376")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -6116,6 +6096,16 @@
 			(uuid "1b8f2719-fe96-4d12-a2b7-3b508846c7ff")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cb51a79e-ac0a-43e3-9510-c137534c134b")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -6124,6 +6114,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "f9ffb515-9cea-4036-802d-d21f3930a06d")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f496a97b-2743-4480-9ad2-40909be2d3c2")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -6137,7 +6137,7 @@
 			(uuid "4d580e63-bebb-4e47-8bdf-cf442fdbc7fe")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6147,7 +6147,7 @@
 			(uuid "56e141a9-efad-4c90-b03b-3b0ba267f738")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6157,7 +6157,7 @@
 			(uuid "b31db22f-9021-451e-9365-67fd68d7ef24")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6171,11 +6171,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "792af989-2850-44d6-b891-3bec31fe2cf7")
-		(at 145.755 35.05)
+		(at 157 38.5 90)
 		(property "Reference" "Q7"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "025fbcc3-7c06-4bd8-a79a-aa70fad93952")
+			(uuid "4089be2d-aeca-47de-83ad-fda91b373b13")
 			(effects
 				(font
 					(size 1 1)
@@ -6184,9 +6184,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 29.9925 -11.775 0)
+			(at 0.245 2.95 90)
 			(layer "F.Fab")
-			(uuid "ed8ec29e-b54d-40e8-97e5-3f42d147dbea")
+			(uuid "6c3da01c-a906-4970-aa51-aeba6ab655b9")
 			(effects
 				(font
 					(size 1 1)
@@ -6195,10 +6195,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ad86ca3b-28ef-4a1e-b0ed-cebf27f4b5f5")
+			(uuid "e9fd28aa-95ca-4db1-96af-918cd7ce6f4d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6207,10 +6207,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ceef06b-17b4-42dd-b38e-3ec3b595aea7")
+			(uuid "22ee52eb-68f5-4173-8fa2-de595a4bd193")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6219,7 +6219,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6232,7 +6232,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6245,7 +6245,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6258,7 +6258,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6271,7 +6271,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6284,7 +6284,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6297,7 +6297,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6310,7 +6310,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6323,7 +6323,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6336,7 +6336,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6349,7 +6349,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6362,7 +6362,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6379,16 +6379,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "16b92907-6e33-4ab8-8ae7-c3c1bb2726c6")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -6397,6 +6387,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "0087b92b-e498-4942-8d9b-9930964c8829")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "16b92907-6e33-4ab8-8ae7-c3c1bb2726c6")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -6410,26 +6410,6 @@
 			(uuid "084e4f1b-a138-45e1-93ed-f316630764a5")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "1bfcc9ee-b15b-43d6-8e9e-16607c296771")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "55396a9c-114a-4698-a398-028634410532")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -6438,6 +6418,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "1e7116ec-c39e-40a4-8e16-30288fbce1a6")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1bfcc9ee-b15b-43d6-8e9e-16607c296771")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -6450,24 +6440,14 @@
 			(uuid "f503f868-cf9b-40f7-b93f-ba7b4e42e5d0")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "90484297-aaa0-437a-8ad3-0767cc888e70")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "69f08785-26dc-463b-8210-5bc22c76d683")
+			(layer "F.CrtYd")
+			(uuid "55396a9c-114a-4698-a398-028634410532")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -6480,6 +6460,16 @@
 			(uuid "0c748f70-a7f8-4024-9fd5-7cbfe93fc486")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "90484297-aaa0-437a-8ad3-0767cc888e70")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -6488,6 +6478,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "da48ced4-c492-45f4-962c-b3de6ce6874e")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "69f08785-26dc-463b-8210-5bc22c76d683")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -6501,7 +6501,7 @@
 			(uuid "5511c436-8c78-46c5-ab16-295191445eca")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6511,7 +6511,7 @@
 			(uuid "98b4d6f3-16f6-41be-963a-7e06495c401d")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6521,7 +6521,7 @@
 			(uuid "237b4a56-f886-44d4-818c-41a0c6036b2e")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6535,13 +6535,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "7be6be2d-20c4-43a0-a610-92353f8e872a")
-		(at 156 85.5)
+		(at 156.5 81.5)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D4"
 			(at 5.08 -2.47 0)
 			(layer "F.SilkS")
-			(uuid "cd5ea9e1-cc79-4ac4-8511-be8d8938ceb7")
+			(uuid "460d580f-82e1-41f9-b302-01fb16cb099a")
 			(effects
 				(font
 					(size 1 1)
@@ -6552,7 +6552,7 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "2bef7df1-7bfe-4d20-b6da-b58a1ce98ed9")
+			(uuid "e0e1320b-838a-4af3-9927-21b2850a6566")
 			(effects
 				(font
 					(size 1 1)
@@ -6564,7 +6564,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eb0fdcb0-10a5-4159-80d3-6a0829243012")
+			(uuid "2997a883-1e6c-4d4e-82b1-884f1151bd15")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6576,7 +6576,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e0faec15-4f8d-477e-9894-1305deabb6cf")
+			(uuid "6058fe56-2f15-4ab7-8eea-26fce3a2f2a3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6820,11 +6820,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "abe1dbf3-6703-4311-8a60-13b965a14792")
-		(at 145.755 123.05)
+		(at 157 110.745 90)
 		(property "Reference" "Q1"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "b5b4bb50-8d25-4567-9299-03d17c70ba5c")
+			(uuid "c39f0511-5e70-4bb3-a0c2-3ce66c2b2b0c")
 			(effects
 				(font
 					(size 1 1)
@@ -6833,9 +6833,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 8.16 2.615 0)
+			(at 0.245 3.45 90)
 			(layer "F.Fab")
-			(uuid "fabbfca5-a66e-4aed-a363-6fe520023e58")
+			(uuid "8e7340bd-eeda-4f12-898c-b6cd18307262")
 			(effects
 				(font
 					(size 1 1)
@@ -6844,10 +6844,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "80051322-12f9-4dbc-8ccb-5ddec062dba6")
+			(uuid "abbbf367-2a44-4f5b-a804-de58d318e364")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6856,10 +6856,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f393e557-d7e0-4155-b1c1-31b5b2c2d6f1")
+			(uuid "da246257-ef2d-40c0-8128-43e0ff09237e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6868,7 +6868,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6881,7 +6881,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6894,7 +6894,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6907,7 +6907,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6920,7 +6920,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6933,7 +6933,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6946,7 +6946,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6959,7 +6959,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6972,7 +6972,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6985,7 +6985,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -6998,7 +6998,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7011,7 +7011,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7028,16 +7028,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c1fcc0a9-e1d7-4e0d-9634-be3b81414546")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -7046,6 +7036,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "8981f0ab-9c7a-4cdb-ab61-fa98b2015ece")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c1fcc0a9-e1d7-4e0d-9634-be3b81414546")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -7059,26 +7059,6 @@
 			(uuid "2508d31f-d00f-462b-851d-5fa0120f0be3")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "d1f0fda7-f4f4-427e-953c-352c025b0f5b")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "e56bcc6c-c3f7-475e-bbbf-a32c9b4ba683")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -7087,6 +7067,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "5edd9388-bbdd-4094-b69b-f81c7b543ad3")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d1f0fda7-f4f4-427e-953c-352c025b0f5b")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -7099,24 +7089,14 @@
 			(uuid "e76eb565-c38f-492a-a1df-8cb6b856b26a")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "0461eb91-5446-4714-955d-0a2bf9cf0ca9")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "58823a21-37e2-4140-8a3a-41ca215ae268")
+			(layer "F.CrtYd")
+			(uuid "e56bcc6c-c3f7-475e-bbbf-a32c9b4ba683")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -7129,6 +7109,16 @@
 			(uuid "97e66a16-b990-43ae-b5e0-bcd57ebbc551")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0461eb91-5446-4714-955d-0a2bf9cf0ca9")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -7137,6 +7127,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "29aeb025-8cfe-468a-b8d7-d5981b067ee2")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "58823a21-37e2-4140-8a3a-41ca215ae268")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -7150,7 +7150,7 @@
 			(uuid "511f6dc3-851a-4cac-a290-7a67f400e435")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7160,7 +7160,7 @@
 			(uuid "445afbaf-1869-4e2e-9049-0257bd2c9f50")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7170,7 +7170,7 @@
 			(uuid "73d7265a-476d-43a1-a962-cf09bd917886")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7184,11 +7184,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "b195bf49-4792-4e23-a8ed-3aad62ae3c96")
-		(at 145.755 64.05)
+		(at 157 62.245 90)
 		(property "Reference" "Q5"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "d2e9b50c-8179-4436-a9e6-0db730bcc487")
+			(uuid "3bd63578-5cfe-4066-97f0-6180dccf245f")
 			(effects
 				(font
 					(size 1 1)
@@ -7197,9 +7197,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 8.16 2.615 0)
+			(at -0.255 3.45 90)
 			(layer "F.Fab")
-			(uuid "2ce53422-bd78-42ac-b8d8-bff8592961c0")
+			(uuid "86bcc967-0f9b-45e7-b479-1bdae7282ed2")
 			(effects
 				(font
 					(size 1 1)
@@ -7208,10 +7208,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4616f06d-d74c-4531-a968-f99a0129037d")
+			(uuid "00f7f9f8-24a3-493e-bcbd-1f1f104976c2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7220,10 +7220,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ee4baebb-3d71-4964-80db-80d7c3766061")
+			(uuid "b8100399-7d64-4a5c-a1e6-960d88046db7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7232,7 +7232,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7245,7 +7245,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7258,7 +7258,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7271,7 +7271,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7284,7 +7284,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7297,7 +7297,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7310,7 +7310,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7323,7 +7323,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7336,7 +7336,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7349,7 +7349,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7362,7 +7362,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7375,7 +7375,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7392,16 +7392,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9ec6c40a-9314-4db2-a0a5-61b189057dff")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -7410,6 +7400,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "2602f2e6-6670-4bb2-b056-c7892586cfed")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9ec6c40a-9314-4db2-a0a5-61b189057dff")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -7423,26 +7423,6 @@
 			(uuid "246b3662-2b01-4bac-9731-91243852a79d")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "59c83527-0056-4b76-ba7c-72523b2636f2")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "38721ab0-1aaa-492c-bdb3-e07d09deffe0")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -7451,6 +7431,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "469445d4-ccde-4762-a788-6e8937184f7e")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "59c83527-0056-4b76-ba7c-72523b2636f2")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -7463,24 +7453,14 @@
 			(uuid "f4a85f34-3865-465e-a3ec-1848fa9a02b8")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "a79136af-38fc-49c8-89a3-7d483d252f2c")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "577e959f-abe7-4904-8bb9-12dfcd2ccaaf")
+			(layer "F.CrtYd")
+			(uuid "38721ab0-1aaa-492c-bdb3-e07d09deffe0")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -7493,6 +7473,16 @@
 			(uuid "31eab352-adc7-496e-87af-a8e74d74b285")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a79136af-38fc-49c8-89a3-7d483d252f2c")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -7501,6 +7491,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "18fff1b9-8fce-44f4-bd50-063c55c37ab0")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "577e959f-abe7-4904-8bb9-12dfcd2ccaaf")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -7514,7 +7514,7 @@
 			(uuid "a49d35f6-d7e7-4ca7-bcb9-81bccbd11e96")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7524,7 +7524,7 @@
 			(uuid "4b45a32c-756c-4029-9389-91b8a1df784c")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7534,7 +7534,7 @@
 			(uuid "56f520d0-aadc-421e-96e4-c27c5a10fa1a")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -7548,13 +7548,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "c2c5532e-6b62-407a-8714-1387cd880724")
-		(at 156.5 71.5)
+		(at 157 69.5)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D5"
 			(at 5.08 -2.47 0)
 			(layer "F.SilkS")
-			(uuid "8241c78a-154b-4f85-8905-3937532b2b69")
+			(uuid "022749c5-f357-4872-96d2-7e5ad4dcfd21")
 			(effects
 				(font
 					(size 1 1)
@@ -7565,7 +7565,7 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "643c0eb9-a0c1-4c24-9161-33737a1a9f60")
+			(uuid "bd67d1dc-47f9-40ba-9925-37f71ef1be18")
 			(effects
 				(font
 					(size 1 1)
@@ -7577,7 +7577,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "18d17e50-57ad-4e29-9798-3c6c066bde8d")
+			(uuid "4af657c9-ab1d-4f0b-b623-caae79c3c1ab")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7589,7 +7589,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "db073b98-fd42-40a1-b2cf-942788aa1fb1")
+			(uuid "b2824978-c575-44ee-aa20-36607381434a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7833,11 +7833,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "c89b6da5-9754-4c0c-9e14-59c404a96438")
-		(at 145.755 92.55)
+		(at 157 86.745 90)
 		(property "Reference" "Q3"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "1ee2a9f3-df08-4c38-b0d9-818a8371343f")
+			(uuid "53d80267-0867-429c-8e49-cffc453e3435")
 			(effects
 				(font
 					(size 1 1)
@@ -7846,9 +7846,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 8.16 2.615 0)
+			(at -0.255 3.45 90)
 			(layer "F.Fab")
-			(uuid "54b4bb31-4adc-4474-9795-149b77356bbb")
+			(uuid "cfdfc32c-088e-4678-a424-80dba9e87274")
 			(effects
 				(font
 					(size 1 1)
@@ -7857,10 +7857,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1688702d-b6fa-499c-98a8-9a468d690ebe")
+			(uuid "75dab460-5afe-4cdd-917d-fd87dc1dc3b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7869,10 +7869,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dde7a259-e7a1-4f8c-b60a-2ffd10216b25")
+			(uuid "45982858-2d75-4eba-b09f-e8ecd48d90b0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7881,7 +7881,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7894,7 +7894,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7907,7 +7907,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7920,7 +7920,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7933,7 +7933,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7946,7 +7946,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7959,7 +7959,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7972,7 +7972,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7985,7 +7985,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -7998,7 +7998,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8011,7 +8011,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8024,7 +8024,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8041,16 +8041,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "29cbfc7e-a41f-4b78-9e45-972456eb77b5")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -8059,6 +8049,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "e30f99f3-1f01-4d64-b4d1-af2c356d889e")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "29cbfc7e-a41f-4b78-9e45-972456eb77b5")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -8072,26 +8072,6 @@
 			(uuid "c8dae58e-a0af-4631-a5cc-d562688c91e6")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "b784d6af-bea4-4af7-aa43-6dfdb96349df")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "55696e56-7304-4e36-a0e0-ae57f9a27317")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -8100,6 +8080,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "e9535dc8-421a-48b2-9749-19eaedb95b47")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b784d6af-bea4-4af7-aa43-6dfdb96349df")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -8112,24 +8102,14 @@
 			(uuid "2febc3d4-f3d4-4054-b822-4db5138f9282")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "48f34dac-9cb3-4809-af69-32ca28c86bc0")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c80644f1-f220-4552-9bb9-4cc73d9f2d32")
+			(layer "F.CrtYd")
+			(uuid "55696e56-7304-4e36-a0e0-ae57f9a27317")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -8142,6 +8122,16 @@
 			(uuid "cea75144-1d71-4dd6-85c4-24f162a9e368")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "48f34dac-9cb3-4809-af69-32ca28c86bc0")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -8150,6 +8140,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "600d69bd-cccf-4962-af1a-2f53465ca87f")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c80644f1-f220-4552-9bb9-4cc73d9f2d32")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -8163,7 +8163,7 @@
 			(uuid "b3c6b0b2-c6f9-4997-bf5c-488c67aa0171")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8173,7 +8173,7 @@
 			(uuid "e972a50a-1e9a-4a10-adac-7f2c03520019")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8183,7 +8183,7 @@
 			(uuid "60c65cc5-ad7c-4bd0-b68b-a6ca70b47ed5")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -8197,13 +8197,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "c9287f1d-5c39-4c5e-a4d5-e9d35312d634")
-		(at 155.92 100.5)
+		(at 156.42 93.5)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D3"
 			(at 5 -3 0)
 			(layer "F.SilkS")
-			(uuid "2c0ab17b-e776-419e-ae39-3cdda8e53b54")
+			(uuid "e0849d2f-0d52-4b8a-8810-8c7ec96c1640")
 			(effects
 				(font
 					(size 1 1)
@@ -8214,7 +8214,7 @@
 		(property "Value" "1N4007"
 			(at 4.5 3 0)
 			(layer "F.Fab")
-			(uuid "bf31ed08-114f-4a7d-a667-4fec50446c1b")
+			(uuid "614d9eea-7684-4e0f-b380-72943ce45e7c")
 			(effects
 				(font
 					(size 1 1)
@@ -8226,7 +8226,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "54980107-d34a-4191-be4f-e26f540ae0ee")
+			(uuid "2dcf4d3f-7b02-47d3-8c6b-9ebfdccc6512")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8238,7 +8238,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5297c166-4a56-4a75-8860-cf1e094dc026")
+			(uuid "12faa180-5bbb-4fe3-8723-3c28ed04bb66")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8482,13 +8482,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "d4ab0638-07b2-49d9-aad7-310d2b718388")
-		(at 155.92 131.5)
+		(at 156.42 118)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D1"
 			(at 5.5 -2.4 0)
 			(layer "F.SilkS")
-			(uuid "60420423-0d63-4516-ae94-604a54aecc93")
+			(uuid "bbb6e2ed-cfa3-488b-8d7d-d1c91bab51f7")
 			(effects
 				(font
 					(size 1 1)
@@ -8499,7 +8499,7 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "dda6240b-5a9b-4d47-981a-f41b11fd8b75")
+			(uuid "2151af21-8605-428c-b450-6a73957249ea")
 			(effects
 				(font
 					(size 1 1)
@@ -8511,7 +8511,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a1ccd212-2a0f-4ee1-9f56-0c8a04023515")
+			(uuid "b0fa7713-7738-4693-b6df-984572aeb32a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8523,7 +8523,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b36fb9fc-8719-4210-9165-191c9d5644d4")
+			(uuid "63a43787-4264-4bff-90b4-084a546f38fa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8767,11 +8767,11 @@
 	(footprint "Library:AO3400A"
 		(layer "F.Cu")
 		(uuid "d6813266-b11d-43e3-8c7c-b67b081e26df")
-		(at 145.755 107.05)
+		(at 157 98.5 90)
 		(property "Reference" "Q2"
-			(at 1.175 -2.635 0)
+			(at 1.175 -2.635 90)
 			(layer "F.SilkS")
-			(uuid "687720f7-0a57-439d-abaf-3fd2bd75714c")
+			(uuid "14447e03-88c7-4ae9-a75b-7eda5f14f999")
 			(effects
 				(font
 					(size 1 1)
@@ -8780,9 +8780,9 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at -9.34 -3.485 0)
+			(at -0.255 2.95 90)
 			(layer "F.Fab")
-			(uuid "053efb3d-5045-4a5c-86b7-e33f213b303e")
+			(uuid "b6a3ef9f-bfe4-4f63-a2ab-95ed05a96fb1")
 			(effects
 				(font
 					(size 1 1)
@@ -8791,10 +8791,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8034c184-22c6-4a6a-bb6b-90cc4ba0b910")
+			(uuid "9dc3f8ad-0ceb-46f9-b3f0-c3d6ca1fe6eb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,10 +8803,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7af2996a-1d89-4228-b01d-a93d6b34ab04")
+			(uuid "f46d7c08-e4f7-4bf3-9cc3-7a679870a774")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8815,7 +8815,7 @@
 			)
 		)
 		(property "MF" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8828,7 +8828,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "1.25 mm"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8841,7 +8841,7 @@
 			)
 		)
 		(property "Package" "SOT-23 Alpha &amp; Omega Semiconductor Inc."
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8854,7 +8854,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8867,7 +8867,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=eda"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8880,7 +8880,7 @@
 			)
 		)
 		(property "STANDARD" "IPC 7351B"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8893,7 +8893,7 @@
 			)
 		)
 		(property "PARTREV" "L"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8906,7 +8906,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/AO3400A/Alpha/view-part/?ref=snap"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8919,7 +8919,7 @@
 			)
 		)
 		(property "MP" "AO3400A"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8932,7 +8932,7 @@
 			)
 		)
 		(property "Description_1" "N-Channel 30 V 5.7A (Ta) 1.4W (Ta) Surface Mount SOT-23-3"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8945,7 +8945,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8958,7 +8958,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Alpha & Omega Semiconductor"
-			(at 0 0 0)
+			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -8975,16 +8975,6 @@
 		(sheetfile "shiftBoard.kicad_sch")
 		(attr smd)
 		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3c9e9c93-a0c7-4a51-a8a4-437f99866206")
-		)
-		(fp_line
 			(start 0.9 -1.55)
 			(end -0.9 -1.55)
 			(stroke
@@ -8993,6 +8983,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "e95e9ac5-f243-4dd4-89d8-c2b7b6a659ce")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3c9e9c93-a0c7-4a51-a8a4-437f99866206")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -9006,26 +9006,6 @@
 			(uuid "cc3b3a1c-80e5-4b53-9b1a-0521ef3df93d")
 		)
 		(fp_line
-			(start -2.11 -1.8)
-			(end 2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "bf58adff-1a4d-4ab2-aa31-47af22e16511")
-		)
-		(fp_line
-			(start -2.11 1.8)
-			(end -2.11 -1.8)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "3da54935-22fe-4a83-88f0-5b5136151fe5")
-		)
-		(fp_line
 			(start 2.11 -1.8)
 			(end 2.11 1.8)
 			(stroke
@@ -9034,6 +9014,16 @@
 			)
 			(layer "F.CrtYd")
 			(uuid "ed500211-b67a-44d6-8329-5510fe22d64d")
+		)
+		(fp_line
+			(start -2.11 -1.8)
+			(end 2.11 -1.8)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "bf58adff-1a4d-4ab2-aa31-47af22e16511")
 		)
 		(fp_line
 			(start 2.11 1.8)
@@ -9046,24 +9036,14 @@
 			(uuid "26f26a53-7a85-4b00-bf60-91ddba8146b7")
 		)
 		(fp_line
-			(start -0.9 -1.55)
-			(end -0.9 1.55)
+			(start -2.11 1.8)
+			(end -2.11 -1.8)
 			(stroke
-				(width 0.127)
+				(width 0.05)
 				(type solid)
 			)
-			(layer "F.Fab")
-			(uuid "5ae5ba64-1081-4ceb-ba2f-0498eaed7e59")
-		)
-		(fp_line
-			(start -0.9 1.55)
-			(end 0.9 1.55)
-			(stroke
-				(width 0.127)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "3761859d-f23d-43b2-b2e1-79a36acf98f1")
+			(layer "F.CrtYd")
+			(uuid "3da54935-22fe-4a83-88f0-5b5136151fe5")
 		)
 		(fp_line
 			(start 0.9 -1.55)
@@ -9076,6 +9056,16 @@
 			(uuid "015643ed-e767-4886-b3b0-606960f6ba76")
 		)
 		(fp_line
+			(start -0.9 -1.55)
+			(end -0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5ae5ba64-1081-4ceb-ba2f-0498eaed7e59")
+		)
+		(fp_line
 			(start 0.9 1.55)
 			(end 0.9 -1.55)
 			(stroke
@@ -9084,6 +9074,16 @@
 			)
 			(layer "F.Fab")
 			(uuid "00b5c635-94df-45bc-b3a3-9781dbf47da1")
+		)
+		(fp_line
+			(start -0.9 1.55)
+			(end 0.9 1.55)
+			(stroke
+				(width 0.127)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3761859d-f23d-43b2-b2e1-79a36acf98f1")
 		)
 		(fp_circle
 			(center -2.31 -0.95)
@@ -9097,7 +9097,7 @@
 			(uuid "322bb971-5446-443e-a631-941b4b3a3a8b")
 		)
 		(pad "1" smd roundrect
-			(at -1.255 -0.95)
+			(at -1.255 -0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -9107,7 +9107,7 @@
 			(uuid "6fcf3a88-8786-424d-a9aa-567c9007e3dc")
 		)
 		(pad "2" smd roundrect
-			(at -1.255 0.95)
+			(at -1.255 0.95 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -9117,7 +9117,7 @@
 			(uuid "8fc252aa-b7bc-451c-ba1a-b04e3eed6584")
 		)
 		(pad "3" smd roundrect
-			(at 1.255 0)
+			(at 1.255 0 90)
 			(size 1.21 0.59)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -9131,13 +9131,13 @@
 	(footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "fcd3c575-0041-4e16-badc-fd13f7e880c1")
-		(at 155.42 116)
+		(at 155.92 105.5)
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D2"
 			(at 5.08 -2.47 0)
 			(layer "F.SilkS")
-			(uuid "61a93d6b-a5b1-4024-8edf-02fdad2f48ae")
+			(uuid "0c7ac4e1-7230-4e8e-8544-d8c5aa200502")
 			(effects
 				(font
 					(size 1 1)
@@ -9148,7 +9148,7 @@
 		(property "Value" "1N4007"
 			(at 5.08 2.47 0)
 			(layer "F.Fab")
-			(uuid "51b5ae0c-d175-4eaa-93b7-6d4706c9bcae")
+			(uuid "2e597b54-4a8c-4954-93db-60a88ba81b88")
 			(effects
 				(font
 					(size 1 1)
@@ -9160,7 +9160,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "47742cc9-0ae6-4692-a089-7b39334ba88e")
+			(uuid "ead85781-bc8b-4f25-a936-15508d0afb87")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9172,7 +9172,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a7473620-8318-4201-8ae1-ca728ddaca81")
+			(uuid "cedd57d6-9680-4c3a-b6fb-f1d7a7f975c1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9416,7 +9416,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "fed3d3a5-5ec1-4ea6-90c6-10e487b6d8c8")
-		(at 175 106 90)
+		(at 175.5 99 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V2"
@@ -9765,7 +9765,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "ff88ffa4-aed3-4641-b5bc-19f92a8acda4")
-		(at 175 77 90)
+		(at 175.5 75 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "+12V4"
@@ -10114,7 +10114,7 @@
 	(footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "ffcebe59-eadb-47b5-a21a-3982f701007f")
-		(at 108.845 98.166667 90)
+		(at 125.0175 83 90)
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm, drill diameter 1.3mm, pad diameter 2.6mm, http://www.farnell.com/datasheets/100425.pdf, script-generated using https://gitlab.com/kicad/libraries/kicad-footprint-generator/-/tree/master/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm drill 1.3mm pad 2.6mm")
 		(property "Reference" "J2"
@@ -10129,7 +10129,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 5 10 90)
+			(at 2.5 -16.1725 0)
 			(layer "F.Fab")
 			(uuid "2a8cef44-852e-4d32-9602-3f7302560595")
 			(effects
@@ -10459,6 +10459,726 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(segment
+		(start 166.99 109.49)
+		(end 168.5 111)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "3f42d120-4f0e-4577-9f59-a61f8aa89646")
+	)
+	(segment
+		(start 157 109.49)
+		(end 157 106.58)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "4d19e31d-a132-4ac0-9a3d-e6932fa0c52a")
+	)
+	(segment
+		(start 157 106.58)
+		(end 155.92 105.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "589d7a5e-2e8d-4a24-a0b3-317be9364418")
+	)
+	(segment
+		(start 168.5 111)
+		(end 175.5 111)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "83b89525-6510-4a6c-a0ba-ad814639f3f3")
+	)
+	(segment
+		(start 157 109.49)
+		(end 166.99 109.49)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "8ca280a4-aad5-4e6d-9fbf-da78fd8d303a")
+	)
+	(segment
+		(start 168.5 34)
+		(end 167.5 33)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "020a9f2e-aa3c-4c0f-98d3-bd31bce68eff")
+	)
+	(segment
+		(start 167.08 57)
+		(end 174.5 57)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "1109550b-cc4e-4019-b350-ac85b4296d45")
+	)
+	(segment
+		(start 167.08 94)
+		(end 166.58 93.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "3d2cfa20-2384-4ba9-9f19-6cf4d236022a")
+	)
+	(segment
+		(start 175.5 118)
+		(end 166.58 118)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "423bc059-84e1-4b14-a35d-2951b789a6ca")
+	)
+	(segment
+		(start 175.5 94)
+		(end 167.08 94)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "67bcc240-aabc-4c69-bb48-32002538ab0d")
+	)
+	(segment
+		(start 175 69.5)
+		(end 175.5 70)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "6f32cf19-ba62-4c37-98c1-c49ea517fb52")
+	)
+	(segment
+		(start 142 70.15)
+		(end 136.35 64.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "7250c567-a4bf-4fe1-aaa9-4e4c9fcb3dcb")
+	)
+	(segment
+		(start 175.5 106)
+		(end 166.58 106)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "8872b9d8-a463-4475-947b-40858eafb20c")
+	)
+	(segment
+		(start 175.5 34)
+		(end 168.5 34)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "889404f6-5f76-4f59-8f8e-df8a6e9bebfe")
+	)
+	(segment
+		(start 167.16 82)
+		(end 166.66 81.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "8bc9d7e7-549c-4867-9be3-a0042ae67349")
+	)
+	(segment
+		(start 167.08 45)
+		(end 174.5 45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "98270345-9517-4631-913c-d1a970c51d03")
+	)
+	(segment
+		(start 175.5 82)
+		(end 167.16 82)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "c0c1bc2c-3d9e-40bd-b55d-6ac5c229d30c")
+	)
+	(segment
+		(start 166.58 106)
+		(end 166.08 105.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "c45cf773-d1b2-4fae-a745-dfe56910ba14")
+	)
+	(segment
+		(start 174.5 57)
+		(end 175.5 58)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "ced044e2-941e-4ba5-aabb-d21af326f082")
+	)
+	(segment
+		(start 174.5 45)
+		(end 175.5 46)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "eb8bc3d4-ae43-4074-b55d-4543cb562f9c")
+	)
+	(segment
+		(start 167.16 69.5)
+		(end 175 69.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "f28bd87f-d31e-4a58-a857-b671f7b00573")
+	)
+	(segment
+		(start 136.35 64.5)
+		(end 125.0175 64.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "f3dca3a3-3b8f-4836-bdef-05906da4eca0")
+	)
+	(segment
+		(start 167 99)
+		(end 175.5 99)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "2e622cb0-8733-44fb-9865-ada56bc71339")
+	)
+	(segment
+		(start 156.42 96.665)
+		(end 157 97.245)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "48c046b3-7148-46e1-91e0-8fe5aede1d69")
+	)
+	(segment
+		(start 157 97.245)
+		(end 165.245 97.245)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "7a77e6e4-d9c1-4e74-9fef-15b84ec08118")
+	)
+	(segment
+		(start 165.245 97.245)
+		(end 167 99)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "801b9fdd-525c-459e-b8d2-5504d7a48dc0")
+	)
+	(segment
+		(start 156.42 93.5)
+		(end 156.42 96.665)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "c6957cc7-f1fc-48b7-81bd-7a58bd956356")
+	)
+	(segment
+		(start 157 82)
+		(end 156.5 81.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "29fc530b-a842-4d4c-b252-5e332ca61d16")
+	)
+	(segment
+		(start 172 87)
+		(end 175.5 87)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "37fcb397-1b54-44b0-9ca1-ec300353a635")
+	)
+	(segment
+		(start 170.49 85.49)
+		(end 172 87)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "5e2a7601-f952-454a-a7c8-42c9443565f3")
+	)
+	(segment
+		(start 157 85.49)
+		(end 170.49 85.49)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "6db48e12-350c-4184-a248-49eb222af8fd")
+	)
+	(segment
+		(start 157 85.49)
+		(end 157 82)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 4)
+		(uuid "fe71cd18-98d2-41b3-b699-6ebe0cbff265")
+	)
+	(segment
+		(start 167.5 75)
+		(end 175.5 75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "009302bc-d11b-49a8-9c07-97721604e201")
+	)
+	(segment
+		(start 165.745 73.245)
+		(end 167.5 75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "792bc7ff-2833-4145-bcee-06a829aab2d2")
+	)
+	(segment
+		(start 157 69.5)
+		(end 157 73.245)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "809bec64-dc48-41a5-9a76-14f64f0af545")
+	)
+	(segment
+		(start 157 73.245)
+		(end 165.745 73.245)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 5)
+		(uuid "a0618ed5-b91a-4278-b9af-55dccbe511a8")
+	)
+	(segment
+		(start 167.5 63)
+		(end 175.5 63)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "0bc4909e-162b-44f5-9035-68a141eef6c2")
+	)
+	(segment
+		(start 156.92 60.91)
+		(end 157 60.99)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "1c40a45b-3ce0-4a6c-96de-f82b40569612")
+	)
+	(segment
+		(start 165.49 60.99)
+		(end 167.5 63)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "31d36dc9-831f-4e04-9eaf-6011fa8299de")
+	)
+	(segment
+		(start 157 60.99)
+		(end 165.49 60.99)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "65747706-8192-4354-8ef9-ae6e9520a15f")
+	)
+	(segment
+		(start 156.92 57)
+		(end 156.92 60.91)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 6)
+		(uuid "7168b670-9e58-4bb6-ac3b-651bca9a7f51")
+	)
+	(segment
+		(start 168 51)
+		(end 175.5 51)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+		(uuid "4b76a29d-15d9-4d31-9d3d-dc3a131b2226")
+	)
+	(segment
+		(start 157 49.245)
+		(end 157 45.08)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+		(uuid "52e5a3aa-0433-4c5f-be7b-66ea22f71282")
+	)
+	(segment
+		(start 157 49.245)
+		(end 166.245 49.245)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+		(uuid "55cd3428-04eb-4369-a77a-15adf2931301")
+	)
+	(segment
+		(start 166.245 49.245)
+		(end 168 51)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+		(uuid "b51ea251-b482-403b-ae7b-53d6f6096505")
+	)
+	(segment
+		(start 157 45.08)
+		(end 156.92 45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 7)
+		(uuid "c2db7a02-ac9b-410d-81c6-e3d5ac5f31c9")
+	)
+	(segment
+		(start 157.34 36.905)
+		(end 157 37.245)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "79a658e4-d216-4c0d-8459-9e63667ad6d5")
+	)
+	(segment
+		(start 157 37.245)
+		(end 164.745 37.245)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "82a4aed4-123d-477b-af4d-26b5f235aa3d")
+	)
+	(segment
+		(start 166.5 39)
+		(end 175.5 39)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "8c174894-e9f0-4a59-8f85-fd067ed8d64b")
+	)
+	(segment
+		(start 157.34 33)
+		(end 157.34 36.905)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "a7f7b94a-5b43-49a8-9cf2-22c80cd552ff")
+	)
+	(segment
+		(start 164.745 37.245)
+		(end 166.5 39)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 8)
+		(uuid "fe5b2653-cd6b-43d8-8460-59b7642c3f65")
+	)
+	(segment
+		(start 172 123)
+		(end 175.5 123)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "2376526c-6f32-4c64-8cc7-4e7a90eb319c")
+	)
+	(segment
+		(start 157 121.99)
+		(end 170.99 121.99)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "303e51f6-07dd-4c6a-b5c1-ea287006690d")
+	)
+	(segment
+		(start 157 118.58)
+		(end 156.42 118)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "3641f382-8522-4a5b-b9d9-8c6353b13c6b")
+	)
+	(segment
+		(start 170.99 121.99)
+		(end 172 123)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "6bf9f23b-6bc8-4508-b490-62d04adc2fde")
+	)
+	(segment
+		(start 157 121.99)
+		(end 157 118.58)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 9)
+		(uuid "eccb0a57-e0c8-4b5a-b2ce-2a03b6413010")
+	)
+	(segment
+		(start 147.1816 79.04)
+		(end 147.1816 103.1316)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 16)
+		(uuid "0796980f-b3d6-49b9-bf89-01a9158170a0")
+	)
+	(segment
+		(start 147.1816 103.1316)
+		(end 156.05 112)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 16)
+		(uuid "6d3059ab-5a81-4ef1-8f9c-cc2187ac2f92")
+	)
+	(segment
+		(start 147.1816 77.77)
+		(end 148.27 77.77)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 17)
+		(uuid "8c26ed2a-6304-4626-b475-e71d234b5704")
+	)
+	(segment
+		(start 150.5 94.205)
+		(end 156.05 99.755)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 17)
+		(uuid "a30687ff-2a13-4994-bc41-70dda3c19910")
+	)
+	(segment
+		(start 150.5 80)
+		(end 150.5 94.205)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 17)
+		(uuid "ac99502f-c7f6-4e3b-b722-caeadbccb19d")
+	)
+	(segment
+		(start 148.27 77.77)
+		(end 150.5 80)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 17)
+		(uuid "c15badac-0d18-472f-b223-7994b42b81bb")
+	)
+	(segment
+		(start 152.5 81)
+		(end 148 76.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "092cbd9e-3fdb-4552-8621-c9b455926db9")
+	)
+	(segment
+		(start 152.55 84.5)
+		(end 152.5 84.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "1cd2ed63-319b-4a7b-951a-24e13454c2e6")
+	)
+	(segment
+		(start 148 76.5)
+		(end 147.1816 76.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "428398ac-b1d8-4e05-84c1-07f0015625e9")
+	)
+	(segment
+		(start 156.05 88)
+		(end 152.55 84.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "61804567-7f5a-44f2-94a6-63c6981c8b63")
+	)
+	(segment
+		(start 152.5 84.5)
+		(end 152.5 81)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 18)
+		(uuid "82f748f5-3748-43a7-b811-aab59a17fa75")
+	)
+	(segment
+		(start 151.73 75.23)
+		(end 147.1816 75.23)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 19)
+		(uuid "3f050d5d-7657-497b-bb0a-1fc2bcceaca4")
+	)
+	(segment
+		(start 152.255 75.755)
+		(end 151.73 75.23)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 19)
+		(uuid "40b451dd-b958-45e2-a994-5cb984ea1c39")
+	)
+	(segment
+		(start 156.05 75.755)
+		(end 152.255 75.755)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 19)
+		(uuid "c977eb1d-ef4d-4899-bf9d-7733e4c360d9")
+	)
+	(segment
+		(start 150.54 73.96)
+		(end 147.1816 73.96)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+		(uuid "661f3199-0eda-4dd7-b8d9-2293be77c740")
+	)
+	(segment
+		(start 152 69.5)
+		(end 152 72.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+		(uuid "74be56be-81cd-433b-a586-c756966ddcb6")
+	)
+	(segment
+		(start 156.05 65.45)
+		(end 152 69.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+		(uuid "9786f3d9-c100-4502-93a0-4043887407e8")
+	)
+	(segment
+		(start 156.05 63.5)
+		(end 156.05 65.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+		(uuid "991ba326-6a47-4608-9fd9-b573f67476d0")
+	)
+	(segment
+		(start 152 72.5)
+		(end 150.54 73.96)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 20)
+		(uuid "b9262820-0c48-4f7d-9a47-27e1665cf92c")
+	)
+	(segment
+		(start 156.05 52.95)
+		(end 151 58)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+		(uuid "15448ba8-51b5-4945-9000-66d9b1716e1a")
+	)
+	(segment
+		(start 156.05 51.755)
+		(end 156.05 52.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+		(uuid "18e2bd9a-2fb8-4d67-b086-be08419fe6f9")
+	)
+	(segment
+		(start 151 58)
+		(end 151 72)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+		(uuid "4eede6ce-8aae-4af5-9e98-1030620e151b")
+	)
+	(segment
+		(start 151 72)
+		(end 150.31 72.69)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+		(uuid "a68011f5-1a15-48b6-8b5a-95e12dc5ff94")
+	)
+	(segment
+		(start 150.31 72.69)
+		(end 147.1816 72.69)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 21)
+		(uuid "f6838c7c-928a-4c4d-95a1-6a77d018798f")
+	)
+	(segment
+		(start 150.5 47)
+		(end 156.05 41.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+		(uuid "1ab948a6-35fc-40e5-a9e3-549295097d40")
+	)
+	(segment
+		(start 156.05 41.45)
+		(end 156.05 39.755)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+		(uuid "3974c692-46ae-4539-9239-9757a5a1bc1c")
+	)
+	(segment
+		(start 150.5 68.6858)
+		(end 150.5 47)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+		(uuid "613a70ce-c808-46bb-8405-df4d82a28291")
+	)
+	(segment
+		(start 147.1816 71.42)
+		(end 147.7658 71.42)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+		(uuid "95e18b5c-888c-43b7-bc71-bb07e2b58b8a")
+	)
+	(segment
+		(start 147.7658 71.42)
+		(end 150.5 68.6858)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 22)
+		(uuid "a2c69292-1d80-4fa3-b9ec-c00288b5bbf2")
+	)
+	(segment
+		(start 138.5 107)
+		(end 138.55 107)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "03852462-3bab-449d-a114-abfd2c1a1a0f")
+	)
+	(segment
+		(start 138.5 79)
+		(end 138.5 107)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "15de0dd8-648f-4b7c-af82-df478a507f7d")
+	)
+	(segment
+		(start 142 77.77)
+		(end 139.73 77.77)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "47295369-8f2d-46bb-81bc-9c721b7941ad")
+	)
+	(segment
+		(start 139.73 77.77)
+		(end 138.5 79)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "5585211b-7571-4dd2-bbd2-a6d5746f364e")
+	)
+	(segment
+		(start 138.55 107)
+		(end 156.05 124.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 23)
+		(uuid "a3d6beec-4f0a-4b25-a303-0782c1c875d4")
 	)
 	(embedded_fonts no)
 )
