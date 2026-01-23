@@ -1347,12 +1347,6 @@
 		(uuid "d2c547c2-45c0-4610-94da-208022284185")
 	)
 	(junction
-		(at 158.75 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "042893a2-b7be-4c10-9546-830c2e6eee56")
-	)
-	(junction
 		(at 74.93 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1377,24 +1371,6 @@
 		(uuid "22313daf-620d-4418-a712-903ae21ec00b")
 	)
 	(junction
-		(at 158.75 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22a6032a-2a10-42c9-b2b3-1c403e15e1f4")
-	)
-	(junction
-		(at 149.86 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "283e3613-d8e2-428b-98a6-4fe52e09603c")
-	)
-	(junction
-		(at 158.75 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2d711c7a-f147-4e8a-8b25-b3ce19c5c876")
-	)
-	(junction
 		(at 179.07 137.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1405,18 +1381,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33e67359-4658-40cb-9437-05b9b7b2028c")
-	)
-	(junction
-		(at 149.86 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3dcc9331-9360-4e4e-9ad3-03fe53b2b82b")
-	)
-	(junction
-		(at 158.75 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4174f7a1-3c56-43b9-b276-ee72db193bf2")
 	)
 	(junction
 		(at 172.72 91.44)
@@ -1437,18 +1401,6 @@
 		(uuid "4b7bbfdd-7a8a-4bd3-886c-244f1e0d2b04")
 	)
 	(junction
-		(at 149.86 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4dc2b3c9-413b-4e4a-bde5-be3448fb7d1a")
-	)
-	(junction
-		(at 158.75 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4fce86fa-8fe0-406c-9721-13eacd7a424a")
-	)
-	(junction
 		(at 179.07 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1467,34 +1419,16 @@
 		(uuid "5f5d47da-f73d-4bcb-8d07-4a2da555db15")
 	)
 	(junction
-		(at 149.86 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "602ba2c1-b558-4464-876a-f402d7a9e86c")
-	)
-	(junction
 		(at 179.07 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "61b7b167-004b-433d-a15c-50de06529304")
 	)
 	(junction
-		(at 149.86 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62bbbc64-19e1-4559-972d-48aca559b14b")
-	)
-	(junction
 		(at 179.07 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ba78821-112f-47a3-a915-b261060c5164")
-	)
-	(junction
-		(at 149.86 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f653a65-c0f2-4bcb-8e79-266f58e11104")
 	)
 	(junction
 		(at 172.72 106.68)
@@ -1563,18 +1497,6 @@
 		(uuid "b6ef4224-d3ec-4404-ada2-8208e63137f1")
 	)
 	(junction
-		(at 149.86 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfda70a1-aa5b-4875-a038-25b366687e40")
-	)
-	(junction
-		(at 158.75 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9ecb36a-6995-48db-997c-dfdcb21e827b")
-	)
-	(junction
 		(at 179.07 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1605,12 +1527,6 @@
 		(uuid "dcff0b36-38cb-4d1b-b7cf-de8ce4c7ea2b")
 	)
 	(junction
-		(at 149.86 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd19174c-0194-4bf3-9352-407dca0f97ed")
-	)
-	(junction
 		(at 69.85 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1635,42 +1551,10 @@
 		(uuid "e494295d-e331-4a31-a3ae-08fa7300eaf7")
 	)
 	(junction
-		(at 158.75 74.93)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea8a7040-3f95-407c-bd7a-3473e6a4ff48")
-	)
-	(junction
 		(at 179.07 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebc6ad35-2788-42c3-b3a9-152ff2dc9712")
-	)
-	(junction
-		(at 158.75 151.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f43540dc-ea12-429b-afb8-a7580f9722e5")
-	)
-	(wire
-		(pts
-			(xy 149.86 52.07) (xy 162.56 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00bdaa51-4d10-45b9-91df-df2ea841366a")
-	)
-	(wire
-		(pts
-			(xy 148.59 128.27) (xy 149.86 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "043a40e5-21c7-46b4-9a2e-b32e9f29dafd")
 	)
 	(wire
 		(pts
@@ -1694,16 +1578,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 59.69) (xy 158.75 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09294d47-186b-42b0-910c-8bd53efe81ad")
-	)
-	(wire
-		(pts
 			(xy 63.5 67.31) (xy 63.5 85.09)
 		)
 		(stroke
@@ -1721,16 +1595,6 @@
 			(type default)
 		)
 		(uuid "0b46fd1e-0670-41a5-bd98-e5e6034997c4")
-	)
-	(wire
-		(pts
-			(xy 148.59 143.51) (xy 149.86 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0fb546d3-e82a-4926-bccd-267a4e46078b")
 	)
 	(wire
 		(pts
@@ -1784,7 +1648,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 97.79) (xy 162.56 97.79)
+			(xy 148.59 97.79) (xy 162.56 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1804,6 +1668,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 85.09) (xy 72.39 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "198092a3-7fb2-4511-8a73-757b4323b057")
+	)
+	(wire
+		(pts
 			(xy 170.18 36.83) (xy 179.07 36.83)
 		)
 		(stroke
@@ -1814,17 +1688,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 82.55) (xy 149.86 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ade29b7-4e7c-4c01-95fb-15bf702bc79e")
-	)
-	(wire
-		(pts
-			(xy 149.86 82.55) (xy 162.56 82.55)
+			(xy 148.59 82.55) (xy 162.56 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1854,17 +1718,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 67.31) (xy 149.86 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f1fd7e8-28d6-4514-a78a-8dd3839b9518")
-	)
-	(wire
-		(pts
-			(xy 158.75 105.41) (xy 158.75 118.11)
+			(xy 158.75 102.87) (xy 158.75 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1901,16 +1755,6 @@
 			(type default)
 		)
 		(uuid "2527d931-f887-4620-b06a-df69ae605b1b")
-	)
-	(wire
-		(pts
-			(xy 158.75 57.15) (xy 158.75 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26cb6dec-e906-457b-8310-23d8e9aafa06")
 	)
 	(wire
 		(pts
@@ -1974,7 +1818,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 36.83) (xy 149.86 36.83)
+			(xy 148.59 36.83) (xy 162.56 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2014,7 +1858,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 113.03) (xy 162.56 113.03)
+			(xy 148.59 113.03) (xy 162.56 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2041,16 +1885,6 @@
 			(type default)
 		)
 		(uuid "3f3ac20b-9562-4d31-be27-ca70e0778a3a")
-	)
-	(wire
-		(pts
-			(xy 149.86 105.41) (xy 158.75 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4332f6b6-259a-4def-bf06-50c00795e354")
 	)
 	(wire
 		(pts
@@ -2104,16 +1938,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 120.65) (xy 158.75 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "494967de-f4ce-4f0b-af04-d679f76f3b45")
-	)
-	(wire
-		(pts
 			(xy 74.93 64.77) (xy 69.85 64.77)
 		)
 		(stroke
@@ -2134,16 +1958,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 74.93) (xy 158.75 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c9b6c7f-063c-4519-bd15-7e2ee29714e3")
-	)
-	(wire
-		(pts
 			(xy 172.72 29.21) (xy 172.72 45.72)
 		)
 		(stroke
@@ -2154,7 +1968,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 87.63) (xy 158.75 90.17)
+			(xy 158.75 87.63) (xy 158.75 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2174,7 +1988,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 133.35) (xy 158.75 135.89)
+			(xy 158.75 133.35) (xy 158.75 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2204,17 +2018,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 107.95) (xy 72.39 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "573d1336-21a8-43c9-ac1e-6c62f91d551b")
-	)
-	(wire
-		(pts
-			(xy 158.75 44.45) (xy 158.75 57.15)
+			(xy 158.75 41.91) (xy 158.75 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2304,16 +2108,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 41.91) (xy 158.75 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "620acdd7-67df-46dc-a211-a3bf32daabb3")
-	)
-	(wire
-		(pts
 			(xy 181.61 54.61) (xy 181.61 60.96)
 		)
 		(stroke
@@ -2374,7 +2168,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 67.31) (xy 162.56 67.31)
+			(xy 148.59 67.31) (xy 162.56 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2414,7 +2208,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 59.69) (xy 158.75 72.39)
+			(xy 158.75 57.15) (xy 158.75 72.39)
 		)
 		(stroke
 			(width 0)
@@ -2454,16 +2248,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 113.03) (xy 149.86 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71c28234-d20b-4af1-b3ce-b28687c66dc2")
-	)
-	(wire
-		(pts
 			(xy 170.18 143.51) (xy 170.18 148.59)
 		)
 		(stroke
@@ -2474,17 +2258,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 97.79) (xy 149.86 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "779f40d0-523f-4fa5-8306-cd716e3f76e1")
-	)
-	(wire
-		(pts
-			(xy 148.59 52.07) (xy 149.86 52.07)
+			(xy 148.59 52.07) (xy 162.56 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2544,16 +2318,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 90.17) (xy 158.75 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87e8125c-6b26-4625-b61a-3e9db9e15a35")
-	)
-	(wire
-		(pts
 			(xy 158.75 29.21) (xy 158.75 41.91)
 		)
 		(stroke
@@ -2594,16 +2358,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 85.09) (xy 72.39 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92cd9b57-a138-4026-87d3-5f416e479c3a")
-	)
-	(wire
-		(pts
 			(xy 170.18 113.03) (xy 179.07 113.03)
 		)
 		(stroke
@@ -2624,23 +2378,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 128.27) (xy 162.56 128.27)
+			(xy 148.59 128.27) (xy 162.56 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "948f8a03-3b87-42cb-acc7-f69fe6a77c4f")
-	)
-	(wire
-		(pts
-			(xy 149.86 36.83) (xy 162.56 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9497bd37-45e4-4fc4-a096-124b283ddac2")
 	)
 	(wire
 		(pts
@@ -2674,16 +2418,6 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 118.11) (xy 158.75 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a1856f0-4653-49b5-a275-3f9c487511c7")
-	)
-	(wire
-		(pts
 			(xy 158.75 41.91) (xy 160.02 41.91)
 		)
 		(stroke
@@ -2691,16 +2425,6 @@
 			(type default)
 		)
 		(uuid "9a3a3418-a4eb-4530-892b-61ef1bd69657")
-	)
-	(wire
-		(pts
-			(xy 158.75 135.89) (xy 158.75 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a6a9d00-40b5-4d4e-95cc-11ecb3753432")
 	)
 	(wire
 		(pts
@@ -2874,16 +2598,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 90.17) (xy 158.75 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba4fa332-4248-428c-852f-f524294b4d5c")
-	)
-	(wire
-		(pts
 			(xy 179.07 91.44) (xy 181.61 91.44)
 		)
 		(stroke
@@ -2891,16 +2605,6 @@
 			(type default)
 		)
 		(uuid "bb9ea0de-5e5f-455f-99ec-2782a551f481")
-	)
-	(wire
-		(pts
-			(xy 158.75 102.87) (xy 158.75 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbbf9186-1421-45d6-9def-7d943d0fa90c")
 	)
 	(wire
 		(pts
@@ -2994,17 +2698,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 44.45) (xy 158.75 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d05760d3-d82c-42d0-8612-d6a940fb7079")
-	)
-	(wire
-		(pts
-			(xy 158.75 120.65) (xy 158.75 133.35)
+			(xy 158.75 118.11) (xy 158.75 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3064,7 +2758,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 74.93) (xy 158.75 87.63)
+			(xy 158.75 72.39) (xy 158.75 87.63)
 		)
 		(stroke
 			(width 0)
@@ -3074,7 +2768,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 143.51) (xy 162.56 143.51)
+			(xy 148.59 143.51) (xy 162.56 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3111,26 +2805,6 @@
 			(type default)
 		)
 		(uuid "e92870e7-6203-4539-a31c-9b825a69f066")
-	)
-	(wire
-		(pts
-			(xy 149.86 151.13) (xy 158.75 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea327f43-8a2b-4171-8d1d-b24c4f28fd88")
-	)
-	(wire
-		(pts
-			(xy 158.75 72.39) (xy 158.75 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec4c9a56-20fe-446c-958f-b6e444f30e7e")
 	)
 	(wire
 		(pts
@@ -3181,16 +2855,6 @@
 			(type default)
 		)
 		(uuid "f391bb46-18b8-4ede-96d6-7a4fb4bd6abd")
-	)
-	(wire
-		(pts
-			(xy 158.75 151.13) (xy 158.75 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f458c418-3208-4f58-b375-df25828dcea4")
 	)
 	(wire
 		(pts
@@ -3254,7 +2918,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 158.75) (xy 158.75 151.13)
+			(xy 158.75 148.59) (xy 158.75 158.75)
 		)
 		(stroke
 			(width 0)
@@ -3271,16 +2935,6 @@
 			(type default)
 		)
 		(uuid "fa5fbf99-d330-434e-979e-67ab73099cf0")
-	)
-	(wire
-		(pts
-			(xy 149.86 135.89) (xy 158.75 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fade2881-dc6f-4a90-951a-0e50e16bcae4")
 	)
 	(wire
 		(pts
@@ -3861,7 +3515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 128.27 0)
 			(effects
 				(font
@@ -4191,7 +3845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 54.61 0)
 			(effects
 				(font
@@ -4358,146 +4012,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 149.86 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2535f239-d20d-4ed3-b02a-9e127020ec0c")
-		(property "Reference" "R3"
-			(at 152.4 69.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 72.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a87fc2c7-ae50-4fb4-80af-50796c734aa9")
-		)
-		(pin "1"
-			(uuid "af5cb9a2-3f12-46f3-99a2-83a9a1c633ea")
-		)
-		(instances
-			(project "shiftBoard"
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 149.86 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29f3f9fa-9ac0-494c-a726-276059ed5e76")
-		(property "Reference" "R6"
-			(at 152.4 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 118.1099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 116.84 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "816bf98d-02e6-425d-9bb4-73410fe5e3f1")
-		)
-		(pin "1"
-			(uuid "bf9e571d-66c2-4e72-bdcc-a50f6d5684c1")
-		)
-		(instances
-			(project "shiftBoard"
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mossfet:AO3400A")
 		(at 165.1 39.37 270)
 		(unit 1)
@@ -4524,7 +4038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 39.37 0)
 			(effects
 				(font
@@ -4786,7 +4300,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 65.532 90)
 			(effects
 				(font
@@ -4856,7 +4370,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 143.51 0)
 			(effects
 				(font
@@ -4926,7 +4440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 82.55 0)
 			(effects
 				(font
@@ -5083,7 +4597,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 67.31 0)
 			(effects
 				(font
@@ -5153,7 +4667,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 113.03 0)
 			(effects
 				(font
@@ -5221,7 +4735,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 50.292 90)
 			(effects
 				(font
@@ -5264,94 +4778,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
-		(at 72.39 104.14 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "590a3eea-640c-4794-8226-e9856af4a5a1")
-		(property "Reference" "D9"
-			(at 74.93 102.8699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4007"
-			(at 74.93 105.4099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 67.945 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 72.39 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 72.39 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 72.39 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 72.39 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bf7cccf9-2a13-4e63-8d07-aea0a9784f65")
-		)
-		(pin "1"
-			(uuid "24a20d56-e8e9-47cf-9e43-758fc3679481")
-		)
-		(instances
-			(project ""
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mossfet:AO3400A")
 		(at 165.1 115.57 270)
 		(unit 1)
@@ -5378,7 +4804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 115.57 0)
 			(effects
 				(font
@@ -5571,7 +4997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 85.09 0)
 			(effects
 				(font
@@ -5764,7 +5190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 130.81 0)
 			(effects
 				(font
@@ -5957,7 +5383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 100.33 0)
 			(effects
 				(font
@@ -6149,7 +5575,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 126.492 90)
 			(effects
 				(font
@@ -6219,7 +5645,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 161.29 24.13 0)
 			(effects
 				(font
@@ -6350,76 +5776,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 149.86 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "86ecc661-9444-4a16-b251-034e34ee1dbb")
-		(property "Reference" "R4"
-			(at 152.4 85.0899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d285c9c3-5a89-4a51-b134-fd34084ac603")
-		)
-		(pin "1"
-			(uuid "4a0a30d6-2d79-4c78-bdc3-a60d247a7816")
-		)
-		(instances
-			(project "shiftBoard"
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 144.78 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6444,7 +5800,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 96.012 90)
 			(effects
 				(font
@@ -6481,76 +5837,6 @@
 			(project "shiftBoard"
 				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
 					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 149.86 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a3848ab-8937-4cf5-b628-4d356b6e0c88")
-		(property "Reference" "R2"
-			(at 152.4 54.6099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 57.1499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "03b8c0f7-f2b6-466e-a1e6-e8a4e47a11ae")
-		)
-		(pin "1"
-			(uuid "9f4ae5d6-0962-428b-b490-fa3c37cd660c")
-		)
-		(instances
-			(project "shiftBoard"
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6662,76 +5948,6 @@
 			(project ""
 				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 149.86 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "994a9761-34ca-47c0-b5ff-5df20e9d637b")
-		(property "Reference" "R5"
-			(at 152.4 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 102.8699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 101.6 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "60ed4de1-00a9-410f-818c-212a27719de4")
-		)
-		(pin "1"
-			(uuid "d2d560c7-63ad-4bf5-a959-14d89380704b")
-		)
-		(instances
-			(project "shiftBoard"
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -6851,7 +6067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 69.85 0)
 			(effects
 				(font
@@ -7043,7 +6259,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 141.732 90)
 			(effects
 				(font
@@ -7113,7 +6329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 52.07 0)
 			(effects
 				(font
@@ -7253,7 +6469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 97.79 0)
 			(effects
 				(font
@@ -7322,7 +6538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 146.05 0)
 			(effects
 				(font
@@ -7490,76 +6706,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 149.86 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bda8d65a-dcf9-49ce-8610-67188221f47b")
-		(property "Reference" "R1"
-			(at 152.4 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 40.64 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "75ca491a-88cd-48b8-9c4e-117f09e92907")
-		)
-		(pin "1"
-			(uuid "c6ac58e1-2d89-4096-9855-a23b4df7fe9c")
-		)
-		(instances
-			(project ""
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 144.78 113.03 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7584,7 +6730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 111.252 90)
 			(effects
 				(font
@@ -7714,76 +6860,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 149.86 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0979bb0-d221-4914-aee8-0dd6912bfb79")
-		(property "Reference" "R8"
-			(at 152.4 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "51c544b3-c3f1-4267-ae52-260da8010ed5")
-		)
-		(pin "1"
-			(uuid "45343594-5e52-490a-bf67-b13114423a51")
-		)
-		(instances
-			(project "shiftBoard"
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4007")
 		(at 179.07 86.36 90)
 		(unit 1)
@@ -7898,7 +6974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 36.83 0)
 			(effects
 				(font
@@ -7935,76 +7011,6 @@
 			(project ""
 				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 149.86 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5c78353-ead4-41d0-9d5d-89fe5dadfc92")
-		(property "Reference" "R7"
-			(at 152.4 130.8099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 k"
-			(at 152.4 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.082 132.08 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 149.86 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c9f48289-9f16-4263-844d-5bfc48e92e06")
-		)
-		(pin "1"
-			(uuid "c842d1b7-ae2e-4cd2-8dc7-c2b156bf0ec5")
-		)
-		(instances
-			(project "shiftBoard"
-				(path "/0c360d90-224f-47ff-975a-721b6aa9ff22"
-					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -8106,7 +7112,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 80.772 90)
 			(effects
 				(font
@@ -8174,7 +7180,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 35.052 90)
 			(effects
 				(font
