@@ -1558,16 +1558,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 128.27) (xy 162.56 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "043a40e5-21c7-46b4-9a2e-b32e9f29dafd")
-	)
-	(wire
-		(pts
 			(xy 72.39 54.61) (xy 69.85 54.61)
 		)
 		(stroke
@@ -1658,6 +1648,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 97.79) (xy 162.56 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1911fa69-029c-43b0-acb8-5fe37885e79f")
+	)
+	(wire
+		(pts
 			(xy 170.18 52.07) (xy 170.18 57.15)
 		)
 		(stroke
@@ -1665,6 +1665,16 @@
 			(type default)
 		)
 		(uuid "19604ae0-618c-4989-854f-6aa348b6c9a1")
+	)
+	(wire
+		(pts
+			(xy 72.39 85.09) (xy 72.39 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "198092a3-7fb2-4511-8a73-757b4323b057")
 	)
 	(wire
 		(pts
@@ -1684,7 +1694,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "1ade29b7-4e7c-4c01-95fb-15bf702bc79e")
+		(uuid "1b71ed64-d57a-4a9a-9ff2-78960e5d5133")
 	)
 	(wire
 		(pts
@@ -1848,6 +1858,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 113.03) (xy 162.56 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b42af4f-b978-4ab0-9bb8-c672f3e92e88")
+	)
+	(wire
+		(pts
 			(xy 158.75 148.59) (xy 160.02 148.59)
 		)
 		(stroke
@@ -1995,16 +2015,6 @@
 			(type default)
 		)
 		(uuid "53d8038d-4529-48aa-bf8a-52bcb27c8f8d")
-	)
-	(wire
-		(pts
-			(xy 72.39 85.09) (xy 72.39 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "573d1336-21a8-43c9-ac1e-6c62f91d551b")
 	)
 	(wire
 		(pts
@@ -2238,16 +2248,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 113.03) (xy 162.56 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71c28234-d20b-4af1-b3ce-b28687c66dc2")
-	)
-	(wire
-		(pts
 			(xy 170.18 143.51) (xy 170.18 148.59)
 		)
 		(stroke
@@ -2255,26 +2255,6 @@
 			(type default)
 		)
 		(uuid "73a7c710-8dce-4f33-8a67-534b0695a286")
-	)
-	(wire
-		(pts
-			(xy 99.06 80.01) (xy 95.25 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7562aa71-f28f-4706-a0c7-8698714b711c")
-	)
-	(wire
-		(pts
-			(xy 148.59 97.79) (xy 162.56 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "779f40d0-523f-4fa5-8306-cd716e3f76e1")
 	)
 	(wire
 		(pts
@@ -2395,6 +2375,16 @@
 			(type default)
 		)
 		(uuid "948e23bf-2081-4cba-b372-b9b56bcaefd2")
+	)
+	(wire
+		(pts
+			(xy 148.59 128.27) (xy 162.56 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "948f8a03-3b87-42cb-acc7-f69fe6a77c4f")
 	)
 	(wire
 		(pts
@@ -2768,6 +2758,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 72.39) (xy 158.75 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e092c50d-f292-42a1-a805-956772b80064")
+	)
+	(wire
+		(pts
 			(xy 148.59 143.51) (xy 162.56 143.51)
 		)
 		(stroke
@@ -2805,16 +2805,6 @@
 			(type default)
 		)
 		(uuid "e92870e7-6203-4539-a31c-9b825a69f066")
-	)
-	(wire
-		(pts
-			(xy 158.75 72.39) (xy 158.75 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec4c9a56-20fe-446c-958f-b6e444f30e7e")
 	)
 	(wire
 		(pts
@@ -2865,16 +2855,6 @@
 			(type default)
 		)
 		(uuid "f391bb46-18b8-4ede-96d6-7a4fb4bd6abd")
-	)
-	(wire
-		(pts
-			(xy 158.75 148.59) (xy 158.75 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f458c418-3208-4f58-b375-df25828dcea4")
 	)
 	(wire
 		(pts
@@ -2935,6 +2915,16 @@
 			(type default)
 		)
 		(uuid "f9981217-e0eb-4f51-bd23-48910261a327")
+	)
+	(wire
+		(pts
+			(xy 158.75 148.59) (xy 158.75 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa2dcbac-1e6c-4f2a-b187-741c0e560eeb")
 	)
 	(wire
 		(pts
@@ -3525,7 +3515,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 128.27 0)
 			(effects
 				(font
@@ -3855,7 +3845,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 54.61 0)
 			(effects
 				(font
@@ -4048,7 +4038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 39.37 0)
 			(effects
 				(font
@@ -4310,7 +4300,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 65.532 90)
 			(effects
 				(font
@@ -4380,7 +4370,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 143.51 0)
 			(effects
 				(font
@@ -4450,7 +4440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 82.55 0)
 			(effects
 				(font
@@ -4607,7 +4597,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 67.31 0)
 			(effects
 				(font
@@ -4677,7 +4667,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 113.03 0)
 			(effects
 				(font
@@ -4745,7 +4735,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 50.292 90)
 			(effects
 				(font
@@ -4814,7 +4804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 115.57 0)
 			(effects
 				(font
@@ -5007,7 +4997,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 85.09 0)
 			(effects
 				(font
@@ -5200,7 +5190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 130.81 0)
 			(effects
 				(font
@@ -5393,7 +5383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 100.33 0)
 			(effects
 				(font
@@ -5585,7 +5575,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 126.492 90)
 			(effects
 				(font
@@ -5655,7 +5645,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 161.29 24.13 0)
 			(effects
 				(font
@@ -5810,7 +5800,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 96.012 90)
 			(effects
 				(font
@@ -6077,7 +6067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 69.85 0)
 			(effects
 				(font
@@ -6269,7 +6259,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 141.732 90)
 			(effects
 				(font
@@ -6339,7 +6329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 52.07 0)
 			(effects
 				(font
@@ -6479,7 +6469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 97.79 0)
 			(effects
 				(font
@@ -6548,7 +6538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "AO3400A:SOT95P280X125-3N"
+		(property "Footprint" "Library:AO3400A"
 			(at 165.1 146.05 0)
 			(effects
 				(font
@@ -6740,7 +6730,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 111.252 90)
 			(effects
 				(font
@@ -6984,7 +6974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal"
 			(at 186.69 36.83 0)
 			(effects
 				(font
@@ -7122,7 +7112,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 80.772 90)
 			(effects
 				(font
@@ -7190,7 +7180,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 144.78 35.052 90)
 			(effects
 				(font
