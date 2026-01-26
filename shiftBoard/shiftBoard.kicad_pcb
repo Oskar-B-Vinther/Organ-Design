@@ -4203,7 +4203,7 @@
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D2"
-			(at 8.433809 -2.47 0)
+			(at 5.6725 -2.47 0)
 			(layer "F.SilkS")
 			(uuid "726fc921-4a1b-498d-b4d7-cc1d6b6bd47d")
 			(effects
@@ -6340,7 +6340,7 @@
 		(descr "Diode, DO-41_SOD81 series, Axial, Horizontal, pin pitch=10.16mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
 		(tags "Diode DO-41_SOD81 series Axial Horizontal pin pitch 10.16mm  length 5.2mm diameter 2.7mm")
 		(property "Reference" "D1"
-			(at 8.433809 -2.47 0)
+			(at 5.6725 -2.47 0)
 			(layer "F.SilkS")
 			(uuid "41de30ad-159f-466e-9183-32e6db1bf0ca")
 			(effects
@@ -6625,7 +6625,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R16"
-			(at -0.55 -1.31 0)
+			(at -0.2225 -2 0)
 			(layer "F.SilkS")
 			(uuid "789f4352-4515-4237-b639-aa0150b2a479")
 			(effects
@@ -11640,10 +11640,10 @@
 		(end 250 130)
 		(stroke
 			(width 0.2)
-			(type default)
+			(type solid)
 		)
 		(fill no)
-		(layer "B.Cu")
+		(layer "Edge.Cuts")
 		(uuid "fd023389-919d-4252-8bd0-405e1fa22daf")
 	)
 	(dimension
@@ -12171,14 +12171,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 5)
 		(uuid "3708d3d2-67a0-4034-99c1-9d40e7b1d11f")
-	)
-	(via
-		(at 233 91)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 5)
-		(uuid "39242c40-5b29-4ecd-ace1-1e2795bce42b")
 	)
 	(via
 		(at 233 80)
