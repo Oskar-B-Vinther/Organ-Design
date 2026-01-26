@@ -3527,6 +3527,46 @@
 			)
 		)
 	)
+	(label "12v"
+		(at 165.1 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "28c9a5ec-d145-43ef-97c6-f0d0f839f617")
+	)
+	(label "GND"
+		(at 67.31 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4c4a21fa-adbc-4ed6-8480-36cfc507116a")
+	)
+	(label "DAYISY CHAIN"
+		(at 83.82 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7851563c-65ce-4909-8b86-955f8aa0fe63")
+	)
+	(label "VCC"
+		(at 60.96 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf623327-db1a-4d75-9ceb-190d885387c3")
+	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 186.69 128.27 0)
