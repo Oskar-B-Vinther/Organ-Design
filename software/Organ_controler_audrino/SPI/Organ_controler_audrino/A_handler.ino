@@ -1,3 +1,4 @@
+/*
 #include <SPI.h>
 
 class organController {
@@ -42,3 +43,5 @@ int organMedistop
   }
 
 };
+
+*/
