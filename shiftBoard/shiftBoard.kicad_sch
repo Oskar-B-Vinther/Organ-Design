@@ -4520,7 +4520,7 @@
 		)
 		(uuid "28c9a5ec-d145-43ef-97c6-f0d0f839f617")
 	)
-	(label "shift"
+	(label "latch"
 		(at 68.58 69.85 0)
 		(effects
 			(font
@@ -4540,7 +4540,7 @@
 		)
 		(uuid "4c4a21fa-adbc-4ed6-8480-36cfc507116a")
 	)
-	(label "push"
+	(label "shift"
 		(at 64.77 60.96 0)
 		(effects
 			(font
