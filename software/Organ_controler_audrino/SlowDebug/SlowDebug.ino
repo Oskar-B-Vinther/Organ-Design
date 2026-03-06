@@ -1,8 +1,8 @@
 
 
-int shift = 10; 
-int latch = 11; 
-int data = 12; 
+int shift = 13; 
+int latch = 10; 
+int data = 11; 
 
 int test[8] = {1,1,1,1,1,1,1,1};
 
@@ -18,7 +18,7 @@ void loop() {
   // put your main code here, to run repeatedly:
 
 
-
+shiftData(test,2000);
 
 
 }
@@ -34,7 +34,7 @@ for (int i = 0; i<8;i++){
   } else {
     digitalWrite(data, LOW);
   }
-    delay(Delaytime*2); // So data can be messured. 
+    // delay(Delaytime*2); // So data can be messured. 
 
 
     // shift the data once outways. 
@@ -43,14 +43,23 @@ for (int i = 0; i<8;i++){
     delay(Delaytime); // so shift can be messured. 
     digitalWrite(shift, LOW);
 
+
+    // the latch
+     digitalWrite(latch, LOW);
+     digitalWrite(latch, HIGH);
+     delay(Delaytime); // so shift can be messured. 
+     digitalWrite(latch, LOW);
+
+
+
   }
   digitalWrite(data, LOW); // data pin becomes low after each shiftout, so it's now high unless it needs to. 
 
   // the latch
-  digitalWrite(data, LOW);
-  digitalWrite(data, HIGH);
+  digitalWrite(latch, LOW);
+  digitalWrite(latch, HIGH);
   delay(Delaytime); // so shift can be messured. 
-  digitalWrite(data, LOW);
+  digitalWrite(latch, LOW);
 
 }
 
