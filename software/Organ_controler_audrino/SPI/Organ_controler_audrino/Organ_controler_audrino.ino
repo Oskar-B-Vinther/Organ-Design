@@ -26,8 +26,8 @@ void setup() {
 void loop() {
  //------------// change the medi config
 
-sendToShiftRegister((byte)0);
-delay(2000);
+//sendToShiftRegister((byte)0);
+//delay(2000);
 
 sendToShiftRegister((byte)255);
 delay(2000);
@@ -82,9 +82,12 @@ digitalWrite(latch, LOW);
 
 
 void sendToShiftRegister(byte data) {
-  digitalWrite(latchPin, HIGH);    // Prepare to load data
+
   shiftOut(dataPin, clockPin, MSBFIRST, data);
+     digitalWrite(dataPin, LOW);   
+      digitalWrite(latchPin, HIGH);    // Prepare to load data
       digitalWrite(latchPin, LOW);          // Update outputs
+    
 }
 
 

@@ -11,19 +11,14 @@ void setup() {
 pinMode(shift,OUTPUT);
 pinMode(latch,OUTPUT);
 pinMode(data,OUTPUT);
-
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 
-
-shiftData(test,2000);
-
+shiftData(test,500);
 
 }
-
-
 
 void shiftData(int byte[], int Delaytime) {
 
@@ -35,7 +30,6 @@ for (int i = 0; i<8;i++){
     digitalWrite(data, LOW);
   }
     // delay(Delaytime*2); // So data can be messured. 
-
 
     // shift the data once outways. 
     digitalWrite(shift, LOW);
@@ -50,8 +44,6 @@ for (int i = 0; i<8;i++){
      delay(Delaytime); // so shift can be messured. 
      digitalWrite(latch, LOW);
 
-
-
   }
   digitalWrite(data, LOW); // data pin becomes low after each shiftout, so it's now high unless it needs to. 
 
@@ -60,7 +52,6 @@ for (int i = 0; i<8;i++){
   digitalWrite(latch, HIGH);
   delay(Delaytime); // so shift can be messured. 
   digitalWrite(latch, LOW);
-
 }
 
 
