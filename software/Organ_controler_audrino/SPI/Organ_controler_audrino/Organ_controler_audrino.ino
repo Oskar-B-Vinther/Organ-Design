@@ -81,8 +81,9 @@ digitalWrite(latch, LOW);
 
 
 
-void sendToShiftRegister(byte data) {
 
+
+void sendToShiftRegister(byte data) {
   shiftOut(dataPin, clockPin, MSBFIRST, data);
      digitalWrite(dataPin, LOW);   
       digitalWrite(latchPin, HIGH);    // Prepare to load data

@@ -1,5 +1,4 @@
 
-
 #ifndef ORGANCONTROLLER_H
 #define ORGANCONTROLLER_H
 
@@ -9,23 +8,22 @@
 class organController {
 
  public:
-   bool config[128] = {false};  // there are medinotes,   0-127.  
+   byte config[4] = {0x00};  // there are medinotes, which are aviliable on my organ. I only have 32 values EI. 8 x 4 = 32. 
    uint8_t clearConst = 0x00;        // All pins LOW (0)
    uint8_t fullConst  = 0xFF;        // All pins HIGH (255)
 
 // controler pins  // hardcoded 
-   //int setPin = 11;
-  // int shiftPin = 13;
-   int latchPin = 10;
+   int latchPin;
    int powerpin;
 
 // organ config
    int organMedistart, organMedistop;
-    organController(int powerpin, int organMedistart, int organMedistop);
+    organController(int powerpin,int latchpin, int organMedistart, int organMedistop);
     void start();
-    void load(uint8_t bit);
+    void load();
     void set();
     void clear();
+    void define_note_at();
 };
 
 #endif // end of heaeer files
