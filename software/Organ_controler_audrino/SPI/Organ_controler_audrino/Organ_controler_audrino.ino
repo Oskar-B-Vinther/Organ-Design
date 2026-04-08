@@ -6,7 +6,7 @@
 //pin 13 SCLK (shift pin)
 // pin 11 (bit out)
 // pin 10 latcth
-organController pipeOrgan(5/*power ping*/, 36 /*possiple medi start*/, 96 /*possiple medi stop*/);
+organController pipeOrgan(5/*power ping*/,6, 36 /*possiple medi start*/, 96 /*possiple medi stop*/);
 int comport = 3;
 
   const int dataPin  = 11;   // DS
@@ -18,35 +18,24 @@ int comport = 3;
 void setup() {
 //pipeOrgan.start();
 
-  pinMode(dataPin, OUTPUT);
-  pinMode(latchPin, OUTPUT);
-  pinMode(clockPin, OUTPUT);
 }
 
 void loop() {
  //------------// change the medi config
 
-//sendToShiftRegister((byte)0);
-//delay(2000);
 
-sendToShiftRegister((byte)255);
-delay(2000);
-
-
-/*
-pipeOrgan.load(0x00);
-pipeOrgan.set();
-delay(2000);
-
-pipeOrgan.load(0xFF);
-pipeOrgan.set();
-delay(2000);
-
- //------------// here ^-
-
- */
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -78,11 +67,6 @@ digitalWrite(latch, LOW);
 
 }
 
-
-
-
-
-
 void sendToShiftRegister(byte data) {
   shiftOut(dataPin, clockPin, MSBFIRST, data);
      digitalWrite(dataPin, LOW);   
@@ -90,12 +74,3 @@ void sendToShiftRegister(byte data) {
       digitalWrite(latchPin, LOW);          // Update outputs
     
 }
-
-
-
-
-
-
-
-
-
