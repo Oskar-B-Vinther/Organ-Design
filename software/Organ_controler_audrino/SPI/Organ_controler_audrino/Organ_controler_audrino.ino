@@ -11,7 +11,7 @@ int comport = 3;
 
   const int dataPin  = 11;   // DS
   const int latchPin = 10;   // STCP
-  const int clockPin = 13;  // SHCP
+  const int clockPin = 12;  // SHCP
 
 
 
@@ -82,12 +82,13 @@ digitalWrite(latch, LOW);
 
 
 void sendToShiftRegister(byte data) {
+    digitalWrite(latchPin, LOW);
+  shiftOut(dataPin, clockPin, LSBFIRST, data);
 
-  shiftOut(dataPin, clockPin, MSBFIRST, data);
-     digitalWrite(dataPin, LOW);   
       digitalWrite(latchPin, HIGH);    // Prepare to load data
-      digitalWrite(latchPin, LOW);          // Update outputs
-    
+     //digitalWrite(latchPin, LOW);          // Update outputs
+
+      digitalWrite(dataPin, LOW);  
 }
 
 
