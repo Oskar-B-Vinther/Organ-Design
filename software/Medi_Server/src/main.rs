@@ -16,11 +16,19 @@ fn main() {
         let comand = comand.trim();
         match comand {
             "Test" => println!("# - sucsess"),
+            "listen" => {
+            }
+
             "exit" => {
                 println!("# - Qutting Prograimg");
                 keep_running = false
             }
             _ => println!("# - Invalid comand: {comand}\n\n"),
-        }
+        }    
     }
 }
+
+
+
+
+
