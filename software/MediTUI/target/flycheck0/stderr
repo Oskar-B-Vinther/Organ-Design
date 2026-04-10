@@ -1,12 +1,13 @@
-   0.474348500s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint: stale: changed "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/src/main.rs"
-   0.474402400s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:           (vs) "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/target/debug/.fingerprint/MediTUI-aa888f585de60357/dep-bin-MediTUI"
-   0.474411900s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1775724422, nanos: 227152200 } < FileTime { seconds: 1775724896, nanos: 152937300 }
-   0.474935200s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint: fingerprint dirty for MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI)/Check { test: false }/TargetInner { name: "MediTUI", doc: true, ..: with_path("/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/src/main.rs", Edition2024) }
-   0.474977600s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/target/debug/.fingerprint/MediTUI-aa888f585de60357/dep-bin-MediTUI", reference_mtime: FileTime { seconds: 1775724422, nanos: 227152200 }, stale: "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/src/main.rs", stale_mtime: FileTime { seconds: 1775724896, nanos: 152937300 } }))
-   0.520177900s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint: stale: changed "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/src/main.rs"
-   0.520200800s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:           (vs) "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/target/debug/.fingerprint/MediTUI-25abc35d7589a0fd/dep-test-bin-MediTUI"
-   0.520208500s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1775724422, nanos: 227152200 } < FileTime { seconds: 1775724896, nanos: 152937300 }
-   0.520568100s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint: fingerprint dirty for MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI)/Check { test: true }/TargetInner { name: "MediTUI", doc: true, ..: with_path("/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/src/main.rs", Edition2024) }
-   0.520589900s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/target/debug/.fingerprint/MediTUI-25abc35d7589a0fd/dep-test-bin-MediTUI", reference_mtime: FileTime { seconds: 1775724422, nanos: 227152200 }, stale: "/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/src/main.rs", stale_mtime: FileTime { seconds: 1775724896, nanos: 152937300 } }))
-    Checking MediTUI v0.1.0 (/mnt/c/Personal/Organ/Organ-Design/software/MediTUI)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.77s
+error: rustc 1.87.0 is not supported by the following packages:
+  darling@0.23.0 requires rustc 1.88.0
+  darling_core@0.23.0 requires rustc 1.88.0
+  darling_macro@0.23.0 requires rustc 1.88.0
+  instability@0.3.12 requires rustc 1.88
+  instability@0.3.12 requires rustc 1.88
+  instability@0.3.12 requires rustc 1.88
+  time@0.3.47 requires rustc 1.88.0
+  time-core@0.1.8 requires rustc 1.88.0
+Either upgrade rustc or select compatible dependency versions with
+`cargo update <name>@<current-ver> --precise <compatible-ver>`
+where `<compatible-ver>` is the latest version supporting rustc 1.87.0
+

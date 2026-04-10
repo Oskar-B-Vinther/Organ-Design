@@ -1,1 +1,1 @@
-/mnt/c/Personal/Organ/Organ-Design/software/MediTUI/target/debug/MediTUI: /mnt/c/Personal/Organ/Organ-Design/software/MediTUI/src/main.rs
+/mnt/c/Users/oskar/Desktop/Git/Organ-Design/software/MediTUI/target/debug/MediTUI: /mnt/c/Users/oskar/Desktop/Git/Organ-Design/software/MediTUI/src/main.rs
