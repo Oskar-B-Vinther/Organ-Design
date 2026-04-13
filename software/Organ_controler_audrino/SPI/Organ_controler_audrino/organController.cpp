@@ -7,6 +7,7 @@ organController::organController(int powerPin,int latchPin, int organMedistart, 
   this->organMedistop = organMedistop;
  
   nextTime = 0;
+
 }
 
 void organController::start() {
@@ -14,9 +15,7 @@ void organController::start() {
 //-----// define pins
   // define SPI: 
  SPI.begin();
-  SPI.setClockDivider(SPI_CLOCK_DIV8); 
-  SPI.setDataMode(SPI_MODE0);
-  SPI.setBitOrder(MSBFIRST);
+ SPI.beginTransaction(SPISettings(4000000, LSBFIRST, SPI_MODE0));
 
 // define lacth pin: 
   pinMode(latchPin, OUTPUT);

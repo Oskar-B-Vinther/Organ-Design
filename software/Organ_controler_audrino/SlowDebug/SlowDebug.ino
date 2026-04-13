@@ -1,8 +1,8 @@
 
 
-int shift = 4; 
-int latch = 3; 
-int data = 2; 
+int shift = 13; 
+int latch = 6; 
+int data = 11; 
 
 int test[8] = {1,1,1,1,1,1,1,1};
 int test1[8] = {0,0,0,0,0,0,0,0};

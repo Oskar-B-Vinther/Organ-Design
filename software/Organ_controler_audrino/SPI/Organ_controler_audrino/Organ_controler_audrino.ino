@@ -5,26 +5,34 @@
 // this class uses spi. so it takes up pin 10,11, and 13. 
 //pin 13 SCLK (shift pin)
 // pin 11 (bit out)
-// pin 10 latcth
-organController pipeOrgan(5/*power ping*/,6, 36 /*possiple medi start*/, 96 /*possiple medi stop*/);
-int comport = 3;
+// pin 6 latcth
 
-  const int dataPin  = 11;   // DS
-  const int latchPin = 10;   // STCP
-  const int clockPin = 12;  // SHCP
-
-
-
+organController pipeOrgan(
+      5 /*power ping*/,
+      6 /*latch pin*/,  
+      57 /*possiple medi start*/, 
+      89 /*possiple medi stop*/
+          );
+  
 void setup() {
-//pipeOrgan.start();
-
+pipeOrgan.start();
 }
 
 void loop() {
  //------------// change the medi config
 
+  for (int i = 57; i<89;i++){
+  pipeOrgan.Set_Medi_Note(i,true);
+  }
+  pipeOrgan.load();
+  pipeOrgan.set();
+  delay(1000);
 
-
+  
+  pipeOrgan.clear();
+  pipeOrgan.load();
+  pipeOrgan.set();
+  delay(1000);
 }
 
 
@@ -66,7 +74,7 @@ delay(2);
 digitalWrite(latch, LOW);   
 
 }
-
+/*
 void sendToShiftRegister(byte data) {
   shiftOut(dataPin, clockPin, MSBFIRST, data);
      digitalWrite(dataPin, LOW);   
@@ -76,3 +84,4 @@ void sendToShiftRegister(byte data) {
 
       digitalWrite(dataPin, LOW);  
 }
+*/

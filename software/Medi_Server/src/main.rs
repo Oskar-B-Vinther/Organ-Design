@@ -1,4 +1,6 @@
 use std::io;
+mod serial_lib;
+
 
 fn main() {
     // able to turn off the program.
@@ -27,6 +29,9 @@ fn main() {
         }    
     }
 }
+
+
+
 
 
 
