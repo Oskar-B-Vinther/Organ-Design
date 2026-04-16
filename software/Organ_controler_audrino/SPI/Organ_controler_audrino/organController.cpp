@@ -11,7 +11,7 @@ organController::organController(int powerPin,int latchPin, int organMedistart, 
 }
 
 void organController::start() {
-
+ Serial.begin(9600);
 //-----// define pins
   // define SPI: 
  SPI.begin();
@@ -62,9 +62,6 @@ void organController::clear() {
   }
 }
 
-
-
-
 //------------// error codes
 /*
 1: Out of range: Note to high
@@ -92,6 +89,34 @@ part = bitClear(part,note % 8);
 }
 config[ByteN] = part; // applys the change to the organ config. 
 return 0; 
+}
+
+
+byte[] organController::nextEvent() {
+  byte serial[5] = {0x00};
+for (int i = 0; i<5;i++){
+  serial[i] = Serial.read();
+}
+return serial;
+}
+
+organController::HandelEvent(){
+// Medi * my medi "event"
+/* 3 bytes
+1) On/off  (Chanel)
+2) medi note
+3) time Byte 1
+4) time byte 2 
+5) tiem byte 3
+*/
+
+byte serial[5] = nextEvent(); 
+bool ON = false; 
+if(bitRead(serial[1], 5) = true){¨
+ON = true; 
+}
+Set_Medi_Note( byte serial[2],ON)
+
 }
 
 

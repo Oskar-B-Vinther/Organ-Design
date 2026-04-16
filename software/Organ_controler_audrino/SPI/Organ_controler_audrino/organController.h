@@ -21,17 +21,33 @@ class organController {
    int organMedistart, organMedistop;
    int nextTime;
 
+// Serialport
+   int baudSpeed;
+   int nextEvent;
    // constuctor
     organController(int powerPin,int latchPin, int organMedistart, int organMedistop);
 
     //fucntions
-    void start();
+    void start(); 
+
+
     void load();
     void set();
-    void set(long triggertime);
-    static void fast_latch();
-    void clear();
+
+
+    void set(long triggertime); // configure a set to happen at some time, triggertime after the last event. 
+    void nextEvent();
+    byte[] HandelEvent();
+
+    static void fast_latch(); // latch wich use hardware manipulation to quicly flip the pin
+    void clear(); // changes all notes to off same as setting all medi 0-128 to false. 
     int Set_Medi_Note(int note, bool state);
+
+
+
+
+
+
 };
 
 #endif // end of heaeer files
