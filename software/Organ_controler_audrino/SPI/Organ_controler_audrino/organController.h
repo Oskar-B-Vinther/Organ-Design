@@ -6,10 +6,22 @@
 #include <SPI.h>
 #include <TimerOne.h>
 
-class organController {
+class SceduledEvent {
+     public: 
+      int time; 
+      byte config[4];
+      bool NeedToBePlayed; 
+      SceduledEvent();
+};
 
+class organController {
  public:
    byte config[4] = {0x00};  // there are medinotes, which are aviliable on my organ. I only have 32 values EI. 8 x 4 = 32. 
+
+   byte writeIndex;
+   byte readIndex;
+   SceduledEvent events[32];
+
    byte clearConst = 0x00;        // All pins LOW (0)
    byte fullConst  = 0xFF;        // All pins HIGH (255)
    
@@ -23,31 +35,21 @@ class organController {
 
 // Serialport
    int baudSpeed;
-   int nextEvent;
+
    // constuctor
     organController(int powerPin,int latchPin, int organMedistart, int organMedistop);
-
     //fucntions
     void start(); 
-
-
+    void nextReadIndex();
+    void nextWriteIndex();
     void load();
     void set();
-
-
-    void set(long triggertime); // configure a set to happen at some time, triggertime after the last event. 
-    void nextEvent();
-    byte[] HandelEvent();
-
-    static void fast_latch(); // latch wich use hardware manipulation to quicly flip the pin
+    void set(long triggertime);
+    //static void fast_latch(); // latch wich use hardware manipulation to quicly flip the pin
     void clear(); // changes all notes to off same as setting all medi 0-128 to false. 
     int Set_Medi_Note(int note, bool state);
 
-
-
-
-
-
 };
+
 
 #endif // end of heaeer files

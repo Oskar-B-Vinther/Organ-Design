@@ -1,14 +1,31 @@
 #include "organController.h"
 
+
+
+
+
+SceduledEvent::SceduledEvent(){
+      for (int i = 0;i<4;i++) {
+         config[i] = {0x00}; 
+      }
+      time = 0; 
+      NeedToBePlayed = true; 
+   }
+
+
 organController::organController(int powerPin,int latchPin, int organMedistart, int organMedistop) {
   this->powerPin = powerPin;
   this->latchPin = latchPin;
   this->organMedistart = organMedistart;
   this->organMedistop = organMedistop;
  
-  nextTime = 0;
-
+  for (int i = 0; i<32; i++){
+  events[i] = SceduledEvent();
+  }
+  writeIndex = 0; 
+  fullConst = 0; 
 }
+
 
 void organController::start() {
  Serial.begin(9600);
@@ -46,14 +63,12 @@ void organController::set() {
   delay(1);
   digitalWrite(latchPin, HIGH);
 }
-
+/*
 void organController::set(long triggertime){
   Timer1.initialize(triggertime); 
   Timer1.attachInterrupt(fast_latch); 
 }
-static void organController::fast_latch(){
-
-}
+*/
 
 // Set the whole config to "all off" sate
 void organController::clear() {
@@ -92,31 +107,17 @@ return 0;
 }
 
 
-byte[] organController::nextEvent() {
-  byte serial[5] = {0x00};
-for (int i = 0; i<5;i++){
-  serial[i] = Serial.read();
-}
-return serial;
+// functions to maanges the idex of the event buffer.
+void organController::nextReadIndex() {
+readIndex = (readIndex+1) %32;
 }
 
-organController::HandelEvent(){
-// Medi * my medi "event"
-/* 3 bytes
-1) On/off  (Chanel)
-2) medi note
-3) time Byte 1
-4) time byte 2 
-5) tiem byte 3
-*/
-
-byte serial[5] = nextEvent(); 
-bool ON = false; 
-if(bitRead(serial[1], 5) = true){¨
-ON = true; 
+void organController::nextWriteIndex() {
+writeIndex = (writeIndex+1) %32;
 }
-Set_Medi_Note( byte serial[2],ON)
 
-}
+
+
+
 
 
