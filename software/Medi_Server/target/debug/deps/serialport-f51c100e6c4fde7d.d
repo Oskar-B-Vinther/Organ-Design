@@ -1,0 +1,10 @@
+C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\target\debug\deps\libserialport-f51c100e6c4fde7d.rmeta: C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\lib.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\mod.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\com.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\dcb.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\enumerate.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\error.rs
+
+C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\target\debug\deps\serialport-f51c100e6c4fde7d.d: C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\lib.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\mod.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\com.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\dcb.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\enumerate.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\error.rs
+
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\lib.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\mod.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\com.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\dcb.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\enumerate.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serialport-4.9.0\src\windows\error.rs:

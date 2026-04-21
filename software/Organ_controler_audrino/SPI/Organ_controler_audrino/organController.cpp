@@ -51,7 +51,7 @@ void organController::start() {
   digitalWrite(powerPin, HIGH);
 }
 
-SceduledEvent readNextEvent(){
+SceduledEvent organController::readNextEvent(){
 byte infobyte = Serial.read();
 switch (infobyte){
     case 0x01: // ping
@@ -81,7 +81,7 @@ switch (infobyte){
       }
 
 
-  Serial.write(0x02); // undefined result
+  Serial.write(0x03); // undefined result
   return SceduledEvent();
   }
 

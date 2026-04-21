@@ -20,7 +20,7 @@ pipeOrgan.start();
 
 void loop() {
  //------------// change the medi config
-
+pipeOrgan.readNextEvent();
  
 }
 
