@@ -8,8 +8,11 @@ SceduledEvent::SceduledEvent(){
       for (int i = 0;i<4;i++) {
          config[i] = {0x00}; 
       }
-      time = 0; 
-      NeedToBePlayed = true; 
+      Deltatime = 0; 
+      freash = true;
+
+      newtempo = 0;
+      changeTempo = false;  
    }
 
 
@@ -25,7 +28,6 @@ organController::organController(int powerPin,int latchPin, int organMedistart, 
   writeIndex = 0; 
   fullConst = 0; 
 }
-
 
 void organController::start() {
  Serial.begin(9600);
@@ -48,6 +50,41 @@ void organController::start() {
 // Turn on power to the system
   digitalWrite(powerPin, HIGH);
 }
+
+SceduledEvent readNextEvent(){
+byte infobyte = Serial.read();
+switch (infobyte){
+    case 0x01: // ping
+    Serial.write(0x01); //  respons back. 
+      break; 
+
+    case 0x80: // Medi on
+
+      break; 
+
+    case 0x90: // Medi off
+
+      break; 
+
+    case 0x2F: // medi all clear
+
+      break; 
+
+    case 0x51: // medi set tempo
+
+      break;
+
+    default: // FatalSerial error as the type of message was not requrenized. 
+    Serial.write(0x02);
+      return SceduledEvent();
+      break; 
+      }
+
+
+  Serial.write(0x02); // undefined result
+  return SceduledEvent();
+  }
+
 
 // pushes whatever is in the config out to the organs internal memory. 
 void organController::load() {

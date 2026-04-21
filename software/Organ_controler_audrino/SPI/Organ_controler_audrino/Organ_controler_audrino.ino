@@ -21,18 +21,7 @@ pipeOrgan.start();
 void loop() {
  //------------// change the medi config
 
-  for (int i = 57; i<89;i++){
-  pipeOrgan.Set_Medi_Note(i,true);
-  }
-  pipeOrgan.load();
-  pipeOrgan.set();
-  delay(1000);
-
-  
-  pipeOrgan.clear();
-  pipeOrgan.load();
-  pipeOrgan.set();
-  delay(1000);
+ 
 }
 
 // needs to be as the function need to be static while still haveing acsess to pipeorgan metods- 
@@ -42,6 +31,6 @@ static void fast_latch(){
 
     pipeOrgan.nextReadIndex();
     pipeOrgan.load();
-    Timer1.initialize(pipeOrgan.events[pipeOrgan.readIndex].time);
+    Timer1.initialize(pipeOrgan.events[pipeOrgan.readIndex].Deltatime);
     Timer1.attachInterrupt(fast_latch);
   }

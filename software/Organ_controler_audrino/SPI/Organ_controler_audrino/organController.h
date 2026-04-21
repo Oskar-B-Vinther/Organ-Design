@@ -8,9 +8,11 @@
 
 class SceduledEvent {
      public: 
-      int time; 
       byte config[4];
-      bool NeedToBePlayed; 
+      int Deltatime; 
+      bool freash; 
+      bool changeTempo;
+      int newtempo; 
       SceduledEvent();
 };
 
@@ -42,6 +44,9 @@ class organController {
     void start(); 
     void nextReadIndex();
     void nextWriteIndex();
+    SceduledEvent readNextEvent();
+
+
     void load();
     void set();
     void set(long triggertime);
