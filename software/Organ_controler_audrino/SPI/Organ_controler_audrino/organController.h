@@ -44,15 +44,16 @@ class organController {
     void start(); 
     void nextReadIndex();
     void nextWriteIndex();
-    SceduledEvent readNextEvent();
 
+   SceduledEvent readNextEvent();
+    void MediEvent(bool onOFF);
 
     void load();
     void set();
     void set(long triggertime);
     //static void fast_latch(); // latch wich use hardware manipulation to quicly flip the pin
     void clear(); // changes all notes to off same as setting all medi 0-128 to false. 
-    int Set_Medi_Note(int note, bool state);
+    int Set_Medi_Note(int note, bool state,int time);
 
 };
 

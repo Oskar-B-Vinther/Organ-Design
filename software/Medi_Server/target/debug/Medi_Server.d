@@ -1,1 +1,1 @@
-/mnt/c/Users/oskar/Desktop/Git/Organ-Design/software/Medi_Server/target/debug/Medi_Server: /mnt/c/Users/oskar/Desktop/Git/Organ-Design/software/Medi_Server/src/main.rs /mnt/c/Users/oskar/Desktop/Git/Organ-Design/software/Medi_Server/src/serial_lib.rs
+C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\target\debug\Medi_Server.exe: C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\src\main.rs

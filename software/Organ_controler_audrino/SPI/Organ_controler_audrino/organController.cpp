@@ -55,15 +55,15 @@ SceduledEvent organController::readNextEvent(){
 byte infobyte = Serial.read();
 switch (infobyte){
     case 0x01: // ping
-    Serial.write(0x01); //  respons back. 
-      break; 
+    Serial.write(0x86); //  respons back. 
+      break;
 
     case 0x80: // Medi on
-
+    MediEvent(1); // reads the next bytes as if they are "on" medi packet
       break; 
 
     case 0x90: // Medi off
-
+     MediEvent(1); // reads the next bytes as if they are "off" medi packet
       break; 
 
     case 0x2F: // medi all clear
@@ -75,13 +75,13 @@ switch (infobyte){
       break;
 
     default: // FatalSerial error as the type of message was not requrenized. 
-    Serial.write(0x02);
+    //Serial.write(0x02);
       return SceduledEvent();
       break; 
       }
 
 
-  Serial.write(0x03); // undefined result
+  //Serial.write(0x03); // undefined result
   return SceduledEvent();
   }
 
@@ -120,7 +120,7 @@ void organController::clear() {
 2: Out of range: Note to low
 */
 //-------------//
-int organController::Set_Medi_Note(int note, bool state){ // note is medi 0-128. and state is "on" or "off" EI. 1 or 0.  
+int organController::Set_Medi_Note(int note, bool state, int time ){ // note is medi 0-128. and state is "on" or "off" EI. 1 or 0.  
 
 // error handling tet of our of range
 if (note >organMedistop ){
@@ -133,13 +133,13 @@ return 2;
 note = note-organMedistart; // shift the range down so its from 0-32
 byte ByteN = note / 8; // whole number division to get the byte in which the desirreed change is in. 
 
-byte part = config[ByteN]; 
+byte part = events[readIndex].config[ByteN]; 
 if (state){ // checks if the not should be set to on or off. 
 part = bitSet(part,note % 8); // here the modulo function is used to get the excat possistion of the bit in the specific byte. 
 } else {
 part = bitClear(part,note % 8);
 }
-config[ByteN] = part; // applys the change to the organ config. 
+events[readIndex].config[ByteN] = part; // applys the change to the organ config. 
 return 0; 
 }
 
@@ -151,6 +151,20 @@ readIndex = (readIndex+1) %32;
 
 void organController::nextWriteIndex() {
 writeIndex = (writeIndex+1) %32;
+}
+
+
+
+void organController::MediEvent(bool onOFF) {
+      byte MediNote = Serial.read();
+      byte time_one = Serial.read();
+      byte time_two = Serial.read();
+      int time = (int)(time_one << 8) | time_two;
+
+      if (time !=0){
+      nextWriteIndex(); // if the event hapens 0 time after the last, it's the same. 
+      }
+       Set_Medi_Note(MediNote,onOFF,time);
 }
 
 

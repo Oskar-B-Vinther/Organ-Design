@@ -1,51 +1,31 @@
 
-
-
-use std::io::{Read, Write};
+use std::io::{self, Read, Write};
 use std::time::Duration;
 
-struct SerialConnection {
-    port: Box<dyn serialport::SerialPort>,
-}
+fn main() {
+    
 
-impl SerialConnection {
-    fn new(port_name: &str, baud_rate: u32) -> Result<Self, Box<dyn std::error::Error>> {
-        let port = serialport::new(port_name, baud_rate)
-            .timeout(Duration::from_millis(1000))
-            .open()?;
+    // 1. Open the port
+    let mut port = serialport::new(port_name, baud_rate)
+        .timeout(Duration::from_millis(1000)) // Set a read timeout
+        .open()
+        .expect("Failed to open port");
 
-        Ok(SerialConnection { port })
+    // 2. Send bytes
+    let msg = b"";
+    port.write_all(msg).expect("Write failed!");
+    println!("Sent: {:?}", String::from_utf8_lossy(msg));
+
+    // 3. Read bytes
+    let mut buffer: [u8; 128] = [0; 128];
+    match port.read(&mut buffer) {
+        Ok(bytes_read) => {
+            let data = &buffer[..bytes_read];
+            println!("Received: {:?}", String::from_utf8_lossy(data));
+        }
+        Err(e) if e.kind() == io::ErrorKind::TimedOut => {
+            eprintln!("Read timed out!");
+        }
+        Err(e) => eprintln!("Error reading: {:?}", e),
     }
-
-    fn write_bytes(&mut self, data: &[u8]) -> Result<(), Box<dyn std::error::Error>> {
-        self.port.write_all(data)?;
-        Ok(())
-    }
-
-    fn read_bytes(&mut self, buffer: &mut [u8]) -> Result<usize, Box<dyn std::error::Error>> {
-        let bytes_read = self.port.read(buffer)?;
-        Ok(bytes_read)
-    }
-}
-
-fn main() -> Result<(), Box<dyn std::error::Error>> {
-    // Change this to your Arduino port:
-    // Linux: "/dev/ttyUSB0" or "/dev/ttyACM0"
-    // Windows: "COM3"
-    let port_name = "/dev/ttyUSB0";
-    let baud_rate = 9600;
-
-    let mut connection = SerialConnection::new(port_name, baud_rate)?;
-
-    // Write example
-    let data_to_send = b"Hello Arduino\n";
-    connection.write_bytes(data_to_send)?;
-
-    // Read example
-    let mut buffer = [0u8; 64];
-    let bytes_read = connection.read_bytes(&mut buffer)?;
-
-    println!("Read {} bytes: {:?}", bytes_read, &buffer[..bytes_read]);
-
-    Ok(())
 }
