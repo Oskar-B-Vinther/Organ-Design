@@ -1,6 +1,8 @@
 use std::io;
 use std::time::Duration;
 
+pub mod MEDI;
+
 fn main() {
     let port_name = "COM9"; // Use "COM3" on Windows
     let baud_rate = 9600;
