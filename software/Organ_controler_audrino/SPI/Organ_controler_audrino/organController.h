@@ -20,6 +20,7 @@ class organController {
  public:
    byte config[4] = {0x00};  // there are medinotes, which are aviliable on my organ. I only have 32 values EI. 8 x 4 = 32. 
 
+   bool StartRead;
    byte writeIndex;
    byte readIndex;
    SceduledEvent events[32];
@@ -45,7 +46,7 @@ class organController {
     void nextReadIndex();
     void nextWriteIndex();
 
-   SceduledEvent readNextEvent();
+    void readNextEvent();
     void MediEvent(bool onOFF);
 
     void load();

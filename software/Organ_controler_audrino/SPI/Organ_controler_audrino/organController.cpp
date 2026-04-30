@@ -51,7 +51,7 @@ void organController::start() {
   digitalWrite(powerPin, HIGH);
 }
 
-SceduledEvent organController::readNextEvent(){
+void organController::readNextEvent(){
 byte infobyte = Serial.read();
 switch (infobyte){
     case 0x01: // ping
@@ -76,13 +76,8 @@ switch (infobyte){
 
     default: // FatalSerial error as the type of message was not requrenized. 
     //Serial.write(0x02);
-      return SceduledEvent();
       break; 
       }
-
-
-  //Serial.write(0x03); // undefined result
-  return SceduledEvent();
   }
 
 
@@ -161,10 +156,19 @@ void organController::MediEvent(bool onOFF) {
       byte time_two = Serial.read();
       int time = (int)(time_one << 8) | time_two;
 
-      if (time !=0){
-      nextWriteIndex(); // if the event hapens 0 time after the last, it's the same. 
+      if (time !=0){ // if the event hapens 0 time after the last, it's the same. 
+        for (int i = 0; i<4;i++){
+      events[(writeIndex+1)%32].config[i] = events[writeIndex].config[i];
+        }
+      nextWriteIndex(); 
       }
+      
        Set_Medi_Note(MediNote,onOFF,time);
+
+      if (! events[(writeIndex+1)%32].freash){
+        Serial.write(0x4); // indicatres to the server that the next event can be sent
+      }
+      
 }
 
 

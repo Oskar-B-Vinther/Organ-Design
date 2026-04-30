@@ -22,7 +22,13 @@ void loop() {
  //------------// change the medi config
 pipeOrgan.readNextEvent();
 
+    if ( pipeOrgan.StartRead ){
+    pipeOrgan.StartRead = false;
 
+    pipeOrgan.load();
+    fast_latch();
+
+    }
 }
 
 // needs to be as the function need to be static while still haveing acsess to pipeorgan metods- 
