@@ -1,1 +1,1 @@
-C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\target\debug\Medi_Server.exe: C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\src\main.rs
+C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\target\debug\Medi_Server.exe: C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\src\MEDI.rs C:\Users\oskar\Desktop\Git\Organ-Design\software\Medi_Server\src\main.rs

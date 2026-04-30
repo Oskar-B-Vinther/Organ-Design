@@ -4,41 +4,17 @@ pub mod medi {
     use std::vec;
 
     pub struct song {
-        events: Vec<Event>,
-        temp: u8,
+        bytes: Vec<u8>,
+        readindex: u32,
     }
 
     impl song {
         pub fn new(file_name: String) -> Self {
-            let events = loadMediFile(file_name);
-            let temp = 8 as u8;
-
-            Self { events, temp }
+            let bytes: Vec<u8> = fs::read("test-asset/Clementi.mid").unwrap();
+            let readindex = 0;
+            song { bytes, readindex }
         }
-    }
 
-    pub struct Event {
-        note: u8,
-        onOff: bool,
-    }
-
-    impl Event {
-        pub fn new(note: u8, onOff: bool) -> Self {
-            Self { note, onOff }
-        }
-    }
-
-    pub fn loadMediFile(file_name: String) -> Vec<Event> {
-        let events: Vec<Event> = Vec::new();
-
-        let bytes = fs::read("test-asset/Clementi.mid").unwrap();
-        let smf = Smf::parse(&bytes).unwrap();
-        let track = &smf.tracks[0];
-        let L = track.len();
-
-        for i in 0..L {
-            //events.push(Event::new());
-        }
-        vec![Event::new(20, false)] // place holder
+        pub fn send_next_event() {}
     }
 }
