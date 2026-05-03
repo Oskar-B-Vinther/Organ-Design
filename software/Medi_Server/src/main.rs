@@ -1,7 +1,8 @@
 use std::io;
 use std::time::Duration;
 
-pub mod MEDI;
+//use Medi
+mod MEDI;
 
 fn main() {
     let port_name = "COM9"; // Use "COM3" on Windows
@@ -11,6 +12,10 @@ fn main() {
         .timeout(Duration::from_millis(1000)) // Set a read timeout
         .open()
         .expect("Failed to open port");
+
+    let mut song = MEDI::song::new(
+        "C:\\Users\\oskar\\Desktop\\Git\\Organ-Design\\software\\Medi_Server\\Medi.mid",
+    );
 
     // able to turn off the program.
     let mut keep_running = true;
@@ -29,7 +34,7 @@ fn main() {
         match comand {
             "Test" => println!("# - sucsess"),
 
-            "pingPort" => {
+            "ping" => {
                 let msg = 0x01 as u8;
                 port.write_all(&[msg]).expect("Write failed!");
                 println!("Sent: {:?}", msg);
@@ -44,6 +49,12 @@ fn main() {
                         eprintln!("Read timed out!");
                     }
                     Err(e) => eprintln!("Error reading: {:?}", e),
+                }
+            }
+            "play" => {
+                for i in 0..100 {
+                    let msg = song.next_event();
+                    print!("Sent: {:?} \n ", msg);
                 }
             }
 
