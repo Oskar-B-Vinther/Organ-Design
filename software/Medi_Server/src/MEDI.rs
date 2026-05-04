@@ -46,17 +46,18 @@ impl song {
         let mut note_event = match event {
             midly::TrackEventKind::Midi { channel, message } => match message {
                 MidiMessage::NoteOff { key, vel } => {
+                    println!("test");
                     vec![0x90 as u8, key.as_int() as u8]
-                },
+                }
                 MidiMessage::NoteOn { key, vel } => {
                     vec![0x80 as u8, key.as_int() as u8]
-                },
+                }
                 _ => {
-                    vec![0x80 as u8]
+                    vec![0x00 as u8]
                 }
             },
             _ => {
-                vec![0x80 as u8]
+                vec![0x00 as u8]
             }
         };
         let time = next_event.delta.as_int();
