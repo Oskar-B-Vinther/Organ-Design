@@ -47,10 +47,10 @@ impl song {
             midly::TrackEventKind::Midi { channel, message } => match message {
                 MidiMessage::NoteOff { key, vel } => {
                     vec![0x90 as u8, key.as_int() as u8]
-                }
+                },
                 MidiMessage::NoteOn { key, vel } => {
                     vec![0x80 as u8, key.as_int() as u8]
-                }
+                },
                 _ => {
                     vec![0x80 as u8]
                 }
