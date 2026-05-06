@@ -1,9 +1,5 @@
 #include "organController.h"
 
-
-
-
-
 SceduledEvent::SceduledEvent(){
       for (int i = 0;i<4;i++) {
          config[i] = {0x00}; 
@@ -83,8 +79,9 @@ switch (infobyte){
 
 // pushes whatever is in the config out to the organs internal memory. 
 void organController::load() {
+SceduledEvent Event = events[readIndex];
  for (int i = 0; i<4;i++){
-   SPI.transfer(config[i]);
+   SPI.transfer(Event.config[i]);
   }
 }
 

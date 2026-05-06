@@ -35,7 +35,7 @@ class organController {
 // organ config
    int organMedistart, organMedistop;
    int nextTime;
-
+   int bpm;
 // Serialport
    int baudSpeed;
 
