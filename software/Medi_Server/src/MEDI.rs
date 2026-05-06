@@ -50,7 +50,14 @@ impl song {
                     vec![0x90 as u8, key.as_int() as u8]
                 }
                 MidiMessage::NoteOn { key, vel } => {
-                    vec![0x80 as u8, key.as_int() as u8]
+                    if vel == 0 {
+                       vec![0x90 as u8, key.as_int() as u8]
+                    } else {
+                        vec![0x80 as u8, key.as_int() as u8]
+                    }
+
+                    
+                    
                 }
                 _ => {
                     vec![0x00 as u8]

@@ -1,0 +1,14 @@
+/mnt/c/Personal/Organ/Organ-Design/software/Medi_Server/target/debug/deps/midly-058ea25e47274912.d: /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/lib.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/error.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/arena.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/event.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/io.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/live.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/primitive.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/riff.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/smf.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/stream.rs
+
+/mnt/c/Personal/Organ/Organ-Design/software/Medi_Server/target/debug/deps/libmidly-058ea25e47274912.rmeta: /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/lib.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/error.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/arena.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/event.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/io.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/live.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/primitive.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/riff.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/smf.rs /home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/stream.rs
+
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/lib.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/error.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/arena.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/event.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/io.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/live.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/primitive.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/riff.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/smf.rs:
+/home/obv/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/midly-0.5.3/src/stream.rs:
