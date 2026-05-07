@@ -162,8 +162,8 @@ void organController::MediEvent(bool onOFF) {
       
        Set_Medi_Note(MediNote,onOFF,time);
 
-      if (! events[(writeIndex+1)%32].freash){
-        Serial.write(0x4); // indicatres to the server that the next event can be sent
+      if (!events[(writeIndex+1)%32].freash){
+        Serial.write(0x04); // indicatres to the server that the next event can be sent
       }
       
 }
