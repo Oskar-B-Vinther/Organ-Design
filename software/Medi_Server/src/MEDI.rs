@@ -10,7 +10,7 @@ use std::vec;
 pub struct song {
     bytes: Vec<u8>,
     readindex: usize,
-    timeing: u15,
+    pub timeing: u15,
 }
 
 impl song {
