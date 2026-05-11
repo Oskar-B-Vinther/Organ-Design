@@ -56,7 +56,7 @@ fn main() {
             }
 
             "play" => {
-                let time = u15::slice_as_int(song.timeing);
+                let time = slice_as_int(song.timeing);
                 to_be_bytes().to_vec();
 
                 println!("{time}");
