@@ -18,7 +18,7 @@ class SceduledEvent {
 
 class organController {
  public:
-   byte config[4] = {0x00};  // there are medinotes, which are aviliable on my organ. I only have 32 values EI. 8 x 4 = 32. 
+   byte config[4] = {0xFF};  // there are medinotes, which are aviliable on my organ. I only have 32 values EI. 8 x 4 = 32. 
 
    bool StartRead;
    byte writeIndex;
@@ -50,6 +50,7 @@ class organController {
     void MediEvent(bool onOFF);
 
     void load();
+    void loadManual();
     void set();
     void set(long triggertime);
     //static void fast_latch(); // latch wich use hardware manipulation to quicly flip the pin

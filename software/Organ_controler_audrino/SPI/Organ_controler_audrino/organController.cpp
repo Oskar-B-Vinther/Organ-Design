@@ -85,11 +85,17 @@ SceduledEvent Event = events[readIndex];
   }
 }
 
+void organController::loadManual(){
+  for (int i = 0; i<4;i++){
+     SPI.transfer( config[i] );
+  }
+}
+
 
 // uses the latch pin to to change the external pins on the shifitng register to the internal values. 
 void organController::set() {
   digitalWrite(latchPin, LOW);
-  delay(1);
+  //delay(1);
   digitalWrite(latchPin, HIGH);
 }
 /*

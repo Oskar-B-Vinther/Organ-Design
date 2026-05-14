@@ -1,6 +1,6 @@
+use serialport::SerialPort;
 use std::io;
 use std::time::Duration;
-use serialport::SerialPort;
 
 //use Medi
 mod MEDI;
@@ -42,7 +42,6 @@ fn main() {
 
                 let mut buffer: [u8; 128] = [0; 128];
                 match port.read(&mut buffer) {
-
                     Ok(bytes_read) => {
                         let data = &buffer[..bytes_read];
                         println!("Received: {:?}", data);
@@ -56,13 +55,11 @@ fn main() {
             }
 
             "play" => {
-                let time = slice_as_int(song.timeing);
-                to_be_bytes().to_vec();
+                //let time = slice_as_int(song.timeing);
+                //  to_be_bytes().to_vec();
 
-                println!("{time}");
-                let timing = vec![0x51,];
-
-
+                // println!("{time}");
+                let timing = vec![0x51];
 
                 for i in 0..100 {
                     let msg = song.next_event();
@@ -79,7 +76,6 @@ fn main() {
     }
 }
 
-
 pub fn send_message(port: &mut Box<dyn SerialPort>, data: &[u8]) {
     if let Err(e) = port.write_all(data) {
         eprintln!("Failed to write to port: {}", e);
@@ -93,5 +89,3 @@ pub fn receive_message(port: &mut Box<dyn SerialPort>) -> Vec<u8> {
         Err(_) => Vec::new(),
     }
 }
-
-

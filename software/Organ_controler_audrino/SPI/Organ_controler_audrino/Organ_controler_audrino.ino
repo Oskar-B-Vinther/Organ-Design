@@ -19,14 +19,9 @@ pipeOrgan.start();
 
 
 // Set a "test" config. 
-for (byte i = 0; i<32;i++){
-    for (byte j = 0;j<4;j++) {
-        pipeOrgan.events[i].config[j] = {i};
-        pipeOrgan.events[i].Deltatime = 500000; 
-     }
-}
+
   
- pipeOrgan.StartRead = true; 
+ pipeOrgan.StartRead = false; 
 
 
 
@@ -35,6 +30,20 @@ for (byte i = 0; i<32;i++){
 void loop() {
  //------------// change the medi config
 //pipeOrgan.readNextEvent();
+
+    delay(1000);
+    for(int i =0; i<4;i++){
+    pipeOrgan.config[i] = pipeOrgan.fullConst;
+   }
+   pipeOrgan.loadManual();
+   pipeOrgan.set();
+
+
+    delay(1000);
+ //  pipeOrgan.clear();
+   pipeOrgan.loadManual();
+   pipeOrgan.set();
+
 
     if ( pipeOrgan.StartRead ){
     pipeOrgan.StartRead = false;
