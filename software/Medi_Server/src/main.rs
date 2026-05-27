@@ -46,8 +46,17 @@ fn main() {
                 port.write_all(&[msg]).expect("Write failed!");
                 println!("Sent: {:?}", msg);
 
-                thread::sleep(time::Duration::from_millis(5000)); // waits a little for answer 
+                thread::sleep(time::Duration::from_millis(1000)); // waits a little for answer 
 
+                let answer = handle_answer(receive_message(&mut port));
+
+                match answer {
+                    answer::Ping => println!("answered"),
+                    answer::None => println!("no answer"),
+                    _ => panic!("# -conflicting messages"),
+                }
+
+                /*
                 let mut buffer: [u8; 128] = [0; 128];
                 match port.read(&mut buffer) {
                     Ok(bytes_read) => {
@@ -60,6 +69,7 @@ fn main() {
                     }
                     Err(e) => eprintln!("Error reading: {:?}", e),
                 }
+                */
             }
 
             "play" => {
