@@ -29,7 +29,7 @@ pipeOrgan.start();
 
 void loop() {
  //------------// change the medi config
-//pipeOrgan.readNextEvent();
+pipeOrgan.readNextEvent();
 
     delay(1000);
     for(int i =0; i<4;i++){

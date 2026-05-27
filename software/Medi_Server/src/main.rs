@@ -1,9 +1,15 @@
 use serialport::SerialPort;
 use std::io;
 use std::time::Duration;
-
+use std::{thread, time};
 //use Medi
 mod MEDI;
+
+pub enum answer {
+    Next,
+    None,
+    Ping,
+}
 
 fn main() {
     let port_name = "COM9"; // Use "COM3" on Windows
@@ -40,6 +46,8 @@ fn main() {
                 port.write_all(&[msg]).expect("Write failed!");
                 println!("Sent: {:?}", msg);
 
+                thread::sleep(time::Duration::from_millis(5000)); // waits a little for answer 
+
                 let mut buffer: [u8; 128] = [0; 128];
                 match port.read(&mut buffer) {
                     Ok(bytes_read) => {
@@ -63,6 +71,7 @@ fn main() {
 
                 for i in 0..100 {
                     let msg = song.next_event();
+                    send_message(&mut port, &msg);
                     print!("Sent: {:?} \n ", msg);
                 }
             }
@@ -88,4 +97,15 @@ pub fn receive_message(port: &mut Box<dyn SerialPort>) -> Vec<u8> {
         Ok(n) => buffer[..n].to_vec(),
         Err(_) => Vec::new(),
     }
+}
+
+pub fn handle_answer(answer: Vec<u8>) -> answer {
+    if answer.len() > 0 {
+        match answer[0] {
+            0x04 => answer::Next,
+            0x86 => answer::Ping,
+            _ => answer::None,
+        };
+    }
+    answer::None // retuns none is no message is heard
 }
