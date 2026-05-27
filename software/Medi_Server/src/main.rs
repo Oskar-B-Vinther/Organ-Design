@@ -64,9 +64,9 @@ fn main() {
 
             "play" => {
                 let timebytes = song.timeing.to_be_bytes().to_vec(); // converts to bytes
-                let timing = vec![0x51,timebytes[0],timebytes[1]];
+                let timing = vec![0x51, timebytes[0], timebytes[1]];
 
-                send_message(&mut port,&timing); // Starts the song
+                send_message(&mut port, &timing); // Starts the song
 
                 for i in 0..100 {
                     let msg = song.next_event();
