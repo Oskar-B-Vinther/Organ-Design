@@ -10,7 +10,7 @@ use std::vec;
 pub struct song {
     bytes: Vec<u8>,
     readindex: usize,
-    pub timeing: u15,
+    pub timeing: u16,
 }
 
 impl song {
@@ -26,6 +26,8 @@ impl song {
                 panic!()
             }
         };
+
+       let timeing: u16 =  timeing.into(); // convert u15 to u16
 
         let readindex = 0;
         song {
@@ -51,13 +53,10 @@ impl song {
                 }
                 MidiMessage::NoteOn { key, vel } => {
                     if vel == 0 {
-                       vec![0x90 as u8, key.as_int() as u8]
+                        vec![0x90 as u8, key.as_int() as u8]
                     } else {
                         vec![0x80 as u8, key.as_int() as u8]
                     }
-
-                    
-                    
                 }
                 _ => {
                     vec![0x00 as u8]

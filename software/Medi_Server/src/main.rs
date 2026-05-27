@@ -63,11 +63,10 @@ fn main() {
             }
 
             "play" => {
-                //let time = slice_as_int(song.timeing);
-                //  to_be_bytes().to_vec();
+                let timebytes = song.timeing.to_be_bytes().to_vec(); // converts to bytes
+                let timing = vec![0x51,timebytes[0],timebytes[1]];
 
-                // println!("{time}");
-                let timing = vec![0x51];
+                send_message(&mut port,&timing); // Starts the song
 
                 for i in 0..100 {
                     let msg = song.next_event();

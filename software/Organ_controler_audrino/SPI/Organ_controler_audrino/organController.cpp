@@ -4,11 +4,14 @@ SceduledEvent::SceduledEvent(){
       for (int i = 0;i<4;i++) {
          config[i] = {0x00}; 
       }
-      Deltatime = 0; 
-      freash = true;
+    freash = true;
 
-      newtempo = 0;
-      changeTempo = false;  
+    
+      // not used
+      Deltatime = 0; 
+      
+
+
    }
 
 
@@ -66,8 +69,8 @@ switch (infobyte){
 
       break; 
 
-    case 0x51: // medi set tempo
-
+    case 0x51: // medi set tempo and start
+     TimingEvent()
       break;
 
     default: // FatalSerial error as the type of message was not requrenized. 
@@ -172,6 +175,14 @@ void organController::MediEvent(bool onOFF) {
         Serial.write(0x04); // indicatres to the server that the next event can be sent
       }
       
+}
+
+void organController::TimingEvent() {
+byte time_one = Serial.read();
+byte time_two = Serial.read();
+int time = (int)(time_one << 8) | time_two;
+bpm = time; 
+StartRead = true; 
 }
 
 
