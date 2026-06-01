@@ -16,36 +16,25 @@ organController pipeOrgan(
   
 void setup() {
 pipeOrgan.start();
-
+//pipeOrgan.printState();
 
 // Set a "test" config. 
 
-  
- pipeOrgan.StartRead = false; 
+ pipeOrgan.StartRead = true; 
 
-
-
+  for (int i = 0; i<32;i++){
+        for (byte j = 0;j<4;j++){
+        pipeOrgan.events[i].config[j] = j;
+        }
+        pipeOrgan.events[i].Deltatime = 10000000;
+    }
 }
 
 void loop() {
  //------------// change the medi config
-pipeOrgan.readNextEvent();
+ pipeOrgan.readNextEvent();
 
-    delay(1000);
-    for(int i =0; i<4;i++){
-    pipeOrgan.config[i] = pipeOrgan.fullConst;
-   }
-   pipeOrgan.loadManual();
-   pipeOrgan.set();
-
-
-    delay(1000);
- //  pipeOrgan.clear();
-   pipeOrgan.loadManual();
-   pipeOrgan.set();
-
-
-    if ( pipeOrgan.StartRead ){
+    if (pipeOrgan.StartRead ){
     pipeOrgan.StartRead = false;
 
     pipeOrgan.load();
@@ -63,4 +52,7 @@ static void fast_latch(){
     pipeOrgan.load();
     Timer1.initialize(pipeOrgan.events[pipeOrgan.readIndex].Deltatime);
     Timer1.attachInterrupt(fast_latch);
+
+    //pipeOrgan.printState();
+
   }

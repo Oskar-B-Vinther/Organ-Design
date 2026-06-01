@@ -15,7 +15,7 @@ class SceduledEvent {
       int newtempo; 
       SceduledEvent();
 };
-
+//-------------------------------------------------------------------//
 class organController {
  public:
    byte config[4] = {0xFF};  // there are medinotes, which are aviliable on my organ. I only have 32 values EI. 8 x 4 = 32. 
@@ -25,8 +25,8 @@ class organController {
    byte readIndex;
    SceduledEvent events[32];
 
-   byte clearConst = 0x00;        // All pins LOW (0)
-   byte fullConst  = 0xFF;        // All pins HIGH (255)
+  byte clearConst = 0x00;        // All pins LOW (0)
+  byte fullConst  = 0xFF;        // All pins HIGH (255)
    
 // controler pins  // hardcoded 
    int latchPin;
@@ -57,6 +57,10 @@ class organController {
     //static void fast_latch(); // latch wich use hardware manipulation to quicly flip the pin
     void clear(); // changes all notes to off same as setting all medi 0-128 to false. 
     int Set_Medi_Note(int note, bool state,int time);
+
+
+    //debug
+   void printState();
 
 };
 

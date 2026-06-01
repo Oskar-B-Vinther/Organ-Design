@@ -2,16 +2,11 @@
 
 SceduledEvent::SceduledEvent(){
       for (int i = 0;i<4;i++) {
-         config[i] = {0x00}; 
+         config[i] = {0xFF}; 
       }
     freash = true;
-
-    
       // not used
       Deltatime = 0; 
-      
-
-
    }
 
 
@@ -70,7 +65,7 @@ switch (infobyte){
       break; 
 
     case 0x51: // medi set tempo and start
-     TimingEvent()
+     TimingEvent();
       break;
 
     default: // FatalSerial error as the type of message was not requrenized. 
@@ -147,8 +142,10 @@ return 0;
 
 // functions to maanges the idex of the event buffer.
 void organController::nextReadIndex() {
-readIndex = (readIndex+1) %32;
+readIndex = (readIndex+1) % 32;
+Serial.print(readIndex);
 }
+
 
 void organController::nextWriteIndex() {
 writeIndex = (writeIndex+1) %32;
@@ -185,7 +182,21 @@ bpm = time;
 StartRead = true; 
 }
 
-
+void organController::printState(){
+  for (int i = 0;i<32;i++){
+      Serial.print(events[i].config[0]);
+      Serial.print(" , ");
+      Serial.print(events[i].config[1]);
+      Serial.print(" , ");
+      Serial.print(events[i].config[2]);
+      Serial.print(" , ");
+      Serial.print(events[i].config[3]);
+      Serial.print("\n");
+  }
+  Serial.print("\n");
+  Serial.print("\n");
+  Serial.print("\n");
+}
 
 
 
