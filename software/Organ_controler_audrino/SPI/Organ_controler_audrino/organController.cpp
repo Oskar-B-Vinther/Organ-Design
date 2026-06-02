@@ -143,7 +143,6 @@ return 0;
 // functions to maanges the idex of the event buffer.
 void organController::nextReadIndex() {
 readIndex = (readIndex+1) % 32;
-Serial.print(readIndex);
 }
 
 
@@ -171,7 +170,6 @@ void organController::MediEvent(bool onOFF) {
       if (!events[(writeIndex+1)%32].freash){
         Serial.write(0x04); // indicatres to the server that the next event can be sent
       }
-      
 }
 
 void organController::TimingEvent() {

@@ -8,6 +8,7 @@ mod MEDI;
 pub enum answer {
     Next,
     None,
+    NoAnswer,
     Ping,
 }
 
@@ -49,27 +50,6 @@ fn main() {
                 thread::sleep(time::Duration::from_millis(1000)); // waits a little for answer 
 
                 let answer = handle_answer(receive_message(&mut port));
-
-                match answer {
-                    answer::Ping => println!("answered"),
-                    answer::None => println!("no answer"),
-                    _ => panic!("# -conflicting messages"),
-                }
-
-                /*
-                let mut buffer: [u8; 128] = [0; 128];
-                match port.read(&mut buffer) {
-                    Ok(bytes_read) => {
-                        let data = &buffer[..bytes_read];
-                        println!("Received: {:?}", data);
-                    }
-
-                    Err(e) if e.kind() == io::ErrorKind::TimedOut => {
-                        eprintln!("Read timed out!");
-                    }
-                    Err(e) => eprintln!("Error reading: {:?}", e),
-                }
-                */
             }
 
             "play" => {
@@ -109,12 +89,18 @@ pub fn receive_message(port: &mut Box<dyn SerialPort>) -> Vec<u8> {
 }
 
 pub fn handle_answer(answer: Vec<u8>) -> answer {
-    if answer.len() > 0 {
-        match answer[0] {
-            0x04 => answer::Next,
-            0x86 => answer::Ping,
-            _ => answer::None,
-        };
+    if answer.is_empty() {
+        return answer::NoAnswer;
     }
-    answer::None // retuns none is no message is heard
+
+    println!("test: {}", answer[0]);
+
+    match answer[0] {
+        0x04 => answer::Next,
+        0x86 => {
+            println!("audiono pinged");
+            answer::Ping
+        }
+        _ => answer::None,
+    }
 }
