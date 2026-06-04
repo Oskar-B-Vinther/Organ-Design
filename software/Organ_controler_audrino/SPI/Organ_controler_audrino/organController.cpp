@@ -49,15 +49,15 @@ void organController::readNextEvent(){
 byte infobyte = Serial.read();
 switch (infobyte){
     case 0x01: // ping
-    Serial.write(0x86); //  respons back. 
+      Serial.write(0x86); //  respons back. 
       break;
 
     case 0x80: // Medi on
-    MediEvent(1); // reads the next bytes as if they are "on" medi packet
+      MediEvent(1); // reads the next bytes as if they are "on" medi packet
       break; 
 
     case 0x90: // Medi off
-     MediEvent(1); // reads the next bytes as if they are "off" medi packet
+      MediEvent(1); // reads the next bytes as if they are "off" medi packet
       break; 
 
     case 0x2F: // medi all clear
@@ -65,7 +65,8 @@ switch (infobyte){
       break; 
 
     case 0x51: // medi set tempo and start
-     TimingEvent();
+      clearBuffer();
+      TimingEvent();
       break;
 
     default: // FatalSerial error as the type of message was not requrenized. 
@@ -142,6 +143,7 @@ return 0;
 
 // functions to maanges the idex of the event buffer.
 void organController::nextReadIndex() {
+events[readIndex].freash = true;
 readIndex = (readIndex+1) % 32;
 }
 
@@ -196,6 +198,18 @@ void organController::printState(){
   Serial.print("\n");
 }
 
+
+
+  void organController::clearBuffer(){
+  for (int i = 0;i<32;i++){
+    events[i].freash = true;
+
+    for (int j = 0; j<4;j++){
+      events[i].config[j] = 0x00;
+    }
+  }
+
+}
 
 
 

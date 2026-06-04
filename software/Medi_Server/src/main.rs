@@ -2,6 +2,8 @@ use serialport::SerialPort;
 use std::io;
 use std::time::Duration;
 use std::{thread, time};
+
+use crate::answer::Next;
 //use Medi
 mod MEDI;
 
@@ -55,13 +57,22 @@ fn main() {
             "play" => {
                 let timebytes = song.timeing.to_be_bytes().to_vec(); // converts to bytes
                 let timing = vec![0x51, timebytes[0], timebytes[1]];
-
                 send_message(&mut port, &timing); // Starts the song
 
-                for i in 0..100 {
+                // fills the buffer with some
+                for i in 0..20 {
                     let msg = song.next_event();
                     send_message(&mut port, &msg);
                     print!("Sent: {:?} \n ", msg);
+                }
+
+                let playing = true;
+                while playing {
+                    let reply = handle_answer(receive_message(&mut port));
+                    match reply {
+                        answer::Next => send_message(&mut port, &song.next_event()),
+                        _ => print!("INTERUPTED PLAYING!!!!"),
+                    }
                 }
             }
 
