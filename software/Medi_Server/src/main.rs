@@ -47,7 +47,7 @@ fn main() {
             "ping" => {
                 let msg = 0x01 as u8;
                 port.write_all(&[msg]).expect("Write failed!");
-                println!("Sent: {:?}", msg);
+                //println!("Sent: {:?}", msg);
 
                 thread::sleep(time::Duration::from_millis(1000)); // waits a little for answer 
 
@@ -68,10 +68,15 @@ fn main() {
 
                 let playing = true;
                 while playing {
+                    thread::sleep(time::Duration::from_millis(5));
                     let reply = handle_answer(receive_message(&mut port));
                     match reply {
-                        answer::Next => send_message(&mut port, &song.next_event()),
-                        _ => print!("INTERUPTED PLAYING!!!!"),
+                        answer::Next => {
+                            let msg = song.next_event();
+                            println!("Sent: {:?}", msg);
+                            send_message(&mut port, &msg);
+                        }
+                        _ => println!("INTERUPTED PLAYING!!!!"),
                     }
                 }
             }
@@ -104,12 +109,12 @@ pub fn handle_answer(answer: Vec<u8>) -> answer {
         return answer::NoAnswer;
     }
 
-    println!("test: {}", answer[0]);
+    println!("revived: {}", answer[0]);
 
     match answer[0] {
         0x04 => answer::Next,
         0x86 => {
-            println!("audiono pinged");
+            println!("audiono aswered");
             answer::Ping
         }
         _ => answer::None,

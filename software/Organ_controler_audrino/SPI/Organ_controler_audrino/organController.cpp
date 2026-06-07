@@ -4,11 +4,10 @@ SceduledEvent::SceduledEvent(){
       for (int i = 0;i<4;i++) {
          config[i] = {0xFF}; 
       }
-    freash = true;
+    freash = false;
       // not used
       Deltatime = 0; 
-   }
-
+}
 
 organController::organController(int powerPin,int latchPin, int organMedistart, int organMedistop) {
   this->powerPin = powerPin;
@@ -25,63 +24,71 @@ organController::organController(int powerPin,int latchPin, int organMedistart, 
 
 void organController::start() {
  Serial.begin(9600);
-//-----// define pins
+  //-----// define pins
   // define SPI: 
- SPI.begin();
- SPI.beginTransaction(SPISettings(4000000, LSBFIRST, SPI_MODE0));
+  SPI.begin();
+  SPI.beginTransaction(SPISettings(4000000, LSBFIRST, SPI_MODE0));
 
-// define lacth pin: 
+  // define lacth pin: 
   pinMode(latchPin, OUTPUT);
 
-// define power pin to solinodes: 
+  // define power pin to solinodes: 
   pinMode(powerPin, OUTPUT);
 
-//-----// reset system
+  //-----// reset system
   clear();
   load();
   set();
 
-// Turn on power to the system
+  // Turn on power to the system
   digitalWrite(powerPin, HIGH);
 }
 
+ void organController::update(){
+  readNextEvent();
+    if (!IsBufferFilled()){
+      Serial.write(0x04);
+    }
+}
+
+
 void organController::readNextEvent(){
-byte infobyte = Serial.read();
-switch (infobyte){
-    case 0x01: // ping
-      Serial.write(0x86); //  respons back. 
-      break;
+  byte infobyte = Serial.read();
+  switch (infobyte){
+      case 0x01: // ping
+        Serial.write(0x86); //  respons back. 
+        break;
 
-    case 0x80: // Medi on
-      MediEvent(1); // reads the next bytes as if they are "on" medi packet
-      break; 
+      case 0x80: // Medi on
+        MediEvent(1); // reads the next bytes as if they are "on" medi packet
+        break; 
 
-    case 0x90: // Medi off
-      MediEvent(1); // reads the next bytes as if they are "off" medi packet
-      break; 
+      case 0x90: // Medi off
+        MediEvent(1); // reads the next bytes as if they are "off" medi packet
+        break; 
 
-    case 0x2F: // medi all clear
+      case 0x2F: // medi all clear
 
-      break; 
+        break; 
 
-    case 0x51: // medi set tempo and start
-      clearBuffer();
-      TimingEvent();
-      break;
+      case 0x51: // medi set tempo and start
+        clearBuffer();
+        TimingEvent();
+        break;
 
-    default: // FatalSerial error as the type of message was not requrenized. 
-    //Serial.write(0x02);
-      break; 
-      }
-  }
+      default: // FatalSerial error as the type of message was not requrenized. 
+      //Serial.write(0x02);
+        break; 
+        }
+}
 
 
 // pushes whatever is in the config out to the organs internal memory. 
 void organController::load() {
-SceduledEvent Event = events[readIndex];
- for (int i = 0; i<4;i++){
-   SPI.transfer(Event.config[i]);
-  }
+  SceduledEvent Event = events[readIndex];
+  for (int i = 0; i<4;i++){
+    SPI.transfer(Event.config[i]);
+    }
 }
 
 void organController::loadManual(){
@@ -97,12 +104,6 @@ void organController::set() {
   //delay(1);
   digitalWrite(latchPin, HIGH);
 }
-/*
-void organController::set(long triggertime){
-  Timer1.initialize(triggertime); 
-  Timer1.attachInterrupt(fast_latch); 
-}
-*/
 
 // Set the whole config to "all off" sate
 void organController::clear() {
@@ -119,39 +120,37 @@ void organController::clear() {
 //-------------//
 int organController::Set_Medi_Note(int note, bool state, int time ){ // note is medi 0-128. and state is "on" or "off" EI. 1 or 0.  
 
-// error handling tet of our of range
-if (note >organMedistop ){
-return 1; 
-} 
-if (note < organMedistart ){
-return 2; 
-} 
-//----------//
-note = note-organMedistart; // shift the range down so its from 0-32
-byte ByteN = note / 8; // whole number division to get the byte in which the desirreed change is in. 
+  // error handling tet of our of range
+  if (note >organMedistop ){
+  return 1; 
+  } 
+  if (note < organMedistart ){
+  return 2; 
+  } 
+  //----------//
+  note = note-organMedistart; // shift the range down so its from 0-32
+  byte ByteN = note / 8; // whole number division to get the byte in which the desirreed change is in. 
 
-byte part = events[readIndex].config[ByteN]; 
-if (state){ // checks if the not should be set to on or off. 
-part = bitSet(part,note % 8); // here the modulo function is used to get the excat possistion of the bit in the specific byte. 
-} else {
-part = bitClear(part,note % 8);
+  byte part = events[readIndex].config[ByteN]; 
+  if (state){ // checks if the not should be set to on or off. 
+  part = bitSet(part,note % 8); // here the modulo function is used to get the excat possistion of the bit in the specific byte. 
+  } else {
+  part = bitClear(part,note % 8);
+  }
+  events[readIndex].config[ByteN] = part; // applys the change to the organ config. 
+  return 0; 
 }
-events[readIndex].config[ByteN] = part; // applys the change to the organ config. 
-return 0; 
-}
-
 
 // functions to maanges the idex of the event buffer.
 void organController::nextReadIndex() {
-events[readIndex].freash = true;
-readIndex = (readIndex+1) % 32;
+ 
+  events[readIndex].freash = true;
+  readIndex = (readIndex+1) % 32;
 }
-
 
 void organController::nextWriteIndex() {
-writeIndex = (writeIndex+1) %32;
+  writeIndex = (writeIndex+1) %32;
 }
-
 
 
 void organController::MediEvent(bool onOFF) {
@@ -168,41 +167,45 @@ void organController::MediEvent(bool onOFF) {
       }
       
        Set_Medi_Note(MediNote,onOFF,time);
-
-      if (!events[(writeIndex+1)%32].freash){
-        Serial.write(0x04); // indicatres to the server that the next event can be sent
-      }
 }
+
+bool organController::IsBufferFilled(){
+  bool filled = true;
+  for (int i = 0; i<32;i++){
+    if (events[i].freash) {
+      filled = false;
+    }
+  }
+}
+
 
 void organController::TimingEvent() {
-byte time_one = Serial.read();
-byte time_two = Serial.read();
-int time = (int)(time_one << 8) | time_two;
-bpm = time; 
-StartRead = true; 
-}
-
-void organController::printState(){
-  for (int i = 0;i<32;i++){
-      Serial.print(events[i].config[0]);
-      Serial.print(" , ");
-      Serial.print(events[i].config[1]);
-      Serial.print(" , ");
-      Serial.print(events[i].config[2]);
-      Serial.print(" , ");
-      Serial.print(events[i].config[3]);
-      Serial.print("\n");
+  byte time_one = Serial.read();
+  byte time_two = Serial.read();
+  int time = (int)(time_one << 8) | time_two;
+  bpm = time; 
+  StartRead = true; 
   }
-  Serial.print("\n");
-  Serial.print("\n");
-  Serial.print("\n");
+
+  void organController::printState(){
+    for (int i = 0;i<32;i++){
+        Serial.print(events[i].config[0]);
+        Serial.print(" , ");
+        Serial.print(events[i].config[1]);
+        Serial.print(" , ");
+        Serial.print(events[i].config[2]);
+        Serial.print(" , ");
+        Serial.print(events[i].config[3]);
+        Serial.print("\n");
+    }
+    Serial.print("\n");
+    Serial.print("\n");
+    Serial.print("\n");
 }
 
-
-
-  void organController::clearBuffer(){
+void organController::clearBuffer(){
   for (int i = 0;i<32;i++){
-    events[i].freash = true;
+    events[i].freash = false;
 
     for (int j = 0; j<4;j++){
       events[i].config[j] = 0x00;
@@ -210,6 +213,9 @@ void organController::printState(){
   }
 
 }
+
+
+
 
 
 

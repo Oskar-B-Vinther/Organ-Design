@@ -32,7 +32,7 @@ pipeOrgan.start();
 
 void loop() {
  //------------// change the medi config
- pipeOrgan.readNextEvent();
+ pipeOrgan.update();
 
     if (pipeOrgan.StartRead ){
     pipeOrgan.StartRead = false;

@@ -50,6 +50,8 @@ class organController {
     void MediEvent(bool onOFF);
     void TimingEvent();
     void clearBuffer();
+    bool IsBufferFilled();
+    void update(); 
 
     void load();
     void loadManual();
