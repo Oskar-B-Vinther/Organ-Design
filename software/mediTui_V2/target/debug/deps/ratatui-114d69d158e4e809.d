@@ -1,0 +1,10 @@
+C:\Users\oskar\Desktop\Git\Organ-Design\software\mediTui_V2\target\debug\deps\ratatui-114d69d158e4e809.d: C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\lib.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\prelude.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets\stateful_widget_ref.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets\widget_ref.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\init.rs
+
+C:\Users\oskar\Desktop\Git\Organ-Design\software\mediTui_V2\target\debug\deps\libratatui-114d69d158e4e809.rmeta: C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\lib.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\prelude.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets\stateful_widget_ref.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets\widget_ref.rs C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\init.rs
+
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\lib.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\prelude.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets\stateful_widget_ref.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\widgets\widget_ref.rs:
+C:\Users\oskar\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ratatui-0.30.2\src\init.rs:

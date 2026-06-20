@@ -4,9 +4,9 @@ SceduledEvent::SceduledEvent(){
       for (int i = 0;i<4;i++) {
          config[i] = {0xFF}; 
       }
-    freash = false;
+    freash =false;
       // not used
-      Deltatime = 0; 
+      Deltatime = 1000; 
 }
 
 organController::organController(int powerPin,int latchPin, int organMedistart, int organMedistop) {
@@ -176,6 +176,7 @@ bool organController::IsBufferFilled(){
       filled = false;
     }
   }
+  return filled;
 }
 
 

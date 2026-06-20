@@ -15,32 +15,25 @@ organController pipeOrgan(
           );
   
 void setup() {
-pipeOrgan.start();
-//pipeOrgan.printState();
-
-// Set a "test" config. 
-
- pipeOrgan.StartRead = true; 
-
-  for (int i = 0; i<32;i++){
-        for (byte j = 0;j<4;j++){
-        pipeOrgan.events[i].config[j] = j;
-        }
-        pipeOrgan.events[i].Deltatime = 10000000;
-    }
+    pipeOrgan.start();
+    //pipeOrgan.printState();
+    // Set a "test" config. 
+    pipeOrgan.StartRead = true; 
 }
 
 void loop() {
  //------------// change the medi config
- pipeOrgan.update();
+     pipeOrgan.update();
+    Serial.write(0x04);
+
+
+
 
     if (pipeOrgan.StartRead ){
     pipeOrgan.StartRead = false;
-
     pipeOrgan.load();
     fast_latch();
     }
-
 }
 
 // needs to be as the function need to be static while still haveing acsess to pipeorgan metods- 

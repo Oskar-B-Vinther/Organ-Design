@@ -3,7 +3,7 @@ use std::io;
 use std::time::Duration;
 use std::{thread, time};
 
-use crate::answer::Next;
+
 //use Medi
 mod MEDI;
 
@@ -23,7 +23,7 @@ fn main() {
         .open()
         .expect("Failed to open port");
 
-    let mut song = MEDI::song::new(
+    let mut song: MEDI::song = MEDI::song::new(
         "C:\\Users\\oskar\\Desktop\\Git\\Organ-Design\\software\\Medi_Server\\Medi.mid",
     );
 
@@ -69,6 +69,7 @@ fn main() {
                 let playing = true;
                 while playing {
                     thread::sleep(time::Duration::from_millis(5));
+
                     let reply = handle_answer(receive_message(&mut port));
                     match reply {
                         answer::Next => {
@@ -76,7 +77,10 @@ fn main() {
                             println!("Sent: {:?}", msg);
                             send_message(&mut port, &msg);
                         }
-                        _ => println!("INTERUPTED PLAYING!!!!"),
+                        answer::NoAnswer => {
+                            println!("noMessage");
+                        }
+                        _ => println!("other input"),
                     }
                 }
             }
@@ -114,7 +118,7 @@ pub fn handle_answer(answer: Vec<u8>) -> answer {
     match answer[0] {
         0x04 => answer::Next,
         0x86 => {
-            println!("audiono aswered");
+            println!("audiono aswered ping");
             answer::Ping
         }
         _ => answer::None,

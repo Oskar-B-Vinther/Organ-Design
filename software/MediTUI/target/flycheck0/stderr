@@ -1,13 +1,63 @@
-error: rustc 1.87.0 is not supported by the following packages:
-  darling@0.23.0 requires rustc 1.88.0
-  darling_core@0.23.0 requires rustc 1.88.0
-  darling_macro@0.23.0 requires rustc 1.88.0
-  instability@0.3.12 requires rustc 1.88
-  instability@0.3.12 requires rustc 1.88
-  instability@0.3.12 requires rustc 1.88
-  time@0.3.47 requires rustc 1.88.0
-  time-core@0.1.8 requires rustc 1.88.0
-Either upgrade rustc or select compatible dependency versions with
-`cargo update <name>@<current-ver> --precise <compatible-ver>`
-where `<compatible-ver>` is the latest version supporting rustc 1.87.0
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   0.350119100s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint: fingerprint error for MediTUI v0.1.0 (C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI)/Check { test: false }/TargetInner { name: "MediTUI", doc: true, ..: with_path("C:\\Users\\oskar\\Desktop\\Git\\Organ-Design\\software\\MediTUI\\src\\main.rs", Edition2024) }
+   0.350179400s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI\target\debug\.fingerprint\MediTUI-b82a22f0abb9daef\bin-MediTUI`
 
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.397194800s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint: fingerprint error for MediTUI v0.1.0 (C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI)/Check { test: true }/TargetInner { name: "MediTUI", doc: true, ..: with_path("C:\\Users\\oskar\\Desktop\\Git\\Organ-Design\\software\\MediTUI\\src\\main.rs", Edition2024) }
+   0.397217300s  INFO prepare_target{force=false package_id=MediTUI v0.1.0 (C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI) target="MediTUI"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI\target\debug\.fingerprint\MediTUI-e518e07ee8d9a6db\test-bin-MediTUI`
+
+Caused by:
+    The system cannot find the file specified. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking MediTUI v0.1.0 (C:\Users\oskar\Desktop\Git\Organ-Design\software\MediTUI)
+error: could not compile `MediTUI` (bin "MediTUI") due to 13 previous errors; 2 warnings emitted
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `MediTUI` (bin "MediTUI" test) due to 13 previous errors; 2 warnings emitted
