@@ -4,6 +4,7 @@ use std::time::Duration;
 use std::{thread, time};
 
 use crate::MEDI::song;
+use crate::answer::Next;
 
 //use Medi
 mod MEDI;
@@ -28,16 +29,24 @@ pub enum answer {
     Ping,
 }
 
+pub enum message {
+    Next_event(Vec<u8>),
+    Ping,
+    None
+}
+
+
 struct App {
-    //dynamic states
-    isplaying: bool,
-    should_send_next_event: bool,
 
     port_name: String,
     baud_rate: u32,
+
     port: Box<dyn SerialPort>,
 
     song: MEDI::song,
+    isplaying: bool,
+
+    next_message: message,
 }
 
 impl App {
@@ -53,6 +62,7 @@ impl App {
             .timeout(Duration::from_millis(1000)) // Set a read timeout
             .open()
             .expect("Failed to open port");
+        let next_message = message::None;
 
         Self {
             song,
@@ -60,7 +70,7 @@ impl App {
             port_name,
             baud_rate,
             isplaying,
-            should_send_next_event,
+            next_message,
         }
     }
 
@@ -78,7 +88,8 @@ impl App {
         }
     }
 
-    pub fn handle_answer(&mut self, answer: Vec<u8>) -> answer {
+    pub fn revice_message_and_update_sate(&mut self, answer: Vec<u8>) -> answer {
+
         if answer.is_empty() {
             return answer::NoAnswer;
         }
@@ -87,7 +98,7 @@ impl App {
 
         match answer[0] {
             0x04 => {
-                self.should_send_next_event = true;
+                self.next_message = message::Next_event(vec![1,2,3]);
                 answer::Next
             }
 
@@ -99,8 +110,13 @@ impl App {
         }
     }
 
+    
+
+
+
+
     pub fn update(&mut self) {
         let response = self.receive_message();
-        self.handle_answer(response);
+        self.revice_message_and_update_sate(response);
     }
 }

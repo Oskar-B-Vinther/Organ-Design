@@ -5,12 +5,24 @@ use midly::num;
 use midly::num::u15;
 use std::fs;
 use std::io;
+//use std::ops::Complete;
+use std::ops::ControlFlow::Break;
 use std::vec;
+
+use crate::message::Next_event;
+
+#[derive(Clone)]
+pub struct organ {
+    lower_bound: i32,
+    higher_bound: i32,
+    last_config: Vec<u8>,
+}
 
 pub struct song {
     bytes: Vec<u8>,
     readindex: usize,
     pub timeing: u16,
+    organ_config: organ,
 }
 
 impl song {
@@ -27,13 +39,25 @@ impl song {
             }
         };
 
-       let timeing: u16 =  timeing.into(); // convert u15 to u16
+        let timeing: u16 = timeing.into(); // convert u15 to u16
 
         let readindex = 0;
+
+        let lower_bound = 32;
+        let higher_bound = 64;
+        let last_config = vec![0x00, 0x00, 0x00, 0x00];
+
+        let organ_config: organ = organ {
+            lower_bound,
+            higher_bound,
+            last_config,
+        };
+
         song {
             bytes,
             readindex,
             timeing,
+            organ_config,
         }
     }
 
@@ -41,6 +65,7 @@ impl song {
         let next_event: Vec<u8> = Vec::new();
 
         let smf = Smf::parse(&self.bytes).unwrap();
+
         let next_event = smf.tracks[0][self.readindex];
 
         let event = next_event.kind;
@@ -75,5 +100,25 @@ impl song {
 
         self.readindex += 1;
         note_event
+    }
+
+    pub fn next_config(&mut self) -> Vec<u8> {
+        let next_config: Vec<u8> = self.organ_config.last_config.clone();
+
+        let mut should_terminate = false;
+        while !should_terminate {
+            let mut next_event = self.next_event();
+
+            should_terminate = true;
+            for i in next_event {
+                if i == !0x00 {
+                    should_terminate = false;
+                }
+            }
+        }
+
+        self.organ_config.last_config = next_config.clone();
+
+        next_config
     }
 }
