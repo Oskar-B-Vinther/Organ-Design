@@ -103,14 +103,25 @@ impl song {
     }
 
     pub fn next_config(&mut self) -> Vec<u8> {
-        let next_config: Vec<u8> = self.organ_config.last_config.clone();
+        let mut next_config: Vec<u8> = self.organ_config.last_config.clone();
 
         let mut should_terminate = false;
         while !should_terminate {
             let mut next_event = self.next_event();
 
+            let note_bytes = vec![next_event[1], next_event[2]];
+            let value = i32::from_be_bytes(note_bytes.try_into().unwrap());
+
+            next_config = set_medinote_in_config();
+
+            let delta_time = vec![
+                next_config[2],
+                next_config[3],
+                next_config[4],
+                next_config[5],
+            ];
             should_terminate = true;
-            for i in next_event {
+            for i in delta_time {
                 if i == !0x00 {
                     should_terminate = false;
                 }
@@ -120,5 +131,22 @@ impl song {
         self.organ_config.last_config = next_config.clone();
 
         next_config
+    }
+
+    fn set_medinote_in_config(self, medi_note: i32, on_off: bool, config: &mut Vec<u8>) -> Vec<u8> {
+        let bourdy_fixed_value =
+            medi_note - (self.organ_config.higher_bound - self.organ_config.lower_bound);
+        let byte_number = (bourdy_fixed_value / 4 as i32) as usize;
+        let byte_bit_number = (bourdy_fixed_value % 8) as u8;
+
+        config[byte_number] = Self::set_bit(config[byte_number], byte_bit_number, on_off);
+
+        return config.to_vec();
+    }
+
+    fn set_bit(x: u8, idx: u8, b: bool) -> u8 {
+        let mask = !(1 << idx);
+        let flag = (b as u8) << idx;
+        x & mask | flag
     }
 }
