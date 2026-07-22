@@ -65,11 +65,9 @@ impl App {
             .timeout(Duration::from_millis(1000)) // Set a read timeout
             .open()
             .expect("Failed to open port");
+        }
 
-        
-        };
-
-        let next_message = message::None;
+        let mut next_message = message::None;
 
         Self {
             song,
@@ -80,23 +78,21 @@ impl App {
             next_message,
         }
 
-    }
+   
 
 
     fn try_oppening_port(&self) -> Port {
         let mut port_enum = match serialport::new(&self.port_name, self.baud_rate)
             .timeout(Duration::from_millis(1000)) // Set a read timeout
             .open()
-        {
+        
             Ok(port) => Port::some(port),
             Err(e) => {
                 println!("port could not open{}", e);
                 Port::none
             }
-
-
-
-    }
+        }
+    
 
     pub fn send_message(&mut self, data: &[u8]) {
         println!("Send Data{:?}", data);
