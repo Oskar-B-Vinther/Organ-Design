@@ -32,12 +32,15 @@ pub enum answer {
 pub enum message {
     Next_event(Vec<u8>),
     Ping,
-    None
+    None,
 }
 
+pub enum Port {
+    some(Box<dyn SerialPort>),
+    none,
+}
 
 struct App {
-
     port_name: String,
     baud_rate: u32,
 
@@ -62,6 +65,10 @@ impl App {
             .timeout(Duration::from_millis(1000)) // Set a read timeout
             .open()
             .expect("Failed to open port");
+
+        
+        };
+
         let next_message = message::None;
 
         Self {
@@ -72,9 +79,28 @@ impl App {
             isplaying,
             next_message,
         }
+
+    }
+
+
+    fn try_oppening_port(&self) -> Port {
+        let mut port_enum = match serialport::new(&self.port_name, self.baud_rate)
+            .timeout(Duration::from_millis(1000)) // Set a read timeout
+            .open()
+        {
+            Ok(port) => Port::some(port),
+            Err(e) => {
+                println!("port could not open{}", e);
+                Port::none
+            }
+
+
+
     }
 
     pub fn send_message(&mut self, data: &[u8]) {
+        println!("Send Data{:?}", data);
+
         if let Err(e) = self.port.write_all(data) {
             eprintln!("Failed to write to port: {}", e);
         }
@@ -89,7 +115,6 @@ impl App {
     }
 
     pub fn revice_message_and_update_sate(&mut self, answer: Vec<u8>) -> answer {
-
         if answer.is_empty() {
             return answer::NoAnswer;
         }
@@ -98,7 +123,7 @@ impl App {
 
         match answer[0] {
             0x04 => {
-                self.next_message = message::Next_event(vec![1,2,3]);
+                self.next_message = message::Next_event(vec![1, 2, 3]);
                 answer::Next
             }
 
@@ -109,11 +134,6 @@ impl App {
             _ => answer::None,
         }
     }
-
-    
-
-
-
 
     pub fn update(&mut self) {
         let response = self.receive_message();

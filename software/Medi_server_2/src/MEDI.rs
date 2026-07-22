@@ -110,9 +110,13 @@ impl song {
             let mut next_event = self.next_event();
 
             let note_bytes = vec![next_event[1], next_event[2]];
-            let value = i32::from_be_bytes(note_bytes.try_into().unwrap());
+            let medi_note = i32::from_be_bytes(note_bytes.try_into().unwrap());
+            let state = match next_event[0] {
+                0x09 => true,
+                0x08 => false,
+            };
 
-            next_config = set_medinote_in_config();
+            next_config = Self::set_medinote_in_config(&self, medi_note, state, &mut next_config);
 
             let delta_time = vec![
                 next_config[2],
@@ -133,7 +137,12 @@ impl song {
         next_config
     }
 
-    fn set_medinote_in_config(self, medi_note: i32, on_off: bool, config: &mut Vec<u8>) -> Vec<u8> {
+    fn set_medinote_in_config(
+        &self,
+        medi_note: i32,
+        on_off: bool,
+        config: &mut Vec<u8>,
+    ) -> Vec<u8> {
         let bourdy_fixed_value =
             medi_note - (self.organ_config.higher_bound - self.organ_config.lower_bound);
         let byte_number = (bourdy_fixed_value / 4 as i32) as usize;
