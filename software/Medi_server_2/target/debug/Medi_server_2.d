@@ -1,0 +1,1 @@
+C:\Users\oskar\Desktop\Organ\ projket\Organ-Design\software\Medi_server_2\target\debug\Medi_server_2.exe: C:\Users\oskar\Desktop\Organ\ projket\Organ-Design\software\Medi_server_2\src\MEDI.rs C:\Users\oskar\Desktop\Organ\ projket\Organ-Design\software\Medi_server_2\src\main.rs C:\Users\oskar\Desktop\Organ\ projket\Organ-Design\software\Medi_server_2\src\test.rs

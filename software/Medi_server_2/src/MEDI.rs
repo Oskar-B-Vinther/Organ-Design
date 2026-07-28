@@ -3,6 +3,7 @@ use midly::Smf;
 use midly::Timing;
 use midly::num;
 use midly::num::u15;
+use std::error;
 use std::fs;
 use std::io;
 //use std::ops::Complete;
@@ -23,6 +24,7 @@ pub struct song {
     readindex: usize,
     pub timeing: u16,
     organ_config: organ,
+    pub isplaying: bool,
 }
 
 impl song {
@@ -43,8 +45,8 @@ impl song {
 
         let readindex = 0;
 
-        let lower_bound = 32;
-        let higher_bound = 64;
+        let lower_bound = 40;
+        let higher_bound = lower_bound + 31;
         let last_config = vec![0x00, 0x00, 0x00, 0x00];
 
         let organ_config: organ = organ {
@@ -52,8 +54,10 @@ impl song {
             higher_bound,
             last_config,
         };
+        let isplaying = false;
 
         song {
+            isplaying,
             bytes,
             readindex,
             timeing,
@@ -65,6 +69,13 @@ impl song {
         let next_event: Vec<u8> = Vec::new();
 
         let smf = Smf::parse(&self.bytes).unwrap();
+
+        if self.readindex == smf.tracks[0].len() {
+            self.isplaying = false;
+            return vec![
+                0x00 as u8, 0x00 as u8, 0x00 as u8, 0x00 as u8, 0x00 as u8, 0x00 as u8, 0x00 as u8,
+            ];
+        }
 
         let next_event = smf.tracks[0][self.readindex];
 
@@ -84,13 +95,14 @@ impl song {
                     }
                 }
                 _ => {
-                    vec![0x00 as u8]
+                    vec![0x00 as u8, 0x00 as u8]
                 }
             },
             _ => {
-                vec![0x00 as u8]
+                vec![0x00 as u8, 0x00 as u8]
             }
         };
+
         let time = next_event.delta.as_int();
         let time_bytyfied = time.to_be_bytes().to_vec();
         note_event.push(time_bytyfied[0]);
@@ -104,32 +116,41 @@ impl song {
 
     pub fn next_config(&mut self) -> Vec<u8> {
         let mut next_config: Vec<u8> = self.organ_config.last_config.clone();
+        let mut first_play = true;
 
-        let mut should_terminate = false;
-        while !should_terminate {
+        'shouldterminate: loop {
             let mut next_event = self.next_event();
+            //println!("Config: {:?}", next_event);
 
-            let note_bytes = vec![next_event[1], next_event[2]];
-            let medi_note = i32::from_be_bytes(note_bytes.try_into().unwrap());
-            let state = match next_event[0] {
-                0x09 => true,
-                0x08 => false,
-            };
+            let delta_time = vec![next_event[2], next_event[3], next_event[4], next_event[5]];
 
-            next_config = Self::set_medinote_in_config(&self, medi_note, state, &mut next_config);
-
-            let delta_time = vec![
-                next_config[2],
-                next_config[3],
-                next_config[4],
-                next_config[5],
-            ];
-            should_terminate = true;
-            for i in delta_time {
-                if i == !0x00 {
-                    should_terminate = false;
+            if !self.isplaying {
+                self.readindex = 0;
+                panic!("done processing song");
+                break 'shouldterminate;
+            }
+            if !first_play {
+                for i in delta_time {
+                    if i != 0x00 {
+                        self.readindex = self.readindex - 1;
+                        break 'shouldterminate;
+                    }
                 }
             }
+
+            // let note_bytes = vec![0x00 as u8, 0x00 as u8, next_event[1], next_event[2]];
+            // let medi_note: i32 = i32::from_be_bytes(note_bytes.try_into().unwrap());
+            let medi_note: i32 = next_event[1] as i32;
+
+            let state = match next_event[0] {
+                0x90 => false,
+                0x80 => true,
+                0x00 => false,
+                _ => panic!("wired note type: {:?}", next_event[0]),
+            };
+
+            next_config = self.set_medinote_in_config(medi_note, state, &mut next_config);
+            first_play = false;
         }
 
         self.organ_config.last_config = next_config.clone();
@@ -138,15 +159,20 @@ impl song {
     }
 
     fn set_medinote_in_config(
-        &self,
+        &mut self,
         medi_note: i32,
         on_off: bool,
         config: &mut Vec<u8>,
     ) -> Vec<u8> {
-        let bourdy_fixed_value =
-            medi_note - (self.organ_config.higher_bound - self.organ_config.lower_bound);
-        let byte_number = (bourdy_fixed_value / 4 as i32) as usize;
-        let byte_bit_number = (bourdy_fixed_value % 8) as u8;
+        if (medi_note < self.organ_config.lower_bound || medi_note > self.organ_config.higher_bound)
+        {
+            return config.clone();
+        }
+
+        let bourdy_fixed_value = medi_note - self.organ_config.lower_bound;
+
+        let byte_number = (bourdy_fixed_value / 8 as i32) as usize;
+        let byte_bit_number = (7 - (bourdy_fixed_value % 8)) as u8;
 
         config[byte_number] = Self::set_bit(config[byte_number], byte_bit_number, on_off);
 
