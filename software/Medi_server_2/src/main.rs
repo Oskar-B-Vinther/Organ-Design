@@ -1,31 +1,19 @@
 use serialport::SerialPort;
 use std::time::Duration;
-use std::{io, io::BufRead, string};
-use std::{thread, time};
+use std::{thread, time, vec};
 
-use crate::mpsc::Receiver;
-use std::sync::mpsc;
+use crate::Port::some;
 
 mod MEDI;
 mod test;
 //use Medi
 
 fn main() {
-    let (tx, rx) = mpsc::channel::<String>();
-
-    std::thread::spawn(move || {
-        let stdin = std::io::stdin();
-
-        for line in stdin.lock().lines() {
-            tx.send(line.unwrap()).unwrap();
-        }
-    });
-
     let mut state_machine = App::new(
         "com9",
         "C:\\Users\\oskar\\Desktop\\Organ projket\\Organ-Design\\software\\Medi_server_2\\Medi.mid",
-        rx,
     );
+
     let quit_program = false;
 
     state_machine.song.isplaying = true;
@@ -36,12 +24,6 @@ fn main() {
     //let port_name = "COM9"; // Use "COM3" on Windows
 }
 
-
-
-
-
-
-
 pub enum answer {
     Next,
     None,
@@ -49,8 +31,10 @@ pub enum answer {
     Ping,
 }
 
+#[derive(Clone)]
 pub enum message {
     Next_event(Vec<u8>),
+    Start_Song(Vec<u8>),
     Ping,
     None,
 }
@@ -63,23 +47,20 @@ pub enum Port {
 struct App {
     port_name: String,
     baud_rate: u32,
-
-    rx: Receiver<String>,
     port: Port,
 
+    isplaying: bool,
     song: MEDI::song,
-
     next_message: message,
 }
 
 impl App {
-    pub fn new(port_name: &str, song_path: &str, rx: Receiver<String>) -> Self {
+    pub fn new(port_name: &str, song_path: &str) -> Self {
         let mut song: MEDI::song = MEDI::song::new(song_path);
 
         let port_name = port_name.to_string();
         let baud_rate = 9600;
         let isplaying = false;
-        let should_send_next_event = false;
 
         /*
         let mut port: Box<dyn SerialPort> = serialport::new(&port_name, baud_rate)
@@ -93,7 +74,7 @@ impl App {
         let mut next_message = message::None;
 
         Self {
-            rx,
+            isplaying,
             song,
             port,
             port_name,
@@ -159,7 +140,7 @@ impl App {
         }
     }
 
-    pub fn revice_message_and_update_sate(&mut self, answer: Vec<u8>) -> answer {
+    pub fn update_sate(&mut self, answer: Vec<u8>) -> answer {
         if answer.is_empty() {
             return answer::NoAnswer;
         }
@@ -168,8 +149,13 @@ impl App {
 
         match answer[0] {
             0x04 => {
-                self.next_message = message::Next_event(vec![1, 2, 3]);
-            answer::Next
+                self.next_message = message::Next_event(self.song.next_config());
+                match &self.port {
+                    Port::some(a) => self.isplaying = true,
+                    _ => {}
+                }
+
+                answer::Next
             }
 
             0x86 => {
@@ -180,24 +166,43 @@ impl App {
         }
     }
 
-    pub fn read_cmd_input() {}
+    pub fn do_because_of_state(&mut self) {
+        let message_enum = self.next_message.clone();
+
+        match message_enum {
+            message::Next_event(message) => {
+                self.print_config(&message);
+                self.send_message(&message);
+            }
+            message::Ping => {
+                self.send_message(&vec![0x00]);
+            }
+            message::Start_Song(start_song) => {
+                println!("{}", start_song[0]);
+                self.send_message(&start_song);
+            }
+            _ => {}
+        }
+    }
+
+    pub fn print_config(&mut self, conifg: &Vec<u8>) {
+        print!("config: ");
+
+        for i in 0..4 {
+            print! {" {:08b}",conifg[i]};
+        }
+
+        let time = [conifg[5], conifg[6], conifg[7], conifg[8]];
+        let time_u32 = u32::from_be_bytes(time);
+        print!("Delta time: {}", time_u32);
+    }
 
     pub fn update(&mut self) {
-        let response = self.receive_message();
-        self.revice_message_and_update_sate(response);
         self.check_port();
-
-        if self.song.isplaying {
-            let bytes = self.song.next_config();
-            //println!("config{:?}", self.song.next_config());
-
-            for i in bytes {
-                print!("config: {:08b}", i);
-            }
-        }
-        
-
-
-
+        let response = self.receive_message();
+        self.update_sate(response);
+        self.do_because_of_state();
     }
+
+    // debug functions
 }

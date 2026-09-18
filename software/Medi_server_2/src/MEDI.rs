@@ -118,7 +118,7 @@ impl song {
         let mut next_config: Vec<u8> = self.organ_config.last_config.clone();
         let mut first_play = true;
 
-        let next_cofig_time: Vec<u8> = vec![];
+        let mut next_cofig_time: Vec<u8> = vec![];
 
         'shouldterminate: loop {
             let mut next_event = self.next_event();
@@ -131,8 +131,8 @@ impl song {
                 panic!("done processing song");
             }
             if !first_play {
-                for i in delta_time {
-                    if i != 0x00 {
+                for i in &delta_time {
+                    if *i != 0x00 {
                         self.readindex = self.readindex - 1;
                         next_cofig_time = delta_time;
                         break 'shouldterminate;
@@ -157,10 +157,9 @@ impl song {
 
         self.organ_config.last_config = next_config.clone();
 
+        next_config.extend(next_cofig_time);
 
-        let next_message: = next_config.extend(next_cofig_time);
-        next_message
-
+        next_config
     }
 
     fn set_medinote_in_config(
