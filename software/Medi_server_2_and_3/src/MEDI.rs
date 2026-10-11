@@ -1,17 +1,14 @@
 use midly::{MidiMessage, Smf, Timing, num::u15};
-use std::{error, fs, io, ops::Index, result, vec};
-
-use crate::{Port::some, message::Next_event};
 use std::ops::ControlFlow::Break;
+use std::{error, fs, io, ops::Index, result, usize, vec};
 
 #[derive(Clone)]
 pub struct organ {
-    lower_bound: i32,
-    higher_bound: i32,
+    lower_bound: u8,
+    higher_bound: u8,
 }
 
 pub struct song {
-    bytes: Vec<u8>,
     readindex: usize,
     pub timeing: u16,
     organ_config: organ,
@@ -38,7 +35,6 @@ impl song {
         let timeing: u16 = timeing.into(); // convert u15 to u16
 
         let readindex = 0;
-
         let lower_bound = 40;
         let higher_bound = lower_bound + 31;
 
@@ -48,11 +44,10 @@ impl song {
         };
 
         let isplaying = false;
-        let config = song::convert_format_to_config(&bytes);
+        let config = song::convert_format_to_config(&bytes, &organ_config);
 
         song {
             isplaying,
-            bytes,
             readindex,
             timeing,
             organ_config,
@@ -60,18 +55,24 @@ impl song {
         }
     }
 
-    pub fn convert_format_to_config(bytes: &Vec<u8>) -> Vec<Vec<u8>> {
+    pub fn convert_format_to_config(bytes: &Vec<u8>, organ_config: &organ) -> Vec<Vec<u8>> {
         let mut config: Vec<Vec<u8>> = vec![vec![0x00, 0x00, 0x00, 0x00]];
         let mut smf: Smf<'_> = Smf::parse(bytes).unwrap();
 
         let mut run = true;
+        let mut index = 0;
 
         while run {
-            let next_config: Result<Vec<u8>, String> =
-                Self::next_config(&smf, &config[config.len() - 1]);
-            match next_config {
-                Ok(next) => config.push(next),
+            match song::next_config(&smf, &config[config.len() - 1], &index, organ_config) {
+                Ok(next) => {
+                    let (next_event, new_index) = next;
+                    index = new_index;
+
+                    config.push(next_event)
+                }
+
                 Err(a) => {
+                    print!("Stoped phrasing");
                     run = false;
                 }
             }
@@ -80,63 +81,74 @@ impl song {
         config
     }
 
-    pub fn next_config(smf: &Smf<'_>, last_config: &Vec<u8>, last_index: usize) -> Result<Vec<u8>, String> {
-
-        let mut next_config: Vec<u8> = last_config.clone();
+    pub fn next_config(
+        smf: &Smf<'_>,
+        last_config: &Vec<u8>,
+        last_index: &usize,
+        organ_config: &organ,
+    ) -> Result<(Vec<u8>, usize), String> {
+        let mut config: Vec<u8> = last_config.clone();
 
         let mut first_play = true;
 
-        let mut next_cofig_time: Vec<u8> = vec![];
+        // computre based on the last config:
+        let mut index = last_index.clone();
 
-         let index = 0;  
-        'shouldterminate: loop {
-            let mut next_event: Vec<u8> = match song::next_event(smf, Index) {
-                Some(a) => a
-                None => return Result::ok( next_cofig_time)
+        'config_builder: loop {
+            let next_event = match song::get_event(smf, index) {
+                Some(a) => a,
+                None => return Result::Err(("vvvv").to_string()),
             };
 
-            //println!("Config: {:?}", next_event);
-
-            let delta_time = vec![next_event[2], next_event[3], next_event[4], next_event[5]];
-
-            if !first_play {
-                for i in &delta_time {
-                    if *i != 0x00 {
-                        index = self.readindex - 1;
-                        next_cofig_time = delta_time;
-                        break 'shouldterminate;
-                    }
-                }
+            if song::is_zerro(&next_event[2..5].to_vec()) == true {
+                // if the time chnage is zerro it is the same event and therefore multple event can happen. When the delta time is not 0 it must be a new event.
+                break 'config_builder;
+            } else {
+                index = index + 1;
             }
 
-            // let note_bytes = vec![0x00 as u8, 0x00 as u8, next_event[1], next_event[2]];
-            // let medi_note: i32 = i32::from_be_bytes(note_bytes.try_into().unwrap());
-            let medi_note: i32 = next_event[1] as i32;
-
-            let state = match next_event[0] {
-                0x90 => false,
-                0x80 => true,
-                0x00 => false,
-                _ => panic!("wired note type: {:?}", next_event[0]),
-            };
-
-            next_config = self.set_medinote_in_config(medi_note, state, &mut next_config);
-
-            first_play = false;
+            // adds the change to the previus config
+            config = song::add_event(&next_event, &config, organ_config)
         }
+        //----------------------------------//
 
-        self.organ_config.last_config = next_config.clone();
-
-        next_config.extend(next_cofig_time);
-
-        next_config
+        Result::Ok((config, index))
     }
 
-    pub fn next_event(smf: Smf<'_>, index: usize) -> Option<Vec<u8>> {
-        // Gives the next medi event at "index" in SMF's
-        let next_event: Vec<u8> = Vec::new();
+    pub fn is_zerro(list: &Vec<u8>) -> bool {
+        let mut is_true = true;
+        for i in 0..list.len() {
+            if !(list[i] == 0x00) {
+                is_true = false;
+            }
+        }
+        is_true
+    }
 
-        let next_event = match smf.tracks[0].get(index) {
+    pub fn add_event(event: &Vec<u8>, config: &Vec<u8>, organ_config: &organ) -> Vec<u8> {
+        let mut config_evnt: Vec<u8> = config[0..3].to_vec();
+
+        let mut config_time: Vec<u8> = config[3..7].to_vec();
+
+        let onOrOff = match event[0] {
+            0x90 => true,
+            0x80 => false,
+            _ => panic!("wrong events in medi phrasing!!!"),
+        };
+
+        let note = event[1];
+
+        config_evnt = song::set_medinote_in_config(note, onOrOff, &mut config_evnt, organ_config);
+
+        config_evnt.append(&mut config_time); // add the time again
+        config_evnt
+    }
+
+    pub fn get_event(smf: &Smf<'_>, index: &usize) -> Option<Vec<u8>> {
+        // Gives the next medi event at "index" in SMF's
+        // let next_event: Vec<u8> = Vec::new();
+
+        let next_event = match smf.tracks[0].get(index.clone()) {
             Some(a) => a,
             None => return Option::None,
         };
@@ -172,26 +184,28 @@ impl song {
         note_event.push(time_bytyfied[2]);
         note_event.push(time_bytyfied[3]);
 
+        // Returns in format with the follong bytes: IDByte_0, Key_byte_0, time_0, time_1. time_2, time_3
+        // Id byte will be 0x80 for on and 0x90 for off
+
         Option::Some(note_event)
     }
 
     fn set_medinote_in_config(
-        &mut self,
-        medi_note: i32,
+        medi_note: u8,
         on_off: bool,
         config: &mut Vec<u8>,
+        organ_config: &organ,
     ) -> Vec<u8> {
-        if (medi_note < self.organ_config.lower_bound || medi_note > self.organ_config.higher_bound)
-        {
+        if (medi_note < organ_config.lower_bound || medi_note > organ_config.higher_bound) {
             return config.clone();
         }
 
-        let bourdy_fixed_value = medi_note - self.organ_config.lower_bound;
+        let bourdy_fixed_value: u8 = medi_note - organ_config.lower_bound;
 
-        let byte_number = (bourdy_fixed_value / 8 as i32) as usize;
+        let byte_number = ((bourdy_fixed_value / 8) as i32) as usize;
         let byte_bit_number = (7 - (bourdy_fixed_value % 8)) as u8;
 
-        config[byte_number] = Self::set_bit(config[byte_number], byte_bit_number, on_off);
+        config[byte_number] = song::set_bit(config[byte_number], byte_bit_number, on_off);
 
         return config.to_vec();
     }

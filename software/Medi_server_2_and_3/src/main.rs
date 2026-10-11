@@ -1,7 +1,4 @@
 mod MEDI;
-mod app;
-mod test;
-mod types;
 
 use serialport::SerialPort;
 use std::time::Duration;
@@ -36,24 +33,19 @@ pub enum message {
     None,
 }
 
-pub enum Port {
-    some(Box<dyn SerialPort>),
-    none,
-}
-
 pub struct App {
     port_name: String,
     baud_rate: u32,
-    port: Port,
+    port: Option<Box<dyn SerialPort>>,
 
     isplaying: bool,
-    pub song: medi::song,
+    pub song: MEDI::song,
     next_message: message,
 }
 
 impl App {
     pub fn new(port_name: &str, song_path: &str) -> Self {
-        let mut song: medi::song = medi::song::new(song_path);
+        let mut song: MEDI::song = MEDI::song::new(song_path);
 
         let port_name = port_name.to_string();
         let baud_rate = 9600;
@@ -80,15 +72,15 @@ impl App {
         }
     }
 
-    pub fn try_oppening_port(port_name: &String, baud_rate: u32) -> Port {
+    pub fn try_oppening_port(port_name: &String, baud_rate: u32) -> Option<Box<dyn SerialPort>> {
         let port_enum = match serialport::new(port_name, baud_rate)
             .timeout(Duration::from_millis(1000)) // Set a read timeout
             .open()
         {
-            Ok(port) => Port::some(port),
+            Ok(port) => Option::Some(port),
             Err(e) => {
                 println!("port could not open{}", e);
-                Port::none
+                Option::None
             }
         };
 
@@ -97,20 +89,20 @@ impl App {
 
     pub fn check_port(&mut self) {
         match &self.port {
-            Port::some(a) => {}
-            Port::none => self.port = App::try_oppening_port(&self.port_name, self.baud_rate),
+            Option::Some(a) => {}
+            Option::None => self.port = App::try_oppening_port(&self.port_name, self.baud_rate),
         }
     }
 
     pub fn send_message(&mut self, data: &[u8]) {
         match &mut self.port {
-            Port::some(port) => {
+            Option::Some(port) => {
                 println!("Send Data{:?}", data);
                 if let Err(e) = port.write_all(data) {
                     //  println!("Failed to write to port: {}", e);
                 }
             }
-            Port::none => {
+            Option::None => {
                 // println!("tried Sending Data port {:?}", self.port_name);
             }
         }
@@ -118,14 +110,14 @@ impl App {
 
     pub fn receive_message(&mut self) -> Vec<u8> {
         match &mut self.port {
-            Port::some(port) => {
+            Option::Some(port) => {
                 let mut buffer: [u8; 128] = [0; 128];
                 match port.read(&mut buffer) {
                     Ok(n) => buffer[..n].to_vec(),
                     Err(_) => Vec::new(),
                 }
             }
-            Port::none => {
+            Option::None => {
                 /*
                 println!(
                     "tried reciving Data port, could not acsess port: {:?}",
