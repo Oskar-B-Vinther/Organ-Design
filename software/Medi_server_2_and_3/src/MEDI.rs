@@ -14,7 +14,7 @@ pub struct song {
     organ_config: organ,
     pub isplaying: bool,
 
-    config: Vec<Vec<u8>>,
+    pub config: Vec<Vec<u8>>,
 }
 
 impl song {
@@ -56,7 +56,7 @@ impl song {
     }
 
     pub fn convert_format_to_config(bytes: &Vec<u8>, organ_config: &organ) -> Vec<Vec<u8>> {
-        let mut config: Vec<Vec<u8>> = vec![vec![0x00, 0x00, 0x00, 0x00]];
+        let mut config: Vec<Vec<u8>> = vec![vec![0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00]];
         let mut smf: Smf<'_> = Smf::parse(bytes).unwrap();
 
         let mut run = true;
@@ -72,7 +72,7 @@ impl song {
                 }
 
                 Err(a) => {
-                    print!("Stoped phrasing");
+                    println!("Stoped phrasing all event Procesed");
                     run = false;
                 }
             }
@@ -89,26 +89,25 @@ impl song {
     ) -> Result<(Vec<u8>, usize), String> {
         let mut config: Vec<u8> = last_config.clone();
 
-        let mut first_play = true;
-
         // computre based on the last config:
         let mut index = last_index.clone();
 
+        // a bool for caturing the delta time of the config, to know if it is the first event.
+        let mut new_event = true;
         'config_builder: loop {
-            let next_event = match song::get_event(smf, index) {
+            let next_event = match song::get_event(smf, &index) {
                 Some(a) => a,
                 None => return Result::Err(("vvvv").to_string()),
             };
-
-            if song::is_zerro(&next_event[2..5].to_vec()) == true {
+            // println!(" index: {index}");
+            if !song::is_zerro(&next_event[2..5].to_vec()) == true && !new_event {
                 // if the time chnage is zerro it is the same event and therefore multple event can happen. When the delta time is not 0 it must be a new event.
                 break 'config_builder;
-            } else {
-                index = index + 1;
             }
-
             // adds the change to the previus config
-            config = song::add_event(&next_event, &config, organ_config)
+            config = song::add_event(&next_event, &config, organ_config, new_event);
+            new_event = false;
+            index = index + 1;
         }
         //----------------------------------//
 
@@ -125,22 +124,39 @@ impl song {
         is_true
     }
 
-    pub fn add_event(event: &Vec<u8>, config: &Vec<u8>, organ_config: &organ) -> Vec<u8> {
-        let mut config_evnt: Vec<u8> = config[0..3].to_vec();
-
-        let mut config_time: Vec<u8> = config[3..7].to_vec();
-
+    pub fn add_event(
+        event: &Vec<u8>,
+        config: &Vec<u8>,
+        organ_config: &organ,
+        add_time: bool,
+    ) -> Vec<u8> {
         let onOrOff = match event[0] {
-            0x90 => true,
-            0x80 => false,
+            0x80 => true,
+            0x90 => false,
+            0x00 => {
+                // not an event which sets a note
+                return config.clone();
+            }
             _ => panic!("wrong events in medi phrasing!!!"),
         };
+
+        let mut config_evnt: Vec<u8> = config[0..4].to_vec();
 
         let note = event[1];
 
         config_evnt = song::set_medinote_in_config(note, onOrOff, &mut config_evnt, organ_config);
 
-        config_evnt.append(&mut config_time); // add the time again
+        if add_time {
+            let mut config_time: Vec<u8> = event[2..5].to_vec();
+
+            //print_byte_array("time from config: ", &config_time);
+
+            config_evnt.append(&mut config_time); // add the time again
+        } else {
+            let mut config_time: Vec<u8> = config[4..7].to_vec();
+            config_evnt.append(&mut config_time); // add the time again
+        }
+
         config_evnt
     }
 
@@ -161,6 +177,7 @@ impl song {
                     println!("test");
                     vec![0x90 as u8, key.as_int() as u8]
                 }
+
                 MidiMessage::NoteOn { key, vel } => {
                     if vel == 0 {
                         vec![0x90 as u8, key.as_int() as u8]
@@ -168,6 +185,7 @@ impl song {
                         vec![0x80 as u8, key.as_int() as u8]
                     }
                 }
+
                 _ => {
                     vec![0x00 as u8, 0x00 as u8]
                 }
@@ -186,6 +204,15 @@ impl song {
 
         // Returns in format with the follong bytes: IDByte_0, Key_byte_0, time_0, time_1. time_2, time_3
         // Id byte will be 0x80 for on and 0x90 for off
+        /* debug prints
+        println!(
+            "phrasing Status: {} % ",
+            ((index.clone() as f32 / smf.tracks[0].len() as f32) * 100.0) as i32
+        );
+        */
+
+        //print_byte_array("note event", &note_event);
+        print_event(&note_event);
 
         Option::Some(note_event)
     }
@@ -203,8 +230,9 @@ impl song {
         let bourdy_fixed_value: u8 = medi_note - organ_config.lower_bound;
 
         let byte_number = ((bourdy_fixed_value / 8) as i32) as usize;
-        let byte_bit_number = (7 - (bourdy_fixed_value % 8)) as u8;
+        let byte_bit_number = (7 - (bourdy_fixed_value as i32 % 8 as i32)) as u8;
 
+        // print!("byte_number:{}", byte_number);
         config[byte_number] = song::set_bit(config[byte_number], byte_bit_number, on_off);
 
         return config.to_vec();
@@ -219,4 +247,25 @@ impl song {
     pub fn start_song(&mut self) {
         self.isplaying = true;
     }
+}
+
+pub fn print_byte_array(text: &str, config: &Vec<u8>) {
+    print!("Array:  {}  ", text);
+    for i in 0..config.len() {
+        print! {" {:08b} ",config[i]};
+    }
+    println!(" ");
+}
+
+pub fn print_event(event: &Vec<u8>) {
+    match event[0] {
+        0x80 => print!("Note state: On  "),
+        0x90 => print!("Note state: Off  "),
+        _ => print!("Note state: none  "),
+    }
+    print!("{}", u8::from_be_bytes([event[1]]));
+
+    let time = [event[2], event[3], event[4], event[5]];
+    print!(" time: {}", u32::from_be_bytes(time));
+    println!(" ");
 }

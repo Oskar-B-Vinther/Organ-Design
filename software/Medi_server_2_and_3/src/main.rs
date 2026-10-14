@@ -5,16 +5,15 @@ use std::time::Duration;
 use std::{thread, time, vec};
 
 fn main() {
-    let mut state_machine = App::new(
-        "com9",
-        "C:\\Users\\oskar\\Desktop\\Organ projket\\Organ-Design\\software\\Medi_server_2\\Medi.mid",
-    );
+    let path: &str = r"C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3\Medi.mid";
+    let mut state_machine = App::new("com9", &path);
 
-    //state_machine.song.start_song();
+    //state_machine.print_config();
 
     let quit_program = false;
     while !quit_program {
-        state_machine.update();
+
+        // state_machine.update();
     }
 }
 
@@ -130,6 +129,8 @@ impl App {
     }
 
     pub fn update_sate(&mut self, answer: Vec<u8>) -> answer {
+        /*
+
         if answer.is_empty() {
             return answer::NoAnswer;
         }
@@ -140,10 +141,9 @@ impl App {
             0x04 => {
                 self.next_message = message::Next_event(self.song.next_config());
                 match &self.port {
-                    Port::some(a) => self.isplaying = true,
+                    Option::Some(a) => self.isplaying = true,
                     _ => {}
                 }
-
                 answer::Next
             }
 
@@ -153,9 +153,13 @@ impl App {
             }
             _ => answer::None,
         }
+        */
+        answer::None
     }
 
     pub fn do_because_of_state(&mut self) {
+
+        /*
         let message_enum = self.next_message.clone();
 
         match message_enum {
@@ -172,24 +176,33 @@ impl App {
             }
             _ => {}
         }
+        */
     }
 
-    pub fn print_config(&mut self, conifg: &Vec<u8>) {
+    pub fn print_config(&mut self) {
         print!("config: ");
 
-        for i in 0..4 {
-            print! {" {:08b}",conifg[i]};
-        }
+        let total_config: Vec<Vec<u8>> = self.song.config.clone();
 
-        let time = [conifg[5], conifg[6], conifg[7], conifg[8]];
-        let time_u32 = u32::from_be_bytes(time);
-        print!("Delta time: {}", time_u32);
+        for j in 0..total_config.len() {
+            let config = &total_config[j];
+            for i in 0..4 {
+                print! {" {:08b}",config[i]};
+            }
+
+            let time = [config[5], config[6], config[7], config[8]];
+            let time_u32 = u32::from_be_bytes(time);
+            print!("Delta time: {}", time_u32);
+        }
     }
 
     pub fn update(&mut self) {
+        // ------ // update state:
         self.check_port();
         let response = self.receive_message();
         self.update_sate(response);
+
+        // ------ // Do because of that state
         self.do_because_of_state();
     }
 

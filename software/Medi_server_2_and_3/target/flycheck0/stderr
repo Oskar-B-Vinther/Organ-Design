@@ -1,58 +1,12 @@
-   0.038821100s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint: fingerprint error for Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3)/Check { test: false }/TargetInner { name: "Medi_server_2", doc: true, ..: with_path("C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\main.rs", Edition2024) }
-   0.038874500s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3\target\debug\.fingerprint\Medi_server_2-f232a038ec43003c\bin-Medi_server_2`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_libgit2_prerelease
-  11: <unknown>
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: git_midx_writer_dump
-  16: git_filter_source_repo
-  17: git_midx_writer_dump
-  18: BaseThreadInitThunk
-  19: RtlUserThreadStart
-   0.056674100s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint: fingerprint error for Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3)/Check { test: true }/TargetInner { name: "Medi_server_2", doc: true, ..: with_path("C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\main.rs", Edition2024) }
-   0.056705100s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3\target\debug\.fingerprint\Medi_server_2-107211c65c62befb\test-bin-Medi_server_2`
-
-Caused by:
-    The system cannot find the file specified. (os error 2)
-
-Stack backtrace:
-   0: git_midx_writer_dump
-   1: git_midx_writer_dump
-   2: git_midx_writer_dump
-   3: git_midx_writer_dump
-   4: git_filter_source_repo
-   5: git_filter_source_repo
-   6: git_filter_source_repo
-   7: git_filter_source_repo
-   8: git_filter_source_repo
-   9: git_filter_source_repo
-  10: git_libgit2_prerelease
-  11: <unknown>
-  12: <unknown>
-  13: <unknown>
-  14: <unknown>
-  15: git_midx_writer_dump
-  16: git_filter_source_repo
-  17: git_midx_writer_dump
-  18: BaseThreadInitThunk
-  19: RtlUserThreadStart
+   0.041086800s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\MEDI.rs"
+   0.041126000s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\target\\debug\\.fingerprint\\Medi_server_2-f232a038ec43003c\\dep-bin-Medi_server_2"
+   0.041136300s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13436364939, nanos: 138718600 } < FileTime { seconds: 13436364940, nanos: 517637600 }
+   0.041312300s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint: fingerprint dirty for Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3)/Check { test: false }/TargetInner { name: "Medi_server_2", doc: true, ..: with_path("C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\main.rs", Edition2024) }
+   0.041355500s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\target\\debug\\.fingerprint\\Medi_server_2-f232a038ec43003c\\dep-bin-Medi_server_2", reference_mtime: FileTime { seconds: 13436364939, nanos: 138718600 }, stale: "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\MEDI.rs", stale_mtime: FileTime { seconds: 13436364940, nanos: 517637600 } }))
+   0.047942100s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint: stale: changed "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\MEDI.rs"
+   0.047958300s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:           (vs) "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\target\\debug\\.fingerprint\\Medi_server_2-107211c65c62befb\\dep-test-bin-Medi_server_2"
+   0.047966200s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 13436364939, nanos: 138718600 } < FileTime { seconds: 13436364940, nanos: 517637600 }
+   0.048128800s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint: fingerprint dirty for Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3)/Check { test: true }/TargetInner { name: "Medi_server_2", doc: true, ..: with_path("C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\main.rs", Edition2024) }
+   0.048152400s  INFO prepare_target{force=false package_id=Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3) target="Medi_server_2"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\target\\debug\\.fingerprint\\Medi_server_2-107211c65c62befb\\dep-test-bin-Medi_server_2", reference_mtime: FileTime { seconds: 13436364939, nanos: 138718600 }, stale: "C:\\Users\\oskar\\Oskars filer\\Filer\\andre projketer\\Organ projket\\Organ-Design\\software\\Medi_server_2_and_3\\src\\MEDI.rs", stale_mtime: FileTime { seconds: 13436364940, nanos: 517637600 } }))
     Checking Medi_server_2 v0.1.0 (C:\Users\oskar\Oskars filer\Filer\andre projketer\Organ projket\Organ-Design\software\Medi_server_2_and_3)
-error: could not compile `Medi_server_2` (bin "Medi_server_2" test) due to 3 previous errors; 19 warnings emitted
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `Medi_server_2` (bin "Medi_server_2") due to 3 previous errors; 19 warnings emitted
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.23s
